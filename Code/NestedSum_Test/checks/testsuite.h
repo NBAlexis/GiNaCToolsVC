@@ -22,6 +22,7 @@ int tsmain()
                       << "." << nestedsums::version_micro
 	    << " testsuite, each test should return zero" << std::endl;
   std::cout << std::endl;
+  int iError = 0;
 
   try{
 
@@ -33,6 +34,7 @@ int tsmain()
     int k;
     int order;
     int NMAX;
+
 
     symbol eps("eps","\\varepsilon");
 
@@ -128,6 +130,10 @@ int tsmain()
                  - expr_start;
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     std::cout << std::endl;
@@ -135,13 +141,17 @@ int tsmain()
     std::cout << std::endl;
 
     for (k=1;k<10;k++)
-      {
-	time(&time_start);
-	ex expr_start = nestedsums_helper_expand_tgamma_fct(0,2,0,2,eps,k);
-	time(&time_end);
-	ex res = expr_start - 1;
-	std::cout << "Test    " << k << " : " << res << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-      }
+    {
+        time(&time_start);
+        ex expr_start = nestedsums_helper_expand_tgamma_fct(0, 2, 0, 2, eps, k);
+        time(&time_end);
+        ex res = expr_start - 1;
+        std::cout << "Test    " << k << " : " << res << "               Time in seconds : " << difftime(time_end, time_start) << std::endl;
+        if (res != 0)
+        {
+            ++iError;
+        }
+    }
 
     // -------------------------------------------
     std::cout << std::endl;
@@ -157,6 +167,10 @@ int tsmain()
 	time(&time_end);
 	ex res = Z1_temp - Z0_temp;
 	std::cout << "Test    " << k << " : " << res << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (res != 0)
+    {
+        ++iError;
+    }
       }
 
     // -------------------------------------------
@@ -170,12 +184,20 @@ int tsmain()
     expr_end = expr_start - Zsum_to_Ssum(Ssum_to_Zsum(expr_start));
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     expr_start = x+MZV3+y*z;
     time(&time_start);
     expr_end = expr_start - Ssum_to_Zsum(Zsum_to_Ssum(expr_start));
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //  multiply S2*S3 and convert the result to Zsums
@@ -194,6 +216,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_start - Ssum_to_Zsum(S2)*Ssum_to_Zsum(S3));
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //  multiply Z2*Z3 and substitute n=10 in the end
@@ -217,6 +243,10 @@ int tsmain()
     expr_end = expr_end.subs(m3==5);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -238,6 +268,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Csum(n,lst{l_x0_1});
@@ -246,6 +280,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Csum(n,lst{l_x0_2});
@@ -255,6 +293,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Csum(n,lst{l_x0_3});
@@ -264,6 +306,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -283,6 +329,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -315,6 +365,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Ssum(n,lst{letter(x,-1),letter(y,m2)}).remove_negative_degrees();
@@ -326,6 +380,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Ssum(Infinity,lst{letter(x,-1)}).remove_negative_degrees();
@@ -334,6 +392,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Ssum(Infinity,lst{letter(x,-1),letter(y,m2)}).remove_negative_degrees();
@@ -343,6 +405,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Ssum(n,lst{letter((ex) 1,-1)}).remove_negative_degrees();
@@ -352,6 +418,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = Ssum(n,lst{letter(x,0)}).remove_negative_degrees();
@@ -360,6 +430,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -391,6 +465,10 @@ int tsmain()
                - expr_start;
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(Infinity,i,
@@ -404,6 +482,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand( expr_end - expr_start);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     order = 2;
@@ -422,6 +504,10 @@ int tsmain()
 
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -476,6 +562,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -490,6 +580,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -505,6 +599,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -520,7 +618,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -535,6 +636,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -550,6 +655,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -565,6 +674,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -579,6 +692,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 8 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -593,6 +710,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test    " << 9 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -607,6 +728,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test   " << 10 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -621,6 +746,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test   " << 11 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -635,6 +764,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test   " << 12 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -650,6 +783,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test   " << 13 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -664,6 +801,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test   " << 14 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = transcendental_sum_type_C(n,i,
@@ -678,7 +819,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end);
     time(&time_end);
     std::cout << "Test   " << 15 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -727,6 +871,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_Ssum(n,lst{letter(x,5)});
@@ -747,6 +895,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_Ssum(n,lst{letter(x,1),letter((ex) 1,1)});
@@ -767,6 +919,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_Ssum(n,lst{letter(x,1),letter(y,1)});
@@ -787,6 +943,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_letter(x,1,n) * create_Ssum(n,lst{letter(y,1)});
@@ -807,6 +967,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_letter(z,1,n) * create_Ssum(n,lst{letter(x,1),letter(y,1)});
@@ -827,6 +991,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_letter(z,1,n) * create_Ssum(n,lst{letter((ex) 1,1),letter((ex) 1,1)});
@@ -847,6 +1015,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // takes a few seconds
     time(&time_start);
@@ -868,6 +1040,10 @@ int tsmain()
     expr_end = nestedsums_helper_expand(expr_end,expand_request::member_variables);
     time(&time_end);
     std::cout << "Test    " << 8 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -910,6 +1086,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(n,i,
@@ -925,6 +1105,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(n,i,
@@ -940,6 +1124,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(n,i,
@@ -955,7 +1143,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(n,i,
@@ -971,7 +1162,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(n,i,
@@ -987,6 +1181,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // takes a few seconds    
     time(&time_start);
@@ -1011,6 +1209,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_A_and_set_gammas(n,i,
@@ -1026,6 +1228,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 8 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -1088,6 +1294,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1106,6 +1316,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1124,6 +1338,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1142,6 +1360,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1160,7 +1382,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1179,6 +1404,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1197,6 +1426,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1215,7 +1448,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 8 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1234,6 +1470,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test    " << 9 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // takes a few seconds    
     time(&time_start);
@@ -1253,6 +1493,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test   " << 10 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_B_and_set_gammas(n,i,
@@ -1271,6 +1515,10 @@ int tsmain()
     expr_end = expr_end - expr_start;
     time(&time_end);
     std::cout << "Test   " << 11 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -1313,6 +1561,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_C_and_set_gammas(n,i,
@@ -1330,6 +1582,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_C_and_set_gammas(n,i,
@@ -1347,7 +1603,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_C_and_set_gammas(n,i,
@@ -1365,7 +1624,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_C_and_set_gammas(n,i,
@@ -1383,7 +1645,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_C_and_set_gammas(n,i,
@@ -1401,7 +1666,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-    
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
     
     // takes a few seconds    
     order = 2 ;
@@ -1437,6 +1705,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -1496,6 +1768,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_D_and_set_gammas(n,i,
@@ -1524,6 +1800,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // takes a few seconds    
     time(&time_start);
@@ -1553,6 +1833,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_D_and_set_gammas(n,i,
@@ -1581,6 +1865,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_D_and_set_gammas(n,i,
@@ -1609,6 +1897,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // takes a few seconds    
     time(&time_start);
@@ -1638,7 +1930,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_D_and_set_gammas(n,i,
@@ -1667,6 +1962,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     expr_start = create_transcendental_sum_type_D_and_set_gammas(n,i,
@@ -1695,6 +1994,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 8 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // takes a few seconds    
     time(&time_start);
@@ -1724,6 +2027,10 @@ int tsmain()
     expr_end = expr_end.normal();
     time(&time_end);
     std::cout << "Test    " << 9 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -1766,6 +2073,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     time(&time_start);
     ma = 1 - eps;
@@ -1784,6 +2095,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     order = 4;
 
@@ -1805,6 +2120,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 3 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     order = 4;
 
@@ -1827,6 +2146,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 4 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     order = 4;
 
@@ -1847,6 +2170,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 5 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     order = 3;
 
@@ -1867,6 +2194,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 6 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     order = 3;
 
@@ -1887,7 +2218,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 7 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     // -------------------------------------------
     //
@@ -1922,7 +2256,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 1 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
     order = 1 ;
 
@@ -1951,7 +2288,10 @@ int tsmain()
     expr_end = convert_Zsums_to_standard_form(expr_end);
     time(&time_end);
     std::cout << "Test    " << 2 << " : " << expr_end << "               Time in seconds : " << difftime(time_end,time_start) << std::endl;
-
+    if (expr_end != 0)
+    {
+        ++iError;
+    }
 
 
 
@@ -1959,13 +2299,14 @@ int tsmain()
   } catch (std::exception &e)
     {
       std::cout << "Exception : " << e.what() << std::endl;
+      ++iError;
     }
 
   std::cout << std::endl;
   std::cout << "end nestedsums testsuite" << std::endl;
   std::cout << std::endl;
 
-  return 0;
+  return iError;
 }
 
 
