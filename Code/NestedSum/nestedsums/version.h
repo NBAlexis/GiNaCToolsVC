@@ -32,9 +32,9 @@
 
 namespace nestedsums {
 
-extern const int version_major;
-extern const int version_minor;
-extern const int version_micro;
+extern NESTEDSUMS_API const int version_major;
+extern NESTEDSUMS_API const int version_minor;
+extern NESTEDSUMS_API const int version_micro;
 
 } // namespace nestedsums
 
