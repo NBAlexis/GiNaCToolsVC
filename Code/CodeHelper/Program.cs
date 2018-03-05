@@ -21,11 +21,31 @@ namespace CodeHelper
             //ChangeAllNum2();
             //ChangeAllNum3();
             //ChangeMainFunction();
+            //AddDllExportForNestedSums();
 
             //pasue
             Console.WriteLine("work done, press enter to exit...");
             string byebye = Console.ReadLine();
         }
+
+        static void AddDllExportForNestedSums()
+        {
+            Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
+            DirectoryInfo dirinfo = new DirectoryInfo("..\\..\\..\\Code\\NestedSum\\nestedsums");
+            FileInfo[] files = dirinfo.GetFiles("*.h", SearchOption.AllDirectories);
+
+            foreach (FileInfo f in files)
+            {
+                string fileContent = File.ReadAllText(f.FullName);
+                fileContent = Regex.Replace(fileContent,
+                    @"class(\s+[\d\w_]+\s*[:\{])",
+                    @"class NESTEDSUMS_API$1");
+                //Console.Write(fileContent);
+                File.WriteAllText(f.FullName, fileContent);
+            }
+        }
+
+        #region GINAC_CHECK
 
         static void ChangeMainFunction()
         {
@@ -59,6 +79,8 @@ namespace CodeHelper
             //Console.Write(headContent);
             File.WriteAllText(headerfile.FullName, headContent);
         }
+
+        #endregion
 
         #region Old
 

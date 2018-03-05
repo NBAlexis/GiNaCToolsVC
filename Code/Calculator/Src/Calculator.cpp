@@ -20,6 +20,31 @@ const cln::cl_I fibonacci(int n)
     return cln::round1(cln::expt(phi, n) / sqrt5);
 }
 
+struct V {
+    virtual V* vf() { cout << "V" << endl; return this; };
+};
+
+struct A : virtual V {
+    V* vf() override { cout << "A" << endl; return this; };
+};
+
+struct B : virtual V {
+    V* vf() override { cout << "B" << endl; return this; };
+};
+
+struct AA : A {
+    V* vf() override { cout << "AA" << endl; return this; };
+};
+
+struct BB : B {
+    V* vf() override { cout << "BB" << endl; return this; };
+};
+
+struct D : AA, BB {
+    V* vf() override { cout << "D" << endl; return this; };
+};
+
+
 int WINAPI WinMain(HINSTANCE hInstance,
     HINSTANCE hPrevInstance,
     LPSTR lpCmdLine,
@@ -28,6 +53,12 @@ int WINAPI WinMain(HINSTANCE hInstance,
 {
     Cout2VisualStudioDebugOutput c2v;
     OutputDebugStringA("release?...");
+
+    D dd;
+    dd.vf();
+    V* pdd = &dd;
+    //D* pdd1 = pdd->vf();
+    V* pdd2 = pdd->vf();
 
     mpz_t r, n;
     mpz_init(r);

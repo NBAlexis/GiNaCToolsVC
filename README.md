@@ -1,7 +1,7 @@
 # GiNaCToolsVC
 Use GiNaC and some libs based on it using VS2017 on WIN10
 
-#Build and run
+###Build and run###
 
 Should work in VS2017 without modifications.
 
@@ -14,7 +14,7 @@ to "Bin/x64/Debug" and "Bin/x64/Release"
 Run CLN_Test.exe to test CLN
 Run GINAC_Test.exe to test GiNaC
 
-#Dependency
+###Dependency###
 
 GMP: v6.1.2
 Built with MinGW64
@@ -34,7 +34,7 @@ https://reduze.hepforge.org/
 GiNacRA(May need this to calculate sums): 
 http://ginacra.sourceforge.net/
 
-#Build GMP, CLN, GiNaC in MinGW64
+###Build GMP, CLN, GiNaC in MinGW64###
 
 Before put the code into VS, we need configure the projects. They might be helpful if you only want to use MinGW but not VS.
 
@@ -44,6 +44,7 @@ Tested in MinGW64 in MSYS2
 
 For GMP, configure use
 $./configure --disable-static --enable-shared
+To obtain the import lib for VS, follow the instructions in the document, but change the file name libgmp-3.dll.def to libgmp-10.def first
 
 For CLN, configure use
 $./configure --enable-shared
@@ -51,7 +52,8 @@ $./configure --enable-shared
 For GiNaC, need python
 $pacman -S python
 
+For Reduze, need cmake
+$pacman -S cmake
 
-For Nested Sums
 
 

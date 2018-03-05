@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="nestedsums\basic_letter.h" />
+    <ClInclude Include="nestedsums\Bsum.h" />
+    <ClInclude Include="nestedsums\classical_polylog.h" />
+    <ClInclude Include="nestedsums\constants.h" />
+    <ClInclude Include="nestedsums\Csum.h" />
+    <ClInclude Include="nestedsums\Euler_Zagier_sum.h" />
+    <ClInclude Include="nestedsums\flags.h" />
+    <ClInclude Include="nestedsums\functions.h" />
+    <ClInclude Include="nestedsums\harmonic_polylog.h" />
+    <ClInclude Include="nestedsums\harmonic_sum.h" />
+    <ClInclude Include="nestedsums\harmonic_sum_to_Infinity.h" />
+    <ClInclude Include="nestedsums\hash_entry.h" />
+    <ClInclude Include="nestedsums\helpers.h" />
+    <ClInclude Include="nestedsums\letter.h" />
+    <ClInclude Include="nestedsums\list_polygamma.h" />
+    <ClInclude Include="nestedsums\multiple_polylog.h" />
+    <ClInclude Include="nestedsums\multiple_zeta_value.h" />
+    <ClInclude Include="nestedsums\nestedsums.h" />
+    <ClInclude Include="nestedsums\nielsen_polylog.h" />
+    <ClInclude Include="nestedsums\polygamma.h" />
+    <ClInclude Include="nestedsums\root_of_unity.h" />
+    <ClInclude Include="nestedsums\Ssum.h" />
+    <ClInclude Include="nestedsums\Ssum_to_Infinity.h" />
+    <ClInclude Include="nestedsums\symbol_factory.h" />
+    <ClInclude Include="nestedsums\transcendental_A.h" />
+    <ClInclude Include="nestedsums\transcendental_B.h" />
+    <ClInclude Include="nestedsums\transcendental_C.h" />
+    <ClInclude Include="nestedsums\transcendental_D.h" />
+    <ClInclude Include="nestedsums\transc_fct_A.h" />
+    <ClInclude Include="nestedsums\transc_fct_B.h" />
+    <ClInclude Include="nestedsums\transc_fct_C.h" />
+    <ClInclude Include="nestedsums\transc_fct_D.h" />
+    <ClInclude Include="nestedsums\unit_letter.h" />
+    <ClInclude Include="nestedsums\utils.h" />
+    <ClInclude Include="nestedsums\version.h" />
+    <ClInclude Include="nestedsums\Zsum.h" />
+    <ClInclude Include="nestedsum_private.h" />
+    <ClInclude Include="nestedsum_public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nestedsums\basic_letter.cc" />
+    <ClCompile Include="nestedsums\Bsum.cc" />
+    <ClCompile Include="nestedsums\classical_polylog.cc" />
+    <ClCompile Include="nestedsums\constants.cc" />
+    <ClCompile Include="nestedsums\Csum.cc" />
+    <ClCompile Include="nestedsums\Euler_Zagier_sum.cc" />
+    <ClCompile Include="nestedsums\functions.cc" />
+    <ClCompile Include="nestedsums\harmonic_polylog.cc" />
+    <ClCompile Include="nestedsums\harmonic_sum.cc" />
+    <ClCompile Include="nestedsums\harmonic_sum_to_Infinity.cc" />
+    <ClCompile Include="nestedsums\hash_entry.cc" />
+    <ClCompile Include="nestedsums\helpers.cc" />
+    <ClCompile Include="nestedsums\letter.cc" />
+    <ClCompile Include="nestedsums\list_polygamma.cc" />
+    <ClCompile Include="nestedsums\multiple_polylog.cc" />
+    <ClCompile Include="nestedsums\multiple_zeta_value.cc" />
+    <ClCompile Include="nestedsums\nielsen_polylog.cc" />
+    <ClCompile Include="nestedsums\polygamma.cc" />
+    <ClCompile Include="nestedsums\root_of_unity.cc" />
+    <ClCompile Include="nestedsums\Ssum.cc" />
+    <ClCompile Include="nestedsums\Ssum_to_Infinity.cc" />
+    <ClCompile Include="nestedsums\symbol_factory.cc" />
+    <ClCompile Include="nestedsums\transcendental_A.cc" />
+    <ClCompile Include="nestedsums\transcendental_B.cc" />
+    <ClCompile Include="nestedsums\transcendental_C.cc" />
+    <ClCompile Include="nestedsums\transcendental_D.cc" />
+    <ClCompile Include="nestedsums\transc_fct_A.cc" />
+    <ClCompile Include="nestedsums\transc_fct_B.cc" />
+    <ClCompile Include="nestedsums\transc_fct_C.cc" />
+    <ClCompile Include="nestedsums\transc_fct_D.cc" />
+    <ClCompile Include="nestedsums\unit_letter.cc" />
+    <ClCompile Include="nestedsums\Zsum.cc" />
+    <ClCompile Include="nestedsum_private.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0BD341F2-455A-43FF-B1B7-538B7D628756}</ProjectGuid>
+    <RootNamespace>NestedSum_vs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt>.dll</TargetExt>
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir);$(SolutionDir)..\Dependency;$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(IncludePath)</IncludePath>
+    <TargetName>nestedsums_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(SolutionDir)..\Dependency;$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>nestedsums</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>nestedsum_private.h</PrecompiledHeaderFile>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_WINDLL;_UNICODE;UNICODE;%(PreprocessorDefinitions);DEBUG=1;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;$(SolutionDir)..\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)..\Libs\$(TargetName).lib</ImportLibrary>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>_WINDLL;_UNICODE;UNICODE;%(PreprocessorDefinitions);NDEBUG=1;</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>nestedsum_private.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;$(SolutionDir)..\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\Temp\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)..\Libs\$(TargetName).lib</ImportLibrary>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

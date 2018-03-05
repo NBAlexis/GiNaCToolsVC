@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nestedsums">
+      <UniqueIdentifier>{916afb8a-998b-45d9-990a-124518495fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nestedsums\Inc">
+      <UniqueIdentifier>{3c83a937-efe8-41d9-a4a1-e0eac5cb6883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nestedsums\Src">
+      <UniqueIdentifier>{56011d23-5f88-4293-b21c-8620d1d78255}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="nestedsum_private.h" />
+    <ClInclude Include="nestedsum_public.h" />
+    <ClInclude Include="nestedsums\flags.h">
+      <Filter>nestedsums</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\nestedsums.h">
+      <Filter>nestedsums</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\utils.h">
+      <Filter>nestedsums</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\version.h">
+      <Filter>nestedsums</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\basic_letter.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\Bsum.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\classical_polylog.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\constants.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\Csum.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\Euler_Zagier_sum.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\functions.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\harmonic_polylog.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\harmonic_sum.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\harmonic_sum_to_Infinity.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\hash_entry.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\helpers.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\letter.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\list_polygamma.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\multiple_polylog.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\multiple_zeta_value.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\nielsen_polylog.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\polygamma.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\root_of_unity.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\Ssum.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\Ssum_to_Infinity.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\symbol_factory.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transc_fct_A.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transc_fct_B.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transc_fct_C.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transc_fct_D.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transcendental_A.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transcendental_B.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transcendental_C.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\transcendental_D.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\unit_letter.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="nestedsums\Zsum.h">
+      <Filter>nestedsums\Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nestedsum_private.cpp" />
+    <ClCompile Include="nestedsums\basic_letter.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\Bsum.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\classical_polylog.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\constants.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\Csum.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\Euler_Zagier_sum.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\functions.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\harmonic_polylog.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\harmonic_sum.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\harmonic_sum_to_Infinity.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\hash_entry.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\helpers.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\letter.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\list_polygamma.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\multiple_polylog.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\multiple_zeta_value.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\nielsen_polylog.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\polygamma.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\root_of_unity.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\Ssum.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\Ssum_to_Infinity.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\symbol_factory.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transc_fct_A.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transc_fct_B.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transc_fct_C.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transc_fct_D.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transcendental_A.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transcendental_B.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transcendental_C.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\transcendental_D.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\unit_letter.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="nestedsums\Zsum.cc">
+      <Filter>nestedsums\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

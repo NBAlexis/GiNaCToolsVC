@@ -91,8 +91,8 @@ GINAC_DECLARE_UNARCHIVER(ncmul);
 
 // friend funtions 
 
-ex reeval_ncmul(const exvector & v);
-ex hold_ncmul(const exvector & v);
+GINAC_API ex reeval_ncmul(const exvector & v);
+GINAC_API ex hold_ncmul(const exvector & v);
 
 } // namespace GiNaC
 

@@ -36,7 +36,9 @@
 #define __GINAC_PUBLIC 1
 
 //Order of those are changed
-#include "config.h"
+//#include "config.h"
+#define _GINAC_MSVC_ 1
+
 #include "version.h"
 #include "compiler.h"
 #include "flags.h"
