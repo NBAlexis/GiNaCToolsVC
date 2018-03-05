@@ -136,15 +136,10 @@ static void test_##typename##_floor (int & er, int & done)				\
   DO_BINOP_TEST(typename,type,qtype,div,/)				\
 void test_##typename (int & er, int & done)						\
 {									\
-    std::cout << "========== " #typename "======= plus ==========" << std::endl; \
 	test_##typename##_plus(er, done);				\
-    std::cout << "========== " #typename "======= minus ==========" << std::endl; \
 	test_##typename##_minus(er, done);				\
-    std::cout << "========== " #typename "======= mul ==========" << std::endl; \
 	test_##typename##_mul(er, done);				\
-    std::cout << "========== " #typename "======= floor ==========" << std::endl; \
 	test_##typename##_floor(er, done);				\
-    std::cout << "========== " #typename "======= div ==========" << std::endl; \
 	test_##typename##_div(er, done);				\
 }
 
@@ -158,17 +153,11 @@ extern void test_lfloat(int & er, int & done);
 
 inline void test_elementary(int & er, int & done)
 {
-    std::cout << "========== integer =================" << std::endl;
     test_integer(er, done);
-    std::cout << "========== rational =================" << std::endl;
     test_rational(er, done);
-    std::cout << "========== sfloat =================" << std::endl;
     test_sfloat(er, done);
-    std::cout << "========== ffloat =================" << std::endl;
     test_ffloat(er, done);
-    std::cout << "========== dfloat =================" << std::endl;
     test_dfloat(er, done);
-    std::cout << "========== lfloat =================" << std::endl;
     test_lfloat(er, done);
 }
 
@@ -177,13 +166,14 @@ extern void test_xgcd(int & er, int & done);
 extern void test_sqrtp(int & er, int & done);
 
 inline void etest_all(int & er, int & done)
-{        
+{   
+    std::cout << "Exam elementary..." << std::endl;
     test_elementary(er, done);
-    std::cout << "========== gcd =================" << std::endl;
+    std::cout << "Exam gcd..." << std::endl;
     test_gcd(er, done);
-    std::cout << "========== xgcd =================" << std::endl;
+    std::cout << "Exam xgcd..." << std::endl;
     test_xgcd(er, done);
-    std::cout << "========== sqrtp =================" << std::endl;
+    std::cout << "Exam sqrtp..." << std::endl;
     test_sqrtp(er, done);
 }
 
