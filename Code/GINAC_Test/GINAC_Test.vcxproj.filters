@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Exam">
+      <UniqueIdentifier>{2eafa2a1-0359-44d6-b844-8e35b2fe5712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{3dbbae80-b31b-4dbd-88c2-8e23aa410c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others">
+      <UniqueIdentifier>{33945c1f-245a-4433-82a0-5a774f70181f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Check">
+      <UniqueIdentifier>{1268a183-d162-4928-92c0-05f88c22a6cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time\Inc">
+      <UniqueIdentifier>{ec85f25d-4659-4310-8280-a6700f5d9e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others\Inc">
+      <UniqueIdentifier>{f3c69857-abcc-42b8-9fe0-81301c27fce7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="check\ginac_test.cpp" />
+    <ClCompile Include="check\exam_archive.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_clifford.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_color.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_cra.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_differentiation.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_factor.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_hashmap.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_indexed.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_inifcns.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_inifcns_nstdsums.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_lsolve.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_matrices.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_misc.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_mod_gcd.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_normalization.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_numeric.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_paranoia.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_polygcd.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_powerlaws.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_pseries.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_real_imag.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\exam_structure.cpp">
+      <Filter>Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_antipode.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_dennyfliegner.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_fateman_expand.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_gammaseries.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_hashmap.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_A.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_B.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_C.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_D.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_E.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_F.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_G.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_H.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_IJKL.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_M1.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_M2.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_N.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_O.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_P.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_Pprime.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_Q.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_lw_Qprime.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_parser.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_toeplitz.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_uvar_gcd.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\time_vandermonde.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\timer.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="check\check_inifcns.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="check\check_lsolve.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="check\check_matrices.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="check\check_mul_info.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="check\check_numeric.cpp">
+      <Filter>Check</Filter>
+    </ClCompile>
+    <ClCompile Include="check\bugme_chinrem_gcd.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\factor_univariate_bug.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\genex.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\heur_gcd_bug.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\match_bug.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\numeric_archive.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\parser_bugs.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\pgcd_infinite_loop.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\pgcd_relatively_prime_bug.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="check\randomize_serials.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="check\ginac_test.h" />
+    <ClInclude Include="check\exam_inifcns_nstdsums.h">
+      <Filter>Exam</Filter>
+    </ClInclude>
+    <ClInclude Include="check\test_runner.h" />
+    <ClInclude Include="check\timer.h">
+      <Filter>Time\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="check\error_report.h">
+      <Filter>Others\Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ginac">
+      <UniqueIdentifier>{4d642726-0a27-4ba0-a91d-7f9535fc37d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Inc">
+      <UniqueIdentifier>{ddbae091-8ab6-4118-b2f2-68be4b26b630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Parser">
+      <UniqueIdentifier>{d0c77470-2e77-4a1c-86c3-5f310bb5756a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Src">
+      <UniqueIdentifier>{b1fb343e-3253-41a2-9a2b-73fd62f55eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Polynomial">
+      <UniqueIdentifier>{011c8455-36bf-4b4b-8aa9-167976254f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Polynomial\Inc">
+      <UniqueIdentifier>{37a95d8c-d882-43c1-87ea-7ea17709fa86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Polynomial\Src">
+      <UniqueIdentifier>{eaddb38e-b5c1-4d76-97d3-dcd70ff4c062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Parser\Inc">
+      <UniqueIdentifier>{3485ac98-4130-4e27-9882-b84c589b135b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Parser\Src">
+      <UniqueIdentifier>{a8ab95a5-3d15-4862-accb-6aeed65d106c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ginac\Inc\Dep">
+      <UniqueIdentifier>{0d471a1d-2e60-4ad7-9833-a54e311da319}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ginac\add.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\clifford.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\color.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\excompiler.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\expair.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\expairseq.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\exprseq.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\factor.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\fail.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\fderivative.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\function.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\ginac.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\hash_map.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\idx.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\indexed.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\inifcns.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\integral.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\matrix.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\mul.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\ncmul.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\normal.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\operators.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\power.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\pseries.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\relational.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\remember.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\structure.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\symbol.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\symmetry.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\tensor.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\wildcard.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\chinrem_gcd.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\collect_vargs.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\cra_garner.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\debug.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\divide_in_z_p.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\euclid_gcd_wrap.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\eval_point_finder.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\eval_uvar.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\gcd_euclid.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\heur_gcd_uvar.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\interpolate_padic_uvar.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\mod_gcd.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\newton_interpolate.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\normalize.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\optimal_vars_finder.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\pgcd.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\poly_cra.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\prem_uvar.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\primes_factory.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\remainder.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\ring_traits.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\smod_helpers.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\sr_gcd_uvar.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\upoly.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\upoly_io.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\parser\debug.h">
+      <Filter>ginac\Parser\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\parser\lexer.h">
+      <Filter>ginac\Parser\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\parser\parse_context.h">
+      <Filter>ginac\Parser\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\parser\parser.h">
+      <Filter>ginac\Parser\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\assertion.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\class_info.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\flags.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\registrar.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\basic.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\ptr.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\ex.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\archive.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\print.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\numeric.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\compiler.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\constant.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\container.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\utils.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\lst.h">
+      <Filter>ginac\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\hash_seed.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\crc32.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\version.h">
+      <Filter>ginac\Inc\Dep</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\ginac_private.h">
+      <Filter>ginac</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\ginac_public.h">
+      <Filter>ginac</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\config.h">
+      <Filter>ginac</Filter>
+    </ClInclude>
+    <ClInclude Include="ginac\polynomial\polyfunctions.h">
+      <Filter>ginac\Polynomial\Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ginac\add.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\archive.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\basic.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\clifford.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\color.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\constant.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\ex.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\excompiler.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\expair.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\expairseq.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\exprseq.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\factor.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\fail.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\fderivative.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\function.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\idx.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\indexed.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\inifcns.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\inifcns_gamma.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\inifcns_nstdsums.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\inifcns_trans.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\integral.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\lst.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\matrix.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\mul.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\ncmul.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\normal.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\numeric.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\operators.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\power.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\print.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\pseries.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\registrar.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\relational.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\remember.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\symbol.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\symmetry.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\tensor.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\utils.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\wildcard.cpp">
+      <Filter>ginac\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\chinrem_gcd.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\collect_vargs.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\cra_garner.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\divide_in_z_p.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\gcd_uvar.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\mgcd.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\mod_gcd.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\normalize.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\optimal_vars_finder.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\pgcd.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\primpart_content.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\remainder.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\polynomial\upoly_io.cpp">
+      <Filter>ginac\Polynomial\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\parser\default_reader.cpp">
+      <Filter>ginac\Parser\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\parser\lexer.cpp">
+      <Filter>ginac\Parser\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\parser\parse_binop_rhs.cpp">
+      <Filter>ginac\Parser\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\parser\parse_context.cpp">
+      <Filter>ginac\Parser\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\parser\parser.cpp">
+      <Filter>ginac\Parser\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\parser\parser_compat.cpp">
+      <Filter>ginac\Parser\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginac\ginac_private.cpp">
+      <Filter>ginac</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

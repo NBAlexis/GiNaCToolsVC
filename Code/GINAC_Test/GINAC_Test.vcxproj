@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="check\bugme_chinrem_gcd.cpp" />
+    <ClCompile Include="check\check_inifcns.cpp" />
+    <ClCompile Include="check\check_lsolve.cpp" />
+    <ClCompile Include="check\check_matrices.cpp" />
+    <ClCompile Include="check\check_mul_info.cpp" />
+    <ClCompile Include="check\check_numeric.cpp" />
+    <ClCompile Include="check\exam_archive.cpp" />
+    <ClCompile Include="check\exam_clifford.cpp" />
+    <ClCompile Include="check\exam_color.cpp" />
+    <ClCompile Include="check\exam_cra.cpp" />
+    <ClCompile Include="check\exam_differentiation.cpp" />
+    <ClCompile Include="check\exam_factor.cpp" />
+    <ClCompile Include="check\exam_hashmap.cpp" />
+    <ClCompile Include="check\exam_indexed.cpp" />
+    <ClCompile Include="check\exam_inifcns.cpp" />
+    <ClCompile Include="check\exam_inifcns_nstdsums.cpp" />
+    <ClCompile Include="check\exam_lsolve.cpp" />
+    <ClCompile Include="check\exam_matrices.cpp" />
+    <ClCompile Include="check\exam_misc.cpp" />
+    <ClCompile Include="check\exam_mod_gcd.cpp" />
+    <ClCompile Include="check\exam_normalization.cpp" />
+    <ClCompile Include="check\exam_numeric.cpp" />
+    <ClCompile Include="check\exam_paranoia.cpp" />
+    <ClCompile Include="check\exam_polygcd.cpp" />
+    <ClCompile Include="check\exam_powerlaws.cpp" />
+    <ClCompile Include="check\exam_pseries.cpp" />
+    <ClCompile Include="check\exam_real_imag.cpp" />
+    <ClCompile Include="check\exam_structure.cpp" />
+    <ClCompile Include="check\factor_univariate_bug.cpp" />
+    <ClCompile Include="check\genex.cpp" />
+    <ClCompile Include="check\ginac_test.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="check\heur_gcd_bug.cpp" />
+    <ClCompile Include="check\match_bug.cpp" />
+    <ClCompile Include="check\numeric_archive.cpp" />
+    <ClCompile Include="check\parser_bugs.cpp" />
+    <ClCompile Include="check\pgcd_infinite_loop.cpp" />
+    <ClCompile Include="check\pgcd_relatively_prime_bug.cpp" />
+    <ClCompile Include="check\randomize_serials.cpp" />
+    <ClCompile Include="check\timer.cpp" />
+    <ClCompile Include="check\time_antipode.cpp" />
+    <ClCompile Include="check\time_dennyfliegner.cpp" />
+    <ClCompile Include="check\time_fateman_expand.cpp" />
+    <ClCompile Include="check\time_gammaseries.cpp" />
+    <ClCompile Include="check\time_hashmap.cpp" />
+    <ClCompile Include="check\time_lw_A.cpp" />
+    <ClCompile Include="check\time_lw_B.cpp" />
+    <ClCompile Include="check\time_lw_C.cpp" />
+    <ClCompile Include="check\time_lw_D.cpp" />
+    <ClCompile Include="check\time_lw_E.cpp" />
+    <ClCompile Include="check\time_lw_F.cpp" />
+    <ClCompile Include="check\time_lw_G.cpp" />
+    <ClCompile Include="check\time_lw_H.cpp" />
+    <ClCompile Include="check\time_lw_IJKL.cpp" />
+    <ClCompile Include="check\time_lw_M1.cpp" />
+    <ClCompile Include="check\time_lw_M2.cpp" />
+    <ClCompile Include="check\time_lw_N.cpp" />
+    <ClCompile Include="check\time_lw_O.cpp" />
+    <ClCompile Include="check\time_lw_P.cpp" />
+    <ClCompile Include="check\time_lw_Pprime.cpp" />
+    <ClCompile Include="check\time_lw_Q.cpp" />
+    <ClCompile Include="check\time_lw_Qprime.cpp" />
+    <ClCompile Include="check\time_parser.cpp" />
+    <ClCompile Include="check\time_toeplitz.cpp" />
+    <ClCompile Include="check\time_uvar_gcd.cpp" />
+    <ClCompile Include="check\time_vandermonde.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="check\error_report.h" />
+    <ClInclude Include="check\exam_inifcns_nstdsums.h" />
+    <ClInclude Include="check\ginac_test.h" />
+    <ClInclude Include="check\test_runner.h" />
+    <ClInclude Include="check\timer.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4CFC2F70-7E8E-4A77-817E-B66B867F78EF}</ProjectGuid>
+    <RootNamespace>GINAC_Test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir)check\;$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir)check\;$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(IncludePath)</IncludePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);WSAPI=__DLL_EXPORT;DEBUG=1;</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ginac_test.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;$(SolutionDir)..\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_$(ConfigurationName).pdb</ProgramDatabaseFile>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);NDEBUG=1;</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ginac_test.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;$(SolutionDir)..\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

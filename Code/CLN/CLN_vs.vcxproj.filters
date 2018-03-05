@@ -1,0 +1,3462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9e868756-084a-4457-8fe0-2d618e477ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{674f7522-d728-45c0-a0e3-b7805ff619aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\digit">
+      <UniqueIdentifier>{2d6c5481-5ffc-409f-a0de-2f64289d3c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\digitseq">
+      <UniqueIdentifier>{ce62f427-f2bd-467c-b794-70399ecda3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\hash">
+      <UniqueIdentifier>{e48acd14-d173-47bb-a119-9f01af15670f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\input">
+      <UniqueIdentifier>{9a0768b5-70e8-444e-9296-764a2732ae47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\low">
+      <UniqueIdentifier>{5c27f591-f725-49e3-851b-4b64043ee113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\output">
+      <UniqueIdentifier>{2a83de61-1814-4e01-af92-7b5880b47937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\proplist">
+      <UniqueIdentifier>{2d26da32-92c2-49f3-8284-9377f2a84e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\random">
+      <UniqueIdentifier>{4981eed3-c41b-409c-9a26-9ffb7be80a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\ring">
+      <UniqueIdentifier>{2244e04b-970a-49d1-b711-654b5690e291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\string">
+      <UniqueIdentifier>{948d19db-b79d-492c-9a7e-0bc9da39c880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\string\input">
+      <UniqueIdentifier>{6a62810d-681a-471a-90ac-7184074210c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\string\misc">
+      <UniqueIdentifier>{31f54de9-8927-4c87-b098-f66aabe730dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\string\output">
+      <UniqueIdentifier>{17579985-6363-4db0-aaa7-aa571d8a40ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\symbol">
+      <UniqueIdentifier>{0ab4a318-a182-445a-afe3-03f6967a21ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex">
+      <UniqueIdentifier>{be50de52-6d84-4489-ac68-895983ad1043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float">
+      <UniqueIdentifier>{3e5a3550-0923-43a5-9284-033ec189ab94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer">
+      <UniqueIdentifier>{a8194dab-1f02-4106-853a-beb9666f2452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modinteger">
+      <UniqueIdentifier>{008a241f-921e-48fe-a575-7758accc795e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\numtheory">
+      <UniqueIdentifier>{188bdc54-5ba0-4f7d-9c28-bb39374dfe59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational">
+      <UniqueIdentifier>{8b6cf4b2-6c53-44c1-95c0-3bcb9d1a4e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real">
+      <UniqueIdentifier>{b3baf4e6-2634-4a75-91ce-78efdcedaf53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\timing">
+      <UniqueIdentifier>{78c08fc3-18f7-40a3-bd62-33ec1ae56d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\vector">
+      <UniqueIdentifier>{379889c3-e181-4273-9b2e-f29dc1e15e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5f5f7118-2a30-4590-b7f6-eea3583d9caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\cln">
+      <UniqueIdentifier>{67e1393c-024c-4a15-be00-be1b82352edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="autoconf">
+      <UniqueIdentifier>{e9256aaf-9e58-4c14-9b0a-840414f50d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\2adic">
+      <UniqueIdentifier>{f06dd0f2-7083-42f4-81aa-5311deee5e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\algebraic">
+      <UniqueIdentifier>{0e191d0a-9d24-4fe8-8c23-6bbe189b96a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\bitwise">
+      <UniqueIdentifier>{f4be4d12-fcf3-4ada-bb5a-a7ec301734e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\conv">
+      <UniqueIdentifier>{bd1f322a-642f-467b-adad-1b99b30c8fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\division">
+      <UniqueIdentifier>{12566806-1d3f-4bd1-99bf-cf652ecc71ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\elem">
+      <UniqueIdentifier>{2adf96d0-10f8-41d3-b78b-6a29c0296d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\gcd">
+      <UniqueIdentifier>{610594af-b72f-42ff-9cbc-0ba981e2df3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\hash">
+      <UniqueIdentifier>{23e1ebaa-afd7-4f9f-b779-7c2ebe7fc61d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\input">
+      <UniqueIdentifier>{c9024609-be92-4d61-b108-694695d18a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\misc">
+      <UniqueIdentifier>{ce4d905e-5d3c-4597-a410-0521c71c99a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\output">
+      <UniqueIdentifier>{72cfa43a-6f99-4576-8535-68c6f6cc1ce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\random">
+      <UniqueIdentifier>{c6c9fdde-8e37-4799-842a-289a8439ef97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\ring">
+      <UniqueIdentifier>{97b51cef-6bf7-4f64-a451-42ee06db8761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\integer\misc\combin">
+      <UniqueIdentifier>{05c55075-0ce4-4190-9d76-2138c659c48b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\algebraic">
+      <UniqueIdentifier>{cce1a650-51ba-48d0-8b07-aa78c257f98f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\base">
+      <UniqueIdentifier>{29809b00-7b78-4a9b-8775-128f869c4a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\conv">
+      <UniqueIdentifier>{aee48bfe-0419-4f5e-a4f0-f94d478ae528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat">
+      <UniqueIdentifier>{f8012b53-96a4-4cad-9870-bdfd6d44aa81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\division">
+      <UniqueIdentifier>{ac0d4ae9-4489-4d66-8dbb-d54196760db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\elem">
+      <UniqueIdentifier>{460a8bd3-10b0-4eb7-b24f-a85b6b79ec3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat">
+      <UniqueIdentifier>{89ff6aee-fbc7-47d5-b19c-a8e75ed3f410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\input">
+      <UniqueIdentifier>{5af8842a-5c5f-4e18-ba35-951642d49e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\lfloat">
+      <UniqueIdentifier>{3aa60d4d-0e3c-4164-951f-1a4b74fafdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\misc">
+      <UniqueIdentifier>{43e5ce98-8168-4ec3-a2f3-dd1d5fb5e5d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\output">
+      <UniqueIdentifier>{bbcc4498-1a87-47d8-befd-a4ff53e47d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\random">
+      <UniqueIdentifier>{1ffb6905-0541-4f33-b838-7b338680f5d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\sfloat">
+      <UniqueIdentifier>{5ad4b061-f0f5-487c-b76e-40e0e74d188e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\transcendental">
+      <UniqueIdentifier>{24119293-a91a-42c1-9a0c-2ae6df66dbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat\algebraic">
+      <UniqueIdentifier>{9ee50354-28eb-4ffd-a31d-5214d1a3fc60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat\conv">
+      <UniqueIdentifier>{aec3bf86-8019-414c-97f5-310bda99faa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat\division">
+      <UniqueIdentifier>{3b3e1cf5-d244-4d93-bbf4-f49e9b02ce62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat\elem">
+      <UniqueIdentifier>{fd9a4431-39b3-4b54-9082-35ba81d68b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat\input">
+      <UniqueIdentifier>{c8fd3dbd-0477-41d1-bad7-1d09742c9676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\dfloat\misc">
+      <UniqueIdentifier>{a4e524b9-b19d-47bb-9e51-b49b6fdddf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat\algebraic">
+      <UniqueIdentifier>{bc6dc0b1-6274-4ad5-a926-0899c4981e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat\conv">
+      <UniqueIdentifier>{72c9a97b-2b1c-4dfa-9d7b-693636552c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat\division">
+      <UniqueIdentifier>{022c77ca-73e6-4c53-9168-2e6db7e1d827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat\elem">
+      <UniqueIdentifier>{dc47bc41-f4e2-42da-8399-ca6ecf488365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat\input">
+      <UniqueIdentifier>{bb794891-b452-4f8b-861a-5527c54efc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\ffloat\misc">
+      <UniqueIdentifier>{aec5cbd0-2c40-4a6e-b089-ba9e1b8dfb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\lfloat\algebraic">
+      <UniqueIdentifier>{622527a2-d52c-402d-aa89-451e84f66144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\lfloat\division">
+      <UniqueIdentifier>{38a4f14e-3768-4efc-afde-a6293b3dbfed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\lfloat\elem">
+      <UniqueIdentifier>{b25f65df-7348-452d-8972-cfdb344dae9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\lfloat\input">
+      <UniqueIdentifier>{5080903f-0d12-491e-92c3-e6e902435d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\lfloat\misc">
+      <UniqueIdentifier>{0abf7cff-a289-4824-84ba-b2a851426dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\sfloat\algebraic">
+      <UniqueIdentifier>{5dd29553-b8e2-4bed-9ec1-757f2d40bb3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\sfloat\division">
+      <UniqueIdentifier>{68a058c5-6033-4e5b-b12e-18c37bfa3306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\sfloat\elem">
+      <UniqueIdentifier>{0e3fb38a-cab4-46b3-b2ae-328f5f2e140d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\sfloat\input">
+      <UniqueIdentifier>{355b29d9-3059-4872-9bd1-94617d45c924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\float\sfloat\misc">
+      <UniqueIdentifier>{507268e2-a50a-4e10-96cd-4cd8468acb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\algebraic">
+      <UniqueIdentifier>{1d567b82-d45a-49f6-ac39-300050a2c05d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\elem">
+      <UniqueIdentifier>{d0eff6e5-4b4c-4f00-94d0-e34379054dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\input">
+      <UniqueIdentifier>{d7dd7b9c-8f78-4f2b-8b64-3b008437e370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\misc">
+      <UniqueIdentifier>{bd11ed70-67ab-4d47-89a3-8d946dc5595a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\output">
+      <UniqueIdentifier>{53579c24-f8ec-4b85-b128-55719e6f3dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\ring">
+      <UniqueIdentifier>{1ab34053-9fde-4c5a-8e09-521136e1c1c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\transcendental">
+      <UniqueIdentifier>{78cf75ed-38b1-4f00-a5b2-74766f01b3d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\complex\elem\division">
+      <UniqueIdentifier>{45444b3c-0d2c-4488-986f-7b20b6d85114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\polynomial">
+      <UniqueIdentifier>{032dcd46-2ed4-4efb-99ba-6cfe35503e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\polynomial\elem">
+      <UniqueIdentifier>{9acc8a8c-4cc0-485f-b22e-5f6649d43dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\polynomial\misc">
+      <UniqueIdentifier>{8d4e4c11-a1ea-4cc8-a34b-043babb9d418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\algebraic">
+      <UniqueIdentifier>{89175606-da75-4b5c-b7dc-7500d685d685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\division">
+      <UniqueIdentifier>{e27b97af-8b9e-4d97-ac04-1280b9bc487d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\elem">
+      <UniqueIdentifier>{6d1b364c-70c2-4dca-8675-1b762b98139d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\input">
+      <UniqueIdentifier>{88cf4b86-a85c-468c-b845-253157f2b1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\misc">
+      <UniqueIdentifier>{d44ed9fe-640b-42cf-b8e4-314a01ec82af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\output">
+      <UniqueIdentifier>{32b37846-7ac1-4ca1-ac3a-d05d7402327d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\ring">
+      <UniqueIdentifier>{9db22966-3b22-4c59-a6b2-210359a08a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rational\transcendental">
+      <UniqueIdentifier>{c0229c1c-4d7d-4f93-a12e-317355f625df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\algebraic">
+      <UniqueIdentifier>{6759490e-0c47-4f2d-89d7-ba1da712f924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\conv">
+      <UniqueIdentifier>{ff307d4e-1aea-43ba-9e85-ab1aeb5e9e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\division">
+      <UniqueIdentifier>{653fc176-5679-4ee0-b1e8-be18a8b9f79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\elem">
+      <UniqueIdentifier>{b4b16c63-c5bd-4c17-90ed-c9c74eb6420e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\format-output">
+      <UniqueIdentifier>{f277553d-9263-4e56-9a7b-8d6dc086db3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\input">
+      <UniqueIdentifier>{f619226a-ef2e-4999-a615-18519784bcfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\misc">
+      <UniqueIdentifier>{4a927aaa-1ead-42ac-99dc-5ff7d5df1d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\output">
+      <UniqueIdentifier>{f4c5aa59-adb3-42b3-a61e-d65f8d40ee7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\random">
+      <UniqueIdentifier>{cd473a73-e697-4d5d-8bd0-d4632cb0eb0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\ring">
+      <UniqueIdentifier>{09160714-5532-4651-9f06-95980ce7543e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\real\transcendental">
+      <UniqueIdentifier>{7aed6a56-6083-4dfd-b320-de1c37be6295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\vector\output">
+      <UniqueIdentifier>{c267369f-1f2b-4caa-ae33-23c0237b0229}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cln\cln.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\complex.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\complex_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\complex_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\complex_ring.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\condition.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\config.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\dfloat.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\dfloat_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\dfloat_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\exception.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\ffloat.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\ffloat_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\ffloat_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\float.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\float_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\float_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\floatformat.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV_complex.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV_integer.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV_modinteger.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV_number.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV_rational.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\GV_real.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\host_cpu.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\input.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\integer.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\integer_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\integer_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\integer_ring.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\lfloat.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\lfloat_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\lfloat_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\malloc.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\modinteger.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\modules.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\null_ring.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\number.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\number_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\numtheory.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\object.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\output.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\proplist.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\random.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\rational.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\rational_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\rational_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\rational_ring.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\real.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\real_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\real_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\real_ring.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\ring.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\sfloat.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\sfloat_class.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\sfloat_io.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\string.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV_complex.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV_integer.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV_number.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV_rational.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV_real.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\SV_ringelt.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\symbol.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\timing.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\types.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\univpoly.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\univpoly_complex.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\univpoly_integer.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\univpoly_modint.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\univpoly_rational.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\univpoly_real.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\V.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\version.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hash.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hash1.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hash1weak.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hash2.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hash2weak.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hashset.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hashuniq.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_hashuniqweak.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_rcpointer_hashweak_rcpointer.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\hash\cl_rcpointer2_hashweak_rcpointer.h">
+      <Filter>src\base\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\string\cl_spushstring.h">
+      <Filter>src\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\string\cl_sstring.h">
+      <Filter>src\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\string\cl_st_make0.h">
+      <Filter>src\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\random\cl_random_impl.h">
+      <Filter>src\base\random</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\floatparam.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln\intparam.h">
+      <Filter>include\cln</Filter>
+    </ClInclude>
+    <ClInclude Include="autoconf\cl_config.h">
+      <Filter>autoconf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_alloca.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_base_config.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_gmpconfig.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_inline.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_inline2.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_iterator.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_low.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_macros.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_maybe_inline.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_N.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_offsetof.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_sysdep.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\cl_xmacros.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digit\cl_2D.h">
+      <Filter>src\base\digit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digit\cl_D.h">
+      <Filter>src\base\digit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_2DS.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_arm.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_hppa.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_i386.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_m68k.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_mips.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_sparc.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_asm_sparc64.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_endian.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftc.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftcs.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftm.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftp.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftp3.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftp3m.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftr.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_kara.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_kara_sqr.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_nuss.h">
+      <Filter>src\base\digitseq</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\cl_I.h">
+      <Filter>src\integer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\bitwise\cl_I_byte.h">
+      <Filter>src\integer\bitwise</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\bitwise\cl_I_log.h">
+      <Filter>src\integer\bitwise</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\conv\cl_I_cached_power.h">
+      <Filter>src\integer\conv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\hash\cl_I_hash_gcobject.h">
+      <Filter>src\integer\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\hash\cl_I_hash_gcpointer.h">
+      <Filter>src\integer\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\hash\cl_I_hash_pointer.h">
+      <Filter>src\integer\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\hash\cl_I_hash_rcobject.h">
+      <Filter>src\integer\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\hash\cl_I_hash_rcpointer.h">
+      <Filter>src\integer\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\hash\cl_I_hashweak_rcpointer.h">
+      <Filter>src\integer\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\integer\misc\combin\cl_I_combin.h">
+      <Filter>src\integer\misc\combin</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\dfloat\cl_DF.h">
+      <Filter>src\float\dfloat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\ffloat\cl_FF.h">
+      <Filter>src\float\ffloat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\lfloat\cl_LF.h">
+      <Filter>src\float\lfloat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\lfloat\cl_LF_impl.h">
+      <Filter>src\float\lfloat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\sfloat\cl_SF.h">
+      <Filter>src\float\sfloat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_catalanconst_var.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_eulerconst_var.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_exp1_var.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_ln2_var.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_ln10_var.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_pi_var.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_F_tran.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\transcendental\cl_LF_tran.h">
+      <Filter>src\float\transcendental</Filter>
+    </ClInclude>
+    <ClInclude Include="src\complex\cl_C.h">
+      <Filter>src\complex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\float\cl_F.h">
+      <Filter>src\float</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_fix16.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_fix29.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_fix32.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_int.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_int32.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_montgom.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_pow2.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_pow2m1.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_pow2p1.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modinteger\cl_MI_std.h">
+      <Filter>src\modinteger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\numtheory\cl_IF.h">
+      <Filter>src\numtheory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\cl_UP.h">
+      <Filter>src\polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\elem\cl_UP_gen.h">
+      <Filter>src\polynomial\elem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\elem\cl_UP_GF2.h">
+      <Filter>src\polynomial\elem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\elem\cl_UP_MI.h">
+      <Filter>src\polynomial\elem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\elem\cl_UP_number.h">
+      <Filter>src\polynomial\elem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rational\cl_RA.h">
+      <Filter>src\rational</Filter>
+    </ClInclude>
+    <ClInclude Include="src\real\cl_R.h">
+      <Filter>src\real</Filter>
+    </ClInclude>
+    <ClInclude Include="src\real\division\cl_R_div_t.h">
+      <Filter>src\real\division</Filter>
+    </ClInclude>
+    <ClInclude Include="src\real\format-output\cl_format.h">
+      <Filter>src\real\format-output</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timing\cl_t_config.h">
+      <Filter>src\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vector\cl_GV_io.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vector\cl_SV_io.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln_private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cln_public.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base\hash\cl_rcpointer_hashweak_rcpointer.cc">
+      <Filter>src\base\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\hash\cl_rcpointer2_hashweak_rcpointer.cc">
+      <Filter>src\base\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\input\cl_read_bad_syntax_exception.cc">
+      <Filter>src\base\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\input\cl_read_eof_exception.cc">
+      <Filter>src\base\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\input\cl_read_junk_exception.cc">
+      <Filter>src\base\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\low\cl_low_div.cc">
+      <Filter>src\base\low</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\low\cl_low_isqrt.cc">
+      <Filter>src\base\low</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\low\cl_low_isqrt2.cc">
+      <Filter>src\base\low</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\low\cl_low_mul.cc">
+      <Filter>src\base\low</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\symbol\cl_sy_hashcode.cc">
+      <Filter>src\base\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\symbol\cl_symbol.cc">
+      <Filter>src\base\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_spushstring_append.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_spushstring_push.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_sstring.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_c2.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_concat1.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_concat2.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_concat3.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_debug.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_hashcode.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_make0.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_make1.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\cl_st_make2.cc">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\input\cl_st_get1.cc">
+      <Filter>src\base\string\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\input\cl_st_get2.cc">
+      <Filter>src\base\string\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\input\cl_st_getline1.cc">
+      <Filter>src\base\string\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\input\cl_st_getline2.cc">
+      <Filter>src\base\string\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\input\cl_st_gettoken.cc">
+      <Filter>src\base\string\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\misc\cl_st_class.cc">
+      <Filter>src\base\string\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\string\output\cl_st_print.cc">
+      <Filter>src\base\string\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ring\cl_no_ring.cc">
+      <Filter>src\base\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ring\cl_ring_debug.cc">
+      <Filter>src\base\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\random\cl_random_def.cc">
+      <Filter>src\base\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\random\cl_random_from.cc">
+      <Filter>src\base\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\random\cl_UL_random.cc">
+      <Filter>src\base\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\proplist\cl_pl_add.cc">
+      <Filter>src\base\proplist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\proplist\cl_pl_d.cc">
+      <Filter>src\base\proplist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\proplist\cl_pl_get.cc">
+      <Filter>src\base\proplist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\output\cl_output_dec.cc">
+      <Filter>src\base\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\output\cl_output_hex.cc">
+      <Filter>src\base\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\output\cl_prin_globals.cc">
+      <Filter>src\base\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_alloca.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_as_exception.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_condition.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_d0_exception.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_debug.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_debugout.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_free.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_immclasses.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_malloc.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_notreached_exception.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_version.cc">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digit\cl_2D_div.cc">
+      <Filter>src\base\digit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digit\cl_2D_exptpos.cc">
+      <Filter>src\base\digit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_2DS_div.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_2DS_recip.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_arm_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_hppa_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_i386_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_m68k_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_mips_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_mipsel_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_sparc_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_asm_sparc64_.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_div.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_mul.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_random.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_recip.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_recipsqrt.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_sqrt.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\digitseq\cl_DS_trandom.cc">
+      <Filter>src\base\digitseq</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\2adic\cl_I_2adic_div.cc">
+      <Filter>src\integer\2adic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\2adic\cl_I_2adic_recip.cc">
+      <Filter>src\integer\2adic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\algebraic\cl_I_rootp.cc">
+      <Filter>src\integer\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\algebraic\cl_I_rootp_aux.cc">
+      <Filter>src\integer\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\algebraic\cl_I_rootp_I.cc">
+      <Filter>src\integer\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\algebraic\cl_I_sqrt.cc">
+      <Filter>src\integer\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\algebraic\cl_I_sqrtp.cc">
+      <Filter>src\integer\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ash.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ash_exception.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ash_I.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_boole.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_dpb.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_dpf.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_fullbyte.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ilength.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ldb.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ldbtest.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ldbx.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_ldbxtest.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_log_aux.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logand.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logandc2.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logbitp.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logbitp_I.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logcount.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logeqv.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logior.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_lognand.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_lognor.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_lognot.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logorc2.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logtest.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_logxor.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_mkf.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\bitwise\cl_I_mkfx.cc">
+      <Filter>src\integer\bitwise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_cached_power.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_digits_need.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_digits.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_DS.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_L.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_L2.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_NDS.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_NUDS.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_Q2.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_UDS.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_UL.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_UL2.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_UQ.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_mul10plus.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_to_digits.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_to_L.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_to_Q.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_to_UL.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_to_UQ.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_ceil1.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_ceil2.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_exquo.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_exquo_exception.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_exquopos.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_floor1.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_floor2.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_mod.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_rem.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_round1.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_round2.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_trunc1.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\division\cl_I_trunc2.cc">
+      <Filter>src\integer\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_compare.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_div.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_equal.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_minus.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_minus1.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_minusp.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_mul.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_plus.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_plus1.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_plusp.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_square.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_uminus.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\elem\cl_I_zerop.cc">
+      <Filter>src\integer\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\gcd\cl_I_gcd.cc">
+      <Filter>src\integer\gcd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\gcd\cl_I_gcd_aux.cc">
+      <Filter>src\integer\gcd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\gcd\cl_I_gcd_aux2.cc">
+      <Filter>src\integer\gcd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\gcd\cl_I_lcm.cc">
+      <Filter>src\integer\gcd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\gcd\cl_I_xgcd.cc">
+      <Filter>src\integer\gcd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\gcd\cl_low_gcd.cc">
+      <Filter>src\integer\gcd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hash_gcobject.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hash_gcpointer.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hash_pointer.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hash_rcobject.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hash_rcpointer.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hashcode.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\hash\cl_I_hashweak_rcpointer.cc">
+      <Filter>src\integer\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\input\cl_I_from_string.cc">
+      <Filter>src\integer\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\input\cl_I_read.cc">
+      <Filter>src\integer\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\input\cl_I_read_stream.cc">
+      <Filter>src\integer\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\input\cl_I_readparsed.cc">
+      <Filter>src\integer\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\combin\cl_I_binomial.cc">
+      <Filter>src\integer\misc\combin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\combin\cl_I_doublefactorial.cc">
+      <Filter>src\integer\misc\combin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\combin\cl_I_factorial.cc">
+      <Filter>src\integer\misc\combin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\combin\cl_I_factorial_aux.cc">
+      <Filter>src\integer\misc\combin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_BN_class.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_FN_class.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_abs.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_as.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_debug.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_eqhashcode.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_exptpos.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_exptpos_I.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_max.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_min.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_oddp.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_ord2.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_power2p.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\misc\cl_I_signum.cc">
+      <Filter>src\integer\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_aprint.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_bprint.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_cprint.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_decstring.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_dprint.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_print.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\output\cl_I_print_string.cc">
+      <Filter>src\integer\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\random\cl_I_random.cc">
+      <Filter>src\integer\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\random\cl_I_trandom.cc">
+      <Filter>src\integer\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\ring\cl_0_ring.cc">
+      <Filter>src\integer\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\ring\cl_I_ring.cc">
+      <Filter>src\integer\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\algebraic\cl_F_sqrt.cc">
+      <Filter>src\float\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\base\cl_F_globals.cc">
+      <Filter>src\float\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\base\cl_F_nan_exception.cc">
+      <Filter>src\float\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\base\cl_F_overflow_exception.cc">
+      <Filter>src\float\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\base\cl_F_underflow_exception.cc">
+      <Filter>src\float\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_DF_to_double.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_DF_to_FF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_DF_to_float.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_DF_to_LF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_DF_to_SF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_F.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_F_f.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_I.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_I_def.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_I_f.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_RA.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_RA_def.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_from_RA_f.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_to_DF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_to_double.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_to_FF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_to_float.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_to_LF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_F_to_SF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_FF_to_DF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_FF_to_double.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_FF_to_float.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_FF_to_LF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_FF_to_SF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_LF_to_DF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_LF_to_double.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_LF_to_FF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_LF_to_float.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_LF_to_SF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_SF_to_DF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_SF_to_double.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_SF_to_FF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_SF_to_float.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\conv\cl_SF_to_LF.cc">
+      <Filter>src\float\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\algebraic\cl_DF_sqrt.cc">
+      <Filter>src\float\dfloat\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\conv\cl_DF_from_double.cc">
+      <Filter>src\float\dfloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\conv\cl_DF_to_doublej.cc">
+      <Filter>src\float\dfloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\conv\cl_I_to_double.cc">
+      <Filter>src\float\dfloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\conv\cl_RA_to_double.cc">
+      <Filter>src\float\dfloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\division\cl_DF_ceil22.cc">
+      <Filter>src\float\dfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\division\cl_DF_fceil.cc">
+      <Filter>src\float\dfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\division\cl_DF_floor22.cc">
+      <Filter>src\float\dfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\division\cl_DF_recip.cc">
+      <Filter>src\float\dfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\division\cl_DF_round22.cc">
+      <Filter>src\float\dfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\division\cl_DF_trunc22.cc">
+      <Filter>src\float\dfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_compare.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_div.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_ffloor.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_from_I.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_from_RA.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_fround.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_ftrunc.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_futrunc.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_globals.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_minus.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_minusp.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_mul.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_plus.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_plusp.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_scale.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_scale_I.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_to_I.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_uminus.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_zerop.cc">
+      <Filter>src\float\dfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\input\cl_DF_from_string.cc">
+      <Filter>src\float\dfloat\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_abs.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_as.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_class.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_debug.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_decode.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_digits.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_eqhashcode.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_exponent.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_idecode.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_max.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_min.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_precision.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_sign.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_signum.cc">
+      <Filter>src\float\dfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ceil1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ceil2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ceil22.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_fceil1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_fceil2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ffloor1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ffloor2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_floor1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_floor2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_floor22.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_fround1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_fround2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ftrunc1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_ftrunc2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_round1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_round2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_round22.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_trunc1.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_trunc2.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\division\cl_F_trunc22.cc">
+      <Filter>src\float\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_compare.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_div.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_I_div.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_I_mul.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_minus.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_minusp.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_mul.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_plus.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_plusp.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_RA_div.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_RA_mul.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_recip.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_scale.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_scale_I.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_square.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_uminus.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_F_zerop.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_I_F_div.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\elem\cl_RA_F_div.cc">
+      <Filter>src\float\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\algebraic\cl_FF_sqrt.cc">
+      <Filter>src\float\ffloat\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\conv\cl_FF_from_float.cc">
+      <Filter>src\float\ffloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\conv\cl_FF_to_floatj.cc">
+      <Filter>src\float\ffloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\conv\cl_I_to_float.cc">
+      <Filter>src\float\ffloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\conv\cl_RA_to_float.cc">
+      <Filter>src\float\ffloat\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\division\cl_FF_ceil22.cc">
+      <Filter>src\float\ffloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\division\cl_FF_fceil.cc">
+      <Filter>src\float\ffloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\division\cl_FF_floor22.cc">
+      <Filter>src\float\ffloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\division\cl_FF_recip.cc">
+      <Filter>src\float\ffloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\division\cl_FF_round22.cc">
+      <Filter>src\float\ffloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\division\cl_FF_trunc22.cc">
+      <Filter>src\float\ffloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_compare.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_div.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_ffloor.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_from_I.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_from_RA.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_fround.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_ftrunc.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_futrunc.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_globals.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_minus.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_minusp.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_mul.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_plus.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_plusp.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_scale.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_scale_I.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_to_I.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_uminus.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_zerop.cc">
+      <Filter>src\float\ffloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\input\cl_FF_from_string.cc">
+      <Filter>src\float\ffloat\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_abs.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_as.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_class.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_debug.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_decode.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_digits.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_eqhashcode.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_exponent.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_idecode.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_max.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_min.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_precision.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_sign.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_signum.cc">
+      <Filter>src\float\ffloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\input\cl_F_from_string.cc">
+      <Filter>src\float\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\input\cl_F_read.cc">
+      <Filter>src\float\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\input\cl_F_read_stream.cc">
+      <Filter>src\float\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\input\cl_F_readparsed.cc">
+      <Filter>src\float\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\algebraic\cl_LF_sqrt.cc">
+      <Filter>src\float\lfloat\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\division\cl_LF_ceil22.cc">
+      <Filter>src\float\lfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\division\cl_LF_fceil.cc">
+      <Filter>src\float\lfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\division\cl_LF_floor22.cc">
+      <Filter>src\float\lfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\division\cl_LF_recip.cc">
+      <Filter>src\float\lfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\division\cl_LF_round22.cc">
+      <Filter>src\float\lfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\division\cl_LF_trunc22.cc">
+      <Filter>src\float\lfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_I_LF_div.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_1minus.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_1plus.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_2minus.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_2plus.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_compare.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_div.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_ffloor.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_from_I.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_from_RA.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_fround.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_ftrunc.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_futrunc.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_globals.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_I_div.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_I_mul.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_minus1.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_minusp.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_mul.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_plus1.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_plusp.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_RA_div.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_RA_mul.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_scale.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_scale_I.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_square.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_to_I.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_uminus.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_zerop.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\elem\cl_RA_LF_div.cc">
+      <Filter>src\float\lfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\input\cl_LF_from_string.cc">
+      <Filter>src\float\lfloat\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_abs.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_as.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_class.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_debug.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_decode.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_digits.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_eqhashcode.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_exponent.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_extend.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_idecode.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_leninc.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_lenincx.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_max.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_min.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_precision.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_shorten.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_shortenrel.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_shortenwith.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_sign.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_signum.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_to_LF.cc">
+      <Filter>src\float\lfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_abs.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_as.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_decode.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_digits.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_epsneg.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_epspos.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_eqhashcode.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_exponent.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_extendsqrt.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_extendsqrtx.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_idecode.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_leastneg.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_leastpos.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_max.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_min.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_mostneg.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_mostpos.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_precision.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_rational.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_shortenrel.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_sign.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_sign2.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_F_signum.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\misc\cl_float_format.cc">
+      <Filter>src\float\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\output\cl_F_aprint.cc">
+      <Filter>src\float\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\output\cl_F_bprint.cc">
+      <Filter>src\float\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\output\cl_F_cprint.cc">
+      <Filter>src\float\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\output\cl_F_dprint.cc">
+      <Filter>src\float\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\output\cl_F_printb.cc">
+      <Filter>src\float\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\random\cl_F_random.cc">
+      <Filter>src\float\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\algebraic\cl_SF_sqrt.cc">
+      <Filter>src\float\sfloat\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_ceil22.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_fceil.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_ffloor.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_floor22.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_recip.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_round22.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\division\cl_SF_trunc22.cc">
+      <Filter>src\float\sfloat\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_compare.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_div.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_from_I.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_from_RA.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_fround.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_ftrunc.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_futrunc.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_minus.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_minusp.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_mul.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_plus.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_plusp.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_scale.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_scale_I.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_to_I.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_uminus.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_zerop.cc">
+      <Filter>src\float\sfloat\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\input\cl_SF_from_string.cc">
+      <Filter>src\float\sfloat\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_abs.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_as.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_class.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_debug.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_decode.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_digits.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_eqhashcode.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_exponent.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_idecode.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_max.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_min.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_precision.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_sign.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_signum.cc">
+      <Filter>src\float\sfloat\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_atanhx.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_atanx.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst_def.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst_var.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_cos.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_cosh.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_coshsinh.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_cossin.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst_def.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst_var.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_exp.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_exp1.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_exp1_def.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_exp1_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_exp1_var.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_expx.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln2.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln2_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln2_var.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln10.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln10_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_ln10_var.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_lnx.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_pi.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_pi_def.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_pi_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_pi_var.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_roundpi.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_roundpi2.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_sin.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_sinh.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_sinhx.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_sinx.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_tan.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_tanh.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_zeta_int.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_zeta_int_def.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_F_zeta_int_f.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_atan_recip.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_atanh_recip.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_catalanconst.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_coshsinh.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_coshsinh_aux.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_cossin.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_cossin_aux.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_eulerconst.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_exp_aux.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_exp1.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ln2.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ln10.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_pi.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_a.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_ab.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_b.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_p.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pa.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pab.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pb.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pq.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pqa.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pqab.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pqb.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_q.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_qa.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_qab.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_qb.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqcd.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqcd_aux.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqd.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqd_aux.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_zeta_int.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float\transcendental\cl_LF_zeta3.cc">
+      <Filter>src\float\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_C_abs.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_C_abs_aux.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_C_signum.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_C_sqrt.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_DF_hypot.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_FF_hypot.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_LF_hypot.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_R_hypot.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\algebraic\cl_SF_hypot.cc">
+      <Filter>src\complex\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_equal.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_from_R_R_complex.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_from_R_R_complex1.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_imagpart.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_minus.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_minus1.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_mul.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_plus.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_plus1.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_realpart.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_square.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_uminus.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\cl_C_zerop.cc">
+      <Filter>src\complex\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\division\cl_C_DF_recip.cc">
+      <Filter>src\complex\elem\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\division\cl_C_div.cc">
+      <Filter>src\complex\elem\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\division\cl_C_FF_recip.cc">
+      <Filter>src\complex\elem\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\division\cl_C_LF_recip.cc">
+      <Filter>src\complex\elem\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\division\cl_C_recip.cc">
+      <Filter>src\complex\elem\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\elem\division\cl_C_SF_recip.cc">
+      <Filter>src\complex\elem\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\input\cl_N_from_string.cc">
+      <Filter>src\complex\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\input\cl_N_read.cc">
+      <Filter>src\complex\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\input\cl_N_read_stream.cc">
+      <Filter>src\complex\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_C_class.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_C_conjugate.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_C_debug.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_C_eqhashcode.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_C_expt.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_C_expt_I.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\misc\cl_N_as.cc">
+      <Filter>src\complex\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\output\cl_N_aprint.cc">
+      <Filter>src\complex\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\output\cl_N_bprint.cc">
+      <Filter>src\complex\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\ring\cl_C_ring.cc">
+      <Filter>src\complex\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_acos.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_acosh.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_asin.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_asinh.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_asinh_aux.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_atan.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_atanh.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_atanh_aux.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_cis.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_cos.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_cosh.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_exp.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_expt_C.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_log.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_log2.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_phase.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_sin.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_sinh.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_tan.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_C_tanh.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complex\transcendental\cl_R_cis.cc">
+      <Filter>src\complex\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modinteger\cl_MI.cc">
+      <Filter>src\modinteger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modinteger\cl_MI_cond_composite.cc">
+      <Filter>src\modinteger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modinteger\cl_MI_debug.cc">
+      <Filter>src\modinteger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modinteger\cl_MI_err_comp.cc">
+      <Filter>src\modinteger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modinteger\cl_MI_lshift.cc">
+      <Filter>src\modinteger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modinteger\cl_MI_rshift.cc">
+      <Filter>src\modinteger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_IF_millerrabin.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_IF_smallprimes.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_IF_trialdiv.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_IF_trialdiv1.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_IF_trialdiv2.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_cornacchia1.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_cornacchia4.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_isprobprime.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_jacobi.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_jacobi_low.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_nextprobprime.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numtheory\cl_nt_sqrtmodp.cc">
+      <Filter>src\numtheory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\elem\cl_asm_GF2.cc">
+      <Filter>src\polynomial\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\elem\cl_asm_sparc_GF2.cc">
+      <Filter>src\polynomial\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\elem\cl_UP.cc">
+      <Filter>src\polynomial\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\elem\cl_UP_named.cc">
+      <Filter>src\polynomial\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\elem\cl_UP_no_ring.cc">
+      <Filter>src\polynomial\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\elem\cl_UP_unnamed.cc">
+      <Filter>src\polynomial\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\misc\cl_UP_debug.cc">
+      <Filter>src\polynomial\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\misc\cl_UP_deriv.cc">
+      <Filter>src\polynomial\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\misc\cl_UP_I_hermite.cc">
+      <Filter>src\polynomial\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\misc\cl_UP_I_laguerre.cc">
+      <Filter>src\polynomial\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\misc\cl_UP_I_tchebychev.cc">
+      <Filter>src\polynomial\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\misc\cl_UP_RA_legendre.cc">
+      <Filter>src\polynomial\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\algebraic\cl_RA_rootp.cc">
+      <Filter>src\rational\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\algebraic\cl_RA_rootp_I.cc">
+      <Filter>src\rational\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\algebraic\cl_RA_sqrtp.cc">
+      <Filter>src\rational\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_ceil1.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_ceil2.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_ceil12.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_ceil22.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_floor1.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_floor2.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_floor12.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_floor22.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_round1.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_round2.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_round12.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_round22.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_trunc1.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_trunc2.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_trunc12.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\division\cl_RA_trunc22.cc">
+      <Filter>src\rational\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_compare.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_denominator.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_div.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_equal.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_I_div.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_posI.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_posI_div.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_posI1.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_minus.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_minus1.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_minusp.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_mul.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_numerator.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_plus.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_plus1.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_plusp.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_recip.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_square.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_uminus.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\elem\cl_RA_zerop.cc">
+      <Filter>src\rational\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\input\cl_RA_from_string.cc">
+      <Filter>src\rational\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\input\cl_RA_read.cc">
+      <Filter>src\rational\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\input\cl_RA_read_stream.cc">
+      <Filter>src\rational\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\input\cl_RA_readparsed.cc">
+      <Filter>src\rational\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_abs.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_as.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_class.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_debug.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_eqhashcode.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_expt.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_expt_I.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_exptpos.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_exptpos_I.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_max.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_min.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\misc\cl_RA_signum.cc">
+      <Filter>src\rational\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\output\cl_RA_aprint.cc">
+      <Filter>src\rational\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\output\cl_RA_bprint.cc">
+      <Filter>src\rational\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\output\cl_RA_cprint.cc">
+      <Filter>src\rational\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\output\cl_RA_dprint.cc">
+      <Filter>src\rational\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\output\cl_RA_print.cc">
+      <Filter>src\rational\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\ring\cl_RA_ring.cc">
+      <Filter>src\rational\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\transcendental\cl_I_logp.cc">
+      <Filter>src\rational\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rational\transcendental\cl_RA_logp.cc">
+      <Filter>src\rational\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\algebraic\cl_R_sqrt.cc">
+      <Filter>src\real\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\algebraic\cl_RA_sqrt.cc">
+      <Filter>src\real\algebraic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_F_from_R.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_F_from_R_def.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_F_from_R_f.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_R_to_DF.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_R_to_double.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_R_to_FF.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_R_to_float.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_R_to_LF.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\conv\cl_R_to_SF.cc">
+      <Filter>src\real\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ceil1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ceil2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ceil12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ceil22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fceil1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fceil2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fceil12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fceil22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ffloor1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ffloor2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ffloor12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ffloor22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_floor1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_floor2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_floor12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_floor22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fround1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fround2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fround12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_fround22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ftrunc1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ftrunc2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ftrunc12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_ftrunc22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_mod.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_rem.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_round1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_round2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_round12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_round22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_trunc1.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_trunc2.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_trunc12.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\division\cl_R_trunc22.cc">
+      <Filter>src\real\division</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_compare.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_div.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_equal.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_minus.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_minus1.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_minusp.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_mul.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_plus.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_plus1.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_plusp.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_recip.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_square.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_uminus.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\elem\cl_R_zerop.cc">
+      <Filter>src\real\elem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_cardinal.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_floatstring.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_integer.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_newroman.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_oldroman.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_ordinal.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_paddedstring.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_scaleexp.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\format-output\cl_fmt_tens.cc">
+      <Filter>src\real\format-output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\input\cl_R_from_string.cc">
+      <Filter>src\real\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\input\cl_R_read.cc">
+      <Filter>src\real\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\input\cl_R_read_stream.cc">
+      <Filter>src\real\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_abs.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_as.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_contagion.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_debug.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_eqhashcode.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_expt.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_expt_I.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_max.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_min.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_rational.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_rationalize.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\misc\cl_R_signum.cc">
+      <Filter>src\real\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\output\cl_R_aprint.cc">
+      <Filter>src\real\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\output\cl_R_bprint.cc">
+      <Filter>src\real\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\output\cl_R_cprint.cc">
+      <Filter>src\real\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\random\cl_R_random.cc">
+      <Filter>src\real\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\ring\cl_R_ring.cc">
+      <Filter>src\real\ring</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_atan.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_atan2.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_cos.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_cosh.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_coshsinh.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_cossin.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_exp.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_ln.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_log.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_sin.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_sinh.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_tan.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\real\transcendental\cl_R_tanh.cc">
+      <Filter>src\real\transcendental</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_c1.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_c2.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_current.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_current2.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_d.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_dec.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_inc.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_minus.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_report.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_td_minus.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timing\cl_t_td_plus.cc">
+      <Filter>src\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_GV_I.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_GV_I_copy.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_GV_I_debug.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_GV_number.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_GV_number_copy.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_GV_number_debug.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_SV_copy.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_SV_number.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_SV_number_debug.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_SV_ringelt.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\cl_SV_ringelt_debug.cc">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\output\cl_GV_number_aprint.cc">
+      <Filter>src\vector\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\output\cl_SV_aprint.cc">
+      <Filter>src\vector\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector\output\cl_SV_number_aprint.cc">
+      <Filter>src\vector\output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\integer\conv\cl_I_from_Q.cc">
+      <Filter>src\integer\conv</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cln_private.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

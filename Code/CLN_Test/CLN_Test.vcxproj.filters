@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{e714447c-bf9f-4faa-9916-af35d6dfdae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{83a9f9b0-08b9-4815-a0f7-b0f76f31485c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Test">
+      <UniqueIdentifier>{a2327bf0-6375-4941-8bc2-765eaea9ab6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Exam">
+      <UniqueIdentifier>{bf099c3a-2d87-4af0-9989-43e15f991cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Time">
+      <UniqueIdentifier>{8f91a91b-1b85-4ec1-8fd0-23a7d767494e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Exam">
+      <UniqueIdentifier>{9a53ebe5-d219-4b6b-99c7-f4133ba710df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mainheader.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exam_DF.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_FF.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_gcd.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_sqrtp.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_LF.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_RA.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_SF.cc">
+      <Filter>Src\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cc">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_abs.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_ash.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_boole.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_compare.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_div.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_dpb.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_dpf.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_evenp.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_gcd.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_GV.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_ilength.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_io.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_isqrt.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_ldb.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_ldbtest.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logand.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logandc1.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logandc2.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logbitp.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logcount.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logeqv.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logior.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_lognand.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_lognor.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_lognot.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logorc1.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logorc2.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logtest.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_logxor.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_minus.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_minus1.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_mkf.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_mul.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_oddp.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_ord2.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_plus.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_plus1.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_power2p.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_sqrtp.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_I_xgcd.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_canonhom.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_div.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_expt.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_minus.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_mul.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_plus.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_MI_recip.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_nt.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_nt_jacobi.cc">
+      <Filter>Src\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="timecatalan.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timediv.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timediv2adic.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeeuler.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeexp1.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timefact.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timegcd.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFatan.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFatanh.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFcos.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFcosh.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFexp.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFln.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFRAmul.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFsin.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFsinh.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeLFsqrt.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeMImisc5.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeMIpow2div.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeMIpow2recip.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timemul.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timepi.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeprint.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeRALFdiv.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeRAtoLF.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timerecip2adic.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timesqrt.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timesqrtmodp.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timesquare.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timeUPMImul.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="timezeta3.cc">
+      <Filter>Src\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_DF_div.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_DF_floor.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_DF_minus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_DF_mul.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_DF_plus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_FF_div.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_FF_floor.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_FF_minus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_FF_mul.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_FF_plus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_div.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_floor.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_minus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_mul.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_I_plus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_LF_div.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_LF_floor.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_LF_minus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_LF_mul.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_LF_plus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_RA_div.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_RA_floor.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_RA_minus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_RA_mul.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_RA_plus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_SF_div.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_SF_floor.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_SF_minus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_SF_mul.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="exam_SF_plus.h">
+      <Filter>Inc\Exam</Filter>
+    </ClCompile>
+    <ClCompile Include="mainheader.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

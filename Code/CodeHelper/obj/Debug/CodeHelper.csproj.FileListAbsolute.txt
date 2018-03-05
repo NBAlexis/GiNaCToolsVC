@@ -1,0 +1,6 @@
+F:\CPPProject\GinacToolkitWin\Bin\x64\Debug\CodeHelper.exe.config
+F:\CPPProject\GinacToolkitWin\Bin\x64\Debug\CodeHelper.exe
+F:\CPPProject\GinacToolkitWin\Bin\x64\Debug\CodeHelper.pdb
+F:\CPPProject\GinacToolkitWin\Code\CodeHelper\obj\Debug\CodeHelper.csprojResolveAssemblyReference.cache
+F:\CPPProject\GinacToolkitWin\Code\CodeHelper\obj\Debug\CodeHelper.exe
+F:\CPPProject\GinacToolkitWin\Code\CodeHelper\obj\Debug\CodeHelper.pdb

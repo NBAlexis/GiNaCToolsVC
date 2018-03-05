@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mainheader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exam_DF.cc" />
+    <ClCompile Include="exam_DF_div.h" />
+    <ClCompile Include="exam_DF_floor.h" />
+    <ClCompile Include="exam_DF_minus.h" />
+    <ClCompile Include="exam_DF_mul.h" />
+    <ClCompile Include="exam_DF_plus.h" />
+    <ClCompile Include="exam_FF.cc" />
+    <ClCompile Include="exam_FF_div.h" />
+    <ClCompile Include="exam_FF_floor.h" />
+    <ClCompile Include="exam_FF_minus.h" />
+    <ClCompile Include="exam_FF_mul.h" />
+    <ClCompile Include="exam_FF_plus.h" />
+    <ClCompile Include="exam_I.cc" />
+    <ClCompile Include="exam_I_div.h" />
+    <ClCompile Include="exam_I_floor.h" />
+    <ClCompile Include="exam_I_gcd.cc" />
+    <ClCompile Include="exam_I_minus.h" />
+    <ClCompile Include="exam_I_mul.h" />
+    <ClCompile Include="exam_I_plus.h" />
+    <ClCompile Include="exam_I_sqrtp.cc" />
+    <ClCompile Include="exam_LF.cc" />
+    <ClCompile Include="exam_LF_div.h" />
+    <ClCompile Include="exam_LF_floor.h" />
+    <ClCompile Include="exam_LF_minus.h" />
+    <ClCompile Include="exam_LF_mul.h" />
+    <ClCompile Include="exam_LF_plus.h" />
+    <ClCompile Include="exam_RA.cc" />
+    <ClCompile Include="exam_RA_div.h" />
+    <ClCompile Include="exam_RA_floor.h" />
+    <ClCompile Include="exam_RA_minus.h" />
+    <ClCompile Include="exam_RA_mul.h" />
+    <ClCompile Include="exam_RA_plus.h" />
+    <ClCompile Include="exam_SF.cc" />
+    <ClCompile Include="exam_SF_div.h" />
+    <ClCompile Include="exam_SF_floor.h" />
+    <ClCompile Include="exam_SF_minus.h" />
+    <ClCompile Include="exam_SF_mul.h" />
+    <ClCompile Include="exam_SF_plus.h" />
+    <ClCompile Include="main.cc" />
+    <ClCompile Include="mainheader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_I.cc" />
+    <ClCompile Include="test_I_abs.cc" />
+    <ClCompile Include="test_I_ash.cc" />
+    <ClCompile Include="test_I_boole.cc" />
+    <ClCompile Include="test_I_compare.cc" />
+    <ClCompile Include="test_I_div.cc" />
+    <ClCompile Include="test_I_dpb.cc" />
+    <ClCompile Include="test_I_dpf.cc" />
+    <ClCompile Include="test_I_evenp.cc" />
+    <ClCompile Include="test_I_gcd.cc" />
+    <ClCompile Include="test_I_GV.cc" />
+    <ClCompile Include="test_I_ilength.cc" />
+    <ClCompile Include="test_I_io.cc" />
+    <ClCompile Include="test_I_isqrt.cc" />
+    <ClCompile Include="test_I_ldb.cc" />
+    <ClCompile Include="test_I_ldbtest.cc" />
+    <ClCompile Include="test_I_logand.cc" />
+    <ClCompile Include="test_I_logandc1.cc" />
+    <ClCompile Include="test_I_logandc2.cc" />
+    <ClCompile Include="test_I_logbitp.cc" />
+    <ClCompile Include="test_I_logcount.cc" />
+    <ClCompile Include="test_I_logeqv.cc" />
+    <ClCompile Include="test_I_logior.cc" />
+    <ClCompile Include="test_I_lognand.cc" />
+    <ClCompile Include="test_I_lognor.cc" />
+    <ClCompile Include="test_I_lognot.cc" />
+    <ClCompile Include="test_I_logorc1.cc" />
+    <ClCompile Include="test_I_logorc2.cc" />
+    <ClCompile Include="test_I_logtest.cc" />
+    <ClCompile Include="test_I_logxor.cc" />
+    <ClCompile Include="test_I_minus.cc" />
+    <ClCompile Include="test_I_minus1.cc" />
+    <ClCompile Include="test_I_mkf.cc" />
+    <ClCompile Include="test_I_mul.cc" />
+    <ClCompile Include="test_I_oddp.cc" />
+    <ClCompile Include="test_I_ord2.cc" />
+    <ClCompile Include="test_I_plus.cc" />
+    <ClCompile Include="test_I_plus1.cc" />
+    <ClCompile Include="test_I_power2p.cc" />
+    <ClCompile Include="test_I_sqrtp.cc" />
+    <ClCompile Include="test_I_xgcd.cc" />
+    <ClCompile Include="test_MI.cc" />
+    <ClCompile Include="test_MI_canonhom.cc" />
+    <ClCompile Include="test_MI_div.cc" />
+    <ClCompile Include="test_MI_expt.cc" />
+    <ClCompile Include="test_MI_minus.cc" />
+    <ClCompile Include="test_MI_mul.cc" />
+    <ClCompile Include="test_MI_plus.cc" />
+    <ClCompile Include="test_MI_recip.cc" />
+    <ClCompile Include="test_nt.cc" />
+    <ClCompile Include="test_nt_jacobi.cc" />
+    <ClCompile Include="timecatalan.cc" />
+    <ClCompile Include="timediv.cc" />
+    <ClCompile Include="timediv2adic.cc" />
+    <ClCompile Include="timeeuler.cc" />
+    <ClCompile Include="timeexp1.cc" />
+    <ClCompile Include="timefact.cc" />
+    <ClCompile Include="timegcd.cc" />
+    <ClCompile Include="timeLFatan.cc" />
+    <ClCompile Include="timeLFatanh.cc" />
+    <ClCompile Include="timeLFcos.cc" />
+    <ClCompile Include="timeLFcosh.cc" />
+    <ClCompile Include="timeLFexp.cc" />
+    <ClCompile Include="timeLFln.cc" />
+    <ClCompile Include="timeLFRAmul.cc" />
+    <ClCompile Include="timeLFsin.cc" />
+    <ClCompile Include="timeLFsinh.cc" />
+    <ClCompile Include="timeLFsqrt.cc" />
+    <ClCompile Include="timeMImisc5.cc" />
+    <ClCompile Include="timeMIpow2div.cc" />
+    <ClCompile Include="timeMIpow2recip.cc" />
+    <ClCompile Include="timemul.cc" />
+    <ClCompile Include="timepi.cc" />
+    <ClCompile Include="timeprint.cc" />
+    <ClCompile Include="timeRALFdiv.cc" />
+    <ClCompile Include="timeRAtoLF.cc" />
+    <ClCompile Include="timerecip2adic.cc" />
+    <ClCompile Include="timesqrt.cc" />
+    <ClCompile Include="timesqrtmodp.cc" />
+    <ClCompile Include="timesquare.cc" />
+    <ClCompile Include="timeUPMImul.cc" />
+    <ClCompile Include="timezeta3.cc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{22649E7B-24E3-4419-B966-D01D9BFC415D}</ProjectGuid>
+    <RootNamespace>CLN_Test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir);$(SolutionDir)CLN\include\;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir);$(SolutionDir)CLN\include\;$(IncludePath)</IncludePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);WSAPI=__DLL_EXPORT;DEBUG=1;</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mainheader.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;$(SolutionDir)..\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_$(ConfigurationName).pdb</ProgramDatabaseFile>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);NDEBUG=1;</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mainheader.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;$(SolutionDir)..\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

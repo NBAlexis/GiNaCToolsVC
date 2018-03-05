@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7E5EA127-7AB6-4ED6-B690-8DE405C0FB35}</ProjectGuid>
+    <RootNamespace>CLN_vs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt>.dll</TargetExt>
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir)\src;$(ProjectDir)\autoconf;$(ProjectDir)\include;$(SolutionDir)..\Dependency;$(IncludePath)</IncludePath>
+    <TargetName>libcln_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)\src;$(ProjectDir)\autoconf;$(ProjectDir)\include;$(SolutionDir)..\Dependency;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libcln</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cln_private.h</PrecompiledHeaderFile>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_WINDLL;_UNICODE;UNICODE;%(PreprocessorDefinitions);DEBUG=1;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)..\Libs\$(TargetName).lib</ImportLibrary>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>_WINDLL;_UNICODE;UNICODE;%(PreprocessorDefinitions);NDEBUG=1;</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>cln_private.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)..\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)_$(Configuration).pdb</ProgramDataBaseFileName>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependency;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(SolutionDir)..\Temp\$(TargetFileName).intermediate.manifest</ManifestFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\Temp\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)..\Libs\$(TargetName).lib</ImportLibrary>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="autoconf\cl_config.h" />
+    <ClInclude Include="include\cln\cln.h" />
+    <ClInclude Include="include\cln\complex.h" />
+    <ClInclude Include="include\cln\complex_class.h" />
+    <ClInclude Include="include\cln\complex_io.h" />
+    <ClInclude Include="include\cln\complex_ring.h" />
+    <ClInclude Include="include\cln\condition.h" />
+    <ClInclude Include="include\cln\config.h" />
+    <ClInclude Include="include\cln\dfloat.h" />
+    <ClInclude Include="include\cln\dfloat_class.h" />
+    <ClInclude Include="include\cln\dfloat_io.h" />
+    <ClInclude Include="include\cln\exception.h" />
+    <ClInclude Include="include\cln\ffloat.h" />
+    <ClInclude Include="include\cln\ffloat_class.h" />
+    <ClInclude Include="include\cln\ffloat_io.h" />
+    <ClInclude Include="include\cln\float.h" />
+    <ClInclude Include="include\cln\floatformat.h" />
+    <ClInclude Include="include\cln\floatparam.h" />
+    <ClInclude Include="include\cln\float_class.h" />
+    <ClInclude Include="include\cln\float_io.h" />
+    <ClInclude Include="include\cln\GV.h" />
+    <ClInclude Include="include\cln\GV_complex.h" />
+    <ClInclude Include="include\cln\GV_integer.h" />
+    <ClInclude Include="include\cln\GV_modinteger.h" />
+    <ClInclude Include="include\cln\GV_number.h" />
+    <ClInclude Include="include\cln\GV_rational.h" />
+    <ClInclude Include="include\cln\GV_real.h" />
+    <ClInclude Include="include\cln\host_cpu.h" />
+    <ClInclude Include="include\cln\input.h" />
+    <ClInclude Include="include\cln\integer.h" />
+    <ClInclude Include="include\cln\integer_class.h" />
+    <ClInclude Include="include\cln\integer_io.h" />
+    <ClInclude Include="include\cln\integer_ring.h" />
+    <ClInclude Include="include\cln\intparam.h" />
+    <ClInclude Include="include\cln\io.h" />
+    <ClInclude Include="include\cln\lfloat.h" />
+    <ClInclude Include="include\cln\lfloat_class.h" />
+    <ClInclude Include="include\cln\lfloat_io.h" />
+    <ClInclude Include="include\cln\malloc.h" />
+    <ClInclude Include="include\cln\modinteger.h" />
+    <ClInclude Include="include\cln\modules.h" />
+    <ClInclude Include="include\cln\null_ring.h" />
+    <ClInclude Include="include\cln\number.h" />
+    <ClInclude Include="include\cln\number_io.h" />
+    <ClInclude Include="include\cln\numtheory.h" />
+    <ClInclude Include="include\cln\object.h" />
+    <ClInclude Include="include\cln\output.h" />
+    <ClInclude Include="include\cln\proplist.h" />
+    <ClInclude Include="include\cln\random.h" />
+    <ClInclude Include="include\cln\rational.h" />
+    <ClInclude Include="include\cln\rational_class.h" />
+    <ClInclude Include="include\cln\rational_io.h" />
+    <ClInclude Include="include\cln\rational_ring.h" />
+    <ClInclude Include="include\cln\real.h" />
+    <ClInclude Include="include\cln\real_class.h" />
+    <ClInclude Include="include\cln\real_io.h" />
+    <ClInclude Include="include\cln\real_ring.h" />
+    <ClInclude Include="include\cln\ring.h" />
+    <ClInclude Include="include\cln\sfloat.h" />
+    <ClInclude Include="include\cln\sfloat_class.h" />
+    <ClInclude Include="include\cln\sfloat_io.h" />
+    <ClInclude Include="include\cln\string.h" />
+    <ClInclude Include="include\cln\SV.h" />
+    <ClInclude Include="include\cln\SV_complex.h" />
+    <ClInclude Include="include\cln\SV_integer.h" />
+    <ClInclude Include="include\cln\SV_number.h" />
+    <ClInclude Include="include\cln\SV_rational.h" />
+    <ClInclude Include="include\cln\SV_real.h" />
+    <ClInclude Include="include\cln\SV_ringelt.h" />
+    <ClInclude Include="include\cln\symbol.h" />
+    <ClInclude Include="include\cln\timing.h" />
+    <ClInclude Include="include\cln\types.h" />
+    <ClInclude Include="include\cln\univpoly.h" />
+    <ClInclude Include="include\cln\univpoly_complex.h" />
+    <ClInclude Include="include\cln\univpoly_integer.h" />
+    <ClInclude Include="include\cln\univpoly_modint.h" />
+    <ClInclude Include="include\cln\univpoly_rational.h" />
+    <ClInclude Include="include\cln\univpoly_real.h" />
+    <ClInclude Include="include\cln\V.h" />
+    <ClInclude Include="include\cln\version.h" />
+    <ClInclude Include="include\cln_private.h" />
+    <ClInclude Include="include\cln_public.h" />
+    <ClInclude Include="src\base\cl_alloca.h" />
+    <ClInclude Include="src\base\cl_base_config.h" />
+    <ClInclude Include="src\base\cl_gmpconfig.h" />
+    <ClInclude Include="src\base\cl_inline.h" />
+    <ClInclude Include="src\base\cl_inline2.h" />
+    <ClInclude Include="src\base\cl_iterator.h" />
+    <ClInclude Include="src\base\cl_low.h" />
+    <ClInclude Include="src\base\cl_macros.h" />
+    <ClInclude Include="src\base\cl_maybe_inline.h" />
+    <ClInclude Include="src\base\cl_N.h" />
+    <ClInclude Include="src\base\cl_offsetof.h" />
+    <ClInclude Include="src\base\cl_sysdep.h" />
+    <ClInclude Include="src\base\cl_xmacros.h" />
+    <ClInclude Include="src\base\digitseq\cl_2DS.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_arm.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_hppa.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_i386.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_m68k.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_mips.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_sparc.h" />
+    <ClInclude Include="src\base\digitseq\cl_asm_sparc64.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_endian.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftc.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftcs.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftm.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftp.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftp3.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftp3m.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_fftr.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_kara.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_kara_sqr.h" />
+    <ClInclude Include="src\base\digitseq\cl_DS_mul_nuss.h" />
+    <ClInclude Include="src\base\digit\cl_2D.h" />
+    <ClInclude Include="src\base\digit\cl_D.h" />
+    <ClInclude Include="src\base\hash\cl_hash.h" />
+    <ClInclude Include="src\base\hash\cl_hash1.h" />
+    <ClInclude Include="src\base\hash\cl_hash1weak.h" />
+    <ClInclude Include="src\base\hash\cl_hash2.h" />
+    <ClInclude Include="src\base\hash\cl_hash2weak.h" />
+    <ClInclude Include="src\base\hash\cl_hashset.h" />
+    <ClInclude Include="src\base\hash\cl_hashuniq.h" />
+    <ClInclude Include="src\base\hash\cl_hashuniqweak.h" />
+    <ClInclude Include="src\base\hash\cl_rcpointer2_hashweak_rcpointer.h" />
+    <ClInclude Include="src\base\hash\cl_rcpointer_hashweak_rcpointer.h" />
+    <ClInclude Include="src\base\random\cl_random_impl.h" />
+    <ClInclude Include="src\base\string\cl_spushstring.h" />
+    <ClInclude Include="src\base\string\cl_sstring.h" />
+    <ClInclude Include="src\base\string\cl_st_make0.h" />
+    <ClInclude Include="src\complex\cl_C.h" />
+    <ClInclude Include="src\float\cl_F.h" />
+    <ClInclude Include="src\float\dfloat\cl_DF.h" />
+    <ClInclude Include="src\float\ffloat\cl_FF.h" />
+    <ClInclude Include="src\float\lfloat\cl_LF.h" />
+    <ClInclude Include="src\float\lfloat\cl_LF_impl.h" />
+    <ClInclude Include="src\float\sfloat\cl_SF.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_catalanconst_var.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_eulerconst_var.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_exp1_var.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_ln10_var.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_ln2_var.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_pi_var.h" />
+    <ClInclude Include="src\float\transcendental\cl_F_tran.h" />
+    <ClInclude Include="src\float\transcendental\cl_LF_tran.h" />
+    <ClInclude Include="src\integer\bitwise\cl_I_byte.h" />
+    <ClInclude Include="src\integer\bitwise\cl_I_log.h" />
+    <ClInclude Include="src\integer\cl_I.h" />
+    <ClInclude Include="src\integer\conv\cl_I_cached_power.h" />
+    <ClInclude Include="src\integer\hash\cl_I_hashweak_rcpointer.h" />
+    <ClInclude Include="src\integer\hash\cl_I_hash_gcobject.h" />
+    <ClInclude Include="src\integer\hash\cl_I_hash_gcpointer.h" />
+    <ClInclude Include="src\integer\hash\cl_I_hash_pointer.h" />
+    <ClInclude Include="src\integer\hash\cl_I_hash_rcobject.h" />
+    <ClInclude Include="src\integer\hash\cl_I_hash_rcpointer.h" />
+    <ClInclude Include="src\integer\misc\combin\cl_I_combin.h" />
+    <ClInclude Include="src\modinteger\cl_MI.h" />
+    <ClInclude Include="src\modinteger\cl_MI_fix16.h" />
+    <ClInclude Include="src\modinteger\cl_MI_fix29.h" />
+    <ClInclude Include="src\modinteger\cl_MI_fix32.h" />
+    <ClInclude Include="src\modinteger\cl_MI_int.h" />
+    <ClInclude Include="src\modinteger\cl_MI_int32.h" />
+    <ClInclude Include="src\modinteger\cl_MI_montgom.h" />
+    <ClInclude Include="src\modinteger\cl_MI_pow2.h" />
+    <ClInclude Include="src\modinteger\cl_MI_pow2m1.h" />
+    <ClInclude Include="src\modinteger\cl_MI_pow2p1.h" />
+    <ClInclude Include="src\modinteger\cl_MI_std.h" />
+    <ClInclude Include="src\numtheory\cl_IF.h" />
+    <ClInclude Include="src\polynomial\cl_UP.h" />
+    <ClInclude Include="src\polynomial\elem\cl_UP_gen.h" />
+    <ClInclude Include="src\polynomial\elem\cl_UP_GF2.h" />
+    <ClInclude Include="src\polynomial\elem\cl_UP_MI.h" />
+    <ClInclude Include="src\polynomial\elem\cl_UP_number.h" />
+    <ClInclude Include="src\rational\cl_RA.h" />
+    <ClInclude Include="src\real\cl_R.h" />
+    <ClInclude Include="src\real\division\cl_R_div_t.h" />
+    <ClInclude Include="src\real\format-output\cl_format.h" />
+    <ClInclude Include="src\timing\cl_t_config.h" />
+    <ClInclude Include="src\vector\cl_GV_io.h" />
+    <ClInclude Include="src\vector\cl_SV_io.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\cln_private.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\base\cl_alloca.cc" />
+    <ClCompile Include="src\base\cl_as_exception.cc" />
+    <ClCompile Include="src\base\cl_condition.cc" />
+    <ClCompile Include="src\base\cl_d0_exception.cc" />
+    <ClCompile Include="src\base\cl_debug.cc" />
+    <ClCompile Include="src\base\cl_debugout.cc" />
+    <ClCompile Include="src\base\cl_free.cc" />
+    <ClCompile Include="src\base\cl_immclasses.cc" />
+    <ClCompile Include="src\base\cl_malloc.cc" />
+    <ClCompile Include="src\base\cl_notreached_exception.cc" />
+    <ClCompile Include="src\base\cl_version.cc" />
+    <ClCompile Include="src\base\digitseq\cl_2DS_div.cc" />
+    <ClCompile Include="src\base\digitseq\cl_2DS_recip.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_arm_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_hppa_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_i386_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_m68k_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_mipsel_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_mips_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_sparc64_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_asm_sparc_.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_div.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_mul.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_random.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_recip.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_recipsqrt.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_sqrt.cc" />
+    <ClCompile Include="src\base\digitseq\cl_DS_trandom.cc" />
+    <ClCompile Include="src\base\digit\cl_2D_div.cc" />
+    <ClCompile Include="src\base\digit\cl_2D_exptpos.cc" />
+    <ClCompile Include="src\base\hash\cl_rcpointer2_hashweak_rcpointer.cc" />
+    <ClCompile Include="src\base\hash\cl_rcpointer_hashweak_rcpointer.cc" />
+    <ClCompile Include="src\base\input\cl_read_bad_syntax_exception.cc" />
+    <ClCompile Include="src\base\input\cl_read_eof_exception.cc" />
+    <ClCompile Include="src\base\input\cl_read_junk_exception.cc" />
+    <ClCompile Include="src\base\low\cl_low_div.cc" />
+    <ClCompile Include="src\base\low\cl_low_isqrt.cc" />
+    <ClCompile Include="src\base\low\cl_low_isqrt2.cc" />
+    <ClCompile Include="src\base\low\cl_low_mul.cc" />
+    <ClCompile Include="src\base\output\cl_output_dec.cc" />
+    <ClCompile Include="src\base\output\cl_output_hex.cc" />
+    <ClCompile Include="src\base\output\cl_prin_globals.cc" />
+    <ClCompile Include="src\base\proplist\cl_pl_add.cc" />
+    <ClCompile Include="src\base\proplist\cl_pl_d.cc" />
+    <ClCompile Include="src\base\proplist\cl_pl_get.cc" />
+    <ClCompile Include="src\base\random\cl_random_def.cc" />
+    <ClCompile Include="src\base\random\cl_random_from.cc" />
+    <ClCompile Include="src\base\random\cl_UL_random.cc" />
+    <ClCompile Include="src\base\ring\cl_no_ring.cc" />
+    <ClCompile Include="src\base\ring\cl_ring_debug.cc" />
+    <ClCompile Include="src\base\string\cl_spushstring_append.cc" />
+    <ClCompile Include="src\base\string\cl_spushstring_push.cc" />
+    <ClCompile Include="src\base\string\cl_sstring.cc" />
+    <ClCompile Include="src\base\string\cl_st_c2.cc" />
+    <ClCompile Include="src\base\string\cl_st_concat1.cc" />
+    <ClCompile Include="src\base\string\cl_st_concat2.cc" />
+    <ClCompile Include="src\base\string\cl_st_concat3.cc" />
+    <ClCompile Include="src\base\string\cl_st_debug.cc" />
+    <ClCompile Include="src\base\string\cl_st_hashcode.cc" />
+    <ClCompile Include="src\base\string\cl_st_make0.cc" />
+    <ClCompile Include="src\base\string\cl_st_make1.cc" />
+    <ClCompile Include="src\base\string\cl_st_make2.cc" />
+    <ClCompile Include="src\base\string\input\cl_st_get1.cc" />
+    <ClCompile Include="src\base\string\input\cl_st_get2.cc" />
+    <ClCompile Include="src\base\string\input\cl_st_getline1.cc" />
+    <ClCompile Include="src\base\string\input\cl_st_getline2.cc" />
+    <ClCompile Include="src\base\string\input\cl_st_gettoken.cc" />
+    <ClCompile Include="src\base\string\misc\cl_st_class.cc" />
+    <ClCompile Include="src\base\string\output\cl_st_print.cc" />
+    <ClCompile Include="src\base\symbol\cl_symbol.cc" />
+    <ClCompile Include="src\base\symbol\cl_sy_hashcode.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_C_abs.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_C_abs_aux.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_C_signum.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_C_sqrt.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_DF_hypot.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_FF_hypot.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_LF_hypot.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_R_hypot.cc" />
+    <ClCompile Include="src\complex\algebraic\cl_SF_hypot.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_equal.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_from_R_R_complex.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_from_R_R_complex1.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_imagpart.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_minus.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_minus1.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_mul.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_plus.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_plus1.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_realpart.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_square.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_uminus.cc" />
+    <ClCompile Include="src\complex\elem\cl_C_zerop.cc" />
+    <ClCompile Include="src\complex\elem\division\cl_C_DF_recip.cc" />
+    <ClCompile Include="src\complex\elem\division\cl_C_div.cc" />
+    <ClCompile Include="src\complex\elem\division\cl_C_FF_recip.cc" />
+    <ClCompile Include="src\complex\elem\division\cl_C_LF_recip.cc" />
+    <ClCompile Include="src\complex\elem\division\cl_C_recip.cc" />
+    <ClCompile Include="src\complex\elem\division\cl_C_SF_recip.cc" />
+    <ClCompile Include="src\complex\input\cl_N_from_string.cc" />
+    <ClCompile Include="src\complex\input\cl_N_read.cc" />
+    <ClCompile Include="src\complex\input\cl_N_read_stream.cc" />
+    <ClCompile Include="src\complex\misc\cl_C_class.cc" />
+    <ClCompile Include="src\complex\misc\cl_C_conjugate.cc" />
+    <ClCompile Include="src\complex\misc\cl_C_debug.cc" />
+    <ClCompile Include="src\complex\misc\cl_C_eqhashcode.cc" />
+    <ClCompile Include="src\complex\misc\cl_C_expt.cc" />
+    <ClCompile Include="src\complex\misc\cl_C_expt_I.cc" />
+    <ClCompile Include="src\complex\misc\cl_N_as.cc" />
+    <ClCompile Include="src\complex\output\cl_N_aprint.cc" />
+    <ClCompile Include="src\complex\output\cl_N_bprint.cc" />
+    <ClCompile Include="src\complex\ring\cl_C_ring.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_acos.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_acosh.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_asin.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_asinh.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_asinh_aux.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_atan.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_atanh.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_atanh_aux.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_cis.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_cos.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_cosh.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_exp.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_expt_C.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_log.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_log2.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_phase.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_sin.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_sinh.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_tan.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_C_tanh.cc" />
+    <ClCompile Include="src\complex\transcendental\cl_R_cis.cc" />
+    <ClCompile Include="src\float\algebraic\cl_F_sqrt.cc" />
+    <ClCompile Include="src\float\base\cl_F_globals.cc" />
+    <ClCompile Include="src\float\base\cl_F_nan_exception.cc" />
+    <ClCompile Include="src\float\base\cl_F_overflow_exception.cc" />
+    <ClCompile Include="src\float\base\cl_F_underflow_exception.cc" />
+    <ClCompile Include="src\float\conv\cl_DF_to_double.cc" />
+    <ClCompile Include="src\float\conv\cl_DF_to_FF.cc" />
+    <ClCompile Include="src\float\conv\cl_DF_to_float.cc" />
+    <ClCompile Include="src\float\conv\cl_DF_to_LF.cc" />
+    <ClCompile Include="src\float\conv\cl_DF_to_SF.cc" />
+    <ClCompile Include="src\float\conv\cl_FF_to_DF.cc" />
+    <ClCompile Include="src\float\conv\cl_FF_to_double.cc" />
+    <ClCompile Include="src\float\conv\cl_FF_to_float.cc" />
+    <ClCompile Include="src\float\conv\cl_FF_to_LF.cc" />
+    <ClCompile Include="src\float\conv\cl_FF_to_SF.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_F.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_F_f.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_I.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_I_def.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_I_f.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_RA.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_RA_def.cc" />
+    <ClCompile Include="src\float\conv\cl_F_from_RA_f.cc" />
+    <ClCompile Include="src\float\conv\cl_F_to_DF.cc" />
+    <ClCompile Include="src\float\conv\cl_F_to_double.cc" />
+    <ClCompile Include="src\float\conv\cl_F_to_FF.cc" />
+    <ClCompile Include="src\float\conv\cl_F_to_float.cc" />
+    <ClCompile Include="src\float\conv\cl_F_to_LF.cc" />
+    <ClCompile Include="src\float\conv\cl_F_to_SF.cc" />
+    <ClCompile Include="src\float\conv\cl_LF_to_DF.cc" />
+    <ClCompile Include="src\float\conv\cl_LF_to_double.cc" />
+    <ClCompile Include="src\float\conv\cl_LF_to_FF.cc" />
+    <ClCompile Include="src\float\conv\cl_LF_to_float.cc" />
+    <ClCompile Include="src\float\conv\cl_LF_to_SF.cc" />
+    <ClCompile Include="src\float\conv\cl_SF_to_DF.cc" />
+    <ClCompile Include="src\float\conv\cl_SF_to_double.cc" />
+    <ClCompile Include="src\float\conv\cl_SF_to_FF.cc" />
+    <ClCompile Include="src\float\conv\cl_SF_to_float.cc" />
+    <ClCompile Include="src\float\conv\cl_SF_to_LF.cc" />
+    <ClCompile Include="src\float\dfloat\algebraic\cl_DF_sqrt.cc" />
+    <ClCompile Include="src\float\dfloat\conv\cl_DF_from_double.cc" />
+    <ClCompile Include="src\float\dfloat\conv\cl_DF_to_doublej.cc" />
+    <ClCompile Include="src\float\dfloat\conv\cl_I_to_double.cc" />
+    <ClCompile Include="src\float\dfloat\conv\cl_RA_to_double.cc" />
+    <ClCompile Include="src\float\dfloat\division\cl_DF_ceil22.cc" />
+    <ClCompile Include="src\float\dfloat\division\cl_DF_fceil.cc" />
+    <ClCompile Include="src\float\dfloat\division\cl_DF_floor22.cc" />
+    <ClCompile Include="src\float\dfloat\division\cl_DF_recip.cc" />
+    <ClCompile Include="src\float\dfloat\division\cl_DF_round22.cc" />
+    <ClCompile Include="src\float\dfloat\division\cl_DF_trunc22.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_compare.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_div.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_ffloor.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_from_I.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_from_RA.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_fround.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_ftrunc.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_futrunc.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_globals.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_minus.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_minusp.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_mul.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_plus.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_plusp.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_scale.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_scale_I.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_to_I.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_uminus.cc" />
+    <ClCompile Include="src\float\dfloat\elem\cl_DF_zerop.cc" />
+    <ClCompile Include="src\float\dfloat\input\cl_DF_from_string.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_abs.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_as.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_class.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_debug.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_decode.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_digits.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_eqhashcode.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_exponent.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_idecode.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_max.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_min.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_precision.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_sign.cc" />
+    <ClCompile Include="src\float\dfloat\misc\cl_DF_signum.cc" />
+    <ClCompile Include="src\float\division\cl_F_ceil1.cc" />
+    <ClCompile Include="src\float\division\cl_F_ceil2.cc" />
+    <ClCompile Include="src\float\division\cl_F_ceil22.cc" />
+    <ClCompile Include="src\float\division\cl_F_fceil1.cc" />
+    <ClCompile Include="src\float\division\cl_F_fceil2.cc" />
+    <ClCompile Include="src\float\division\cl_F_ffloor1.cc" />
+    <ClCompile Include="src\float\division\cl_F_ffloor2.cc" />
+    <ClCompile Include="src\float\division\cl_F_floor1.cc" />
+    <ClCompile Include="src\float\division\cl_F_floor2.cc" />
+    <ClCompile Include="src\float\division\cl_F_floor22.cc" />
+    <ClCompile Include="src\float\division\cl_F_fround1.cc" />
+    <ClCompile Include="src\float\division\cl_F_fround2.cc" />
+    <ClCompile Include="src\float\division\cl_F_ftrunc1.cc" />
+    <ClCompile Include="src\float\division\cl_F_ftrunc2.cc" />
+    <ClCompile Include="src\float\division\cl_F_round1.cc" />
+    <ClCompile Include="src\float\division\cl_F_round2.cc" />
+    <ClCompile Include="src\float\division\cl_F_round22.cc" />
+    <ClCompile Include="src\float\division\cl_F_trunc1.cc" />
+    <ClCompile Include="src\float\division\cl_F_trunc2.cc" />
+    <ClCompile Include="src\float\division\cl_F_trunc22.cc" />
+    <ClCompile Include="src\float\elem\cl_F_compare.cc" />
+    <ClCompile Include="src\float\elem\cl_F_div.cc" />
+    <ClCompile Include="src\float\elem\cl_F_I_div.cc" />
+    <ClCompile Include="src\float\elem\cl_F_I_mul.cc" />
+    <ClCompile Include="src\float\elem\cl_F_minus.cc" />
+    <ClCompile Include="src\float\elem\cl_F_minusp.cc" />
+    <ClCompile Include="src\float\elem\cl_F_mul.cc" />
+    <ClCompile Include="src\float\elem\cl_F_plus.cc" />
+    <ClCompile Include="src\float\elem\cl_F_plusp.cc" />
+    <ClCompile Include="src\float\elem\cl_F_RA_div.cc" />
+    <ClCompile Include="src\float\elem\cl_F_RA_mul.cc" />
+    <ClCompile Include="src\float\elem\cl_F_recip.cc" />
+    <ClCompile Include="src\float\elem\cl_F_scale.cc" />
+    <ClCompile Include="src\float\elem\cl_F_scale_I.cc" />
+    <ClCompile Include="src\float\elem\cl_F_square.cc" />
+    <ClCompile Include="src\float\elem\cl_F_uminus.cc" />
+    <ClCompile Include="src\float\elem\cl_F_zerop.cc" />
+    <ClCompile Include="src\float\elem\cl_I_F_div.cc" />
+    <ClCompile Include="src\float\elem\cl_RA_F_div.cc" />
+    <ClCompile Include="src\float\ffloat\algebraic\cl_FF_sqrt.cc" />
+    <ClCompile Include="src\float\ffloat\conv\cl_FF_from_float.cc" />
+    <ClCompile Include="src\float\ffloat\conv\cl_FF_to_floatj.cc" />
+    <ClCompile Include="src\float\ffloat\conv\cl_I_to_float.cc" />
+    <ClCompile Include="src\float\ffloat\conv\cl_RA_to_float.cc" />
+    <ClCompile Include="src\float\ffloat\division\cl_FF_ceil22.cc" />
+    <ClCompile Include="src\float\ffloat\division\cl_FF_fceil.cc" />
+    <ClCompile Include="src\float\ffloat\division\cl_FF_floor22.cc" />
+    <ClCompile Include="src\float\ffloat\division\cl_FF_recip.cc" />
+    <ClCompile Include="src\float\ffloat\division\cl_FF_round22.cc" />
+    <ClCompile Include="src\float\ffloat\division\cl_FF_trunc22.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_compare.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_div.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_ffloor.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_from_I.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_from_RA.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_fround.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_ftrunc.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_futrunc.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_globals.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_minus.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_minusp.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_mul.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_plus.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_plusp.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_scale.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_scale_I.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_to_I.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_uminus.cc" />
+    <ClCompile Include="src\float\ffloat\elem\cl_FF_zerop.cc" />
+    <ClCompile Include="src\float\ffloat\input\cl_FF_from_string.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_abs.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_as.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_class.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_debug.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_decode.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_digits.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_eqhashcode.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_exponent.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_idecode.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_max.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_min.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_precision.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_sign.cc" />
+    <ClCompile Include="src\float\ffloat\misc\cl_FF_signum.cc" />
+    <ClCompile Include="src\float\input\cl_F_from_string.cc" />
+    <ClCompile Include="src\float\input\cl_F_read.cc" />
+    <ClCompile Include="src\float\input\cl_F_readparsed.cc" />
+    <ClCompile Include="src\float\input\cl_F_read_stream.cc" />
+    <ClCompile Include="src\float\lfloat\algebraic\cl_LF_sqrt.cc" />
+    <ClCompile Include="src\float\lfloat\division\cl_LF_ceil22.cc" />
+    <ClCompile Include="src\float\lfloat\division\cl_LF_fceil.cc" />
+    <ClCompile Include="src\float\lfloat\division\cl_LF_floor22.cc" />
+    <ClCompile Include="src\float\lfloat\division\cl_LF_recip.cc" />
+    <ClCompile Include="src\float\lfloat\division\cl_LF_round22.cc" />
+    <ClCompile Include="src\float\lfloat\division\cl_LF_trunc22.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_I_LF_div.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_1minus.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_1plus.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_2minus.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_2plus.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_compare.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_div.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_ffloor.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_from_I.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_from_RA.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_fround.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_ftrunc.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_futrunc.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_globals.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_I_div.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_I_mul.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_minus1.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_minusp.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_mul.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_plus1.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_plusp.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_RA_div.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_RA_mul.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_scale.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_scale_I.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_square.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_to_I.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_uminus.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_LF_zerop.cc" />
+    <ClCompile Include="src\float\lfloat\elem\cl_RA_LF_div.cc" />
+    <ClCompile Include="src\float\lfloat\input\cl_LF_from_string.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_abs.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_as.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_class.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_debug.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_decode.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_digits.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_eqhashcode.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_exponent.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_extend.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_idecode.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_leninc.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_lenincx.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_max.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_min.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_precision.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_shorten.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_shortenrel.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_shortenwith.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_sign.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_signum.cc" />
+    <ClCompile Include="src\float\lfloat\misc\cl_LF_to_LF.cc" />
+    <ClCompile Include="src\float\misc\cl_float_format.cc" />
+    <ClCompile Include="src\float\misc\cl_F_abs.cc" />
+    <ClCompile Include="src\float\misc\cl_F_as.cc" />
+    <ClCompile Include="src\float\misc\cl_F_decode.cc" />
+    <ClCompile Include="src\float\misc\cl_F_digits.cc" />
+    <ClCompile Include="src\float\misc\cl_F_epsneg.cc" />
+    <ClCompile Include="src\float\misc\cl_F_epspos.cc" />
+    <ClCompile Include="src\float\misc\cl_F_eqhashcode.cc" />
+    <ClCompile Include="src\float\misc\cl_F_exponent.cc" />
+    <ClCompile Include="src\float\misc\cl_F_extendsqrt.cc" />
+    <ClCompile Include="src\float\misc\cl_F_extendsqrtx.cc" />
+    <ClCompile Include="src\float\misc\cl_F_idecode.cc" />
+    <ClCompile Include="src\float\misc\cl_F_leastneg.cc" />
+    <ClCompile Include="src\float\misc\cl_F_leastpos.cc" />
+    <ClCompile Include="src\float\misc\cl_F_max.cc" />
+    <ClCompile Include="src\float\misc\cl_F_min.cc" />
+    <ClCompile Include="src\float\misc\cl_F_mostneg.cc" />
+    <ClCompile Include="src\float\misc\cl_F_mostpos.cc" />
+    <ClCompile Include="src\float\misc\cl_F_precision.cc" />
+    <ClCompile Include="src\float\misc\cl_F_rational.cc" />
+    <ClCompile Include="src\float\misc\cl_F_shortenrel.cc" />
+    <ClCompile Include="src\float\misc\cl_F_sign.cc" />
+    <ClCompile Include="src\float\misc\cl_F_sign2.cc" />
+    <ClCompile Include="src\float\misc\cl_F_signum.cc" />
+    <ClCompile Include="src\float\output\cl_F_aprint.cc" />
+    <ClCompile Include="src\float\output\cl_F_bprint.cc" />
+    <ClCompile Include="src\float\output\cl_F_cprint.cc" />
+    <ClCompile Include="src\float\output\cl_F_dprint.cc" />
+    <ClCompile Include="src\float\output\cl_F_printb.cc" />
+    <ClCompile Include="src\float\random\cl_F_random.cc" />
+    <ClCompile Include="src\float\sfloat\algebraic\cl_SF_sqrt.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_ceil22.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_fceil.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_ffloor.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_floor22.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_recip.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_round22.cc" />
+    <ClCompile Include="src\float\sfloat\division\cl_SF_trunc22.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_compare.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_div.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_from_I.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_from_RA.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_fround.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_ftrunc.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_futrunc.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_minus.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_minusp.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_mul.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_plus.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_plusp.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_scale.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_scale_I.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_to_I.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_uminus.cc" />
+    <ClCompile Include="src\float\sfloat\elem\cl_SF_zerop.cc" />
+    <ClCompile Include="src\float\sfloat\input\cl_SF_from_string.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_abs.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_as.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_class.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_debug.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_decode.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_digits.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_eqhashcode.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_exponent.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_idecode.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_max.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_min.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_precision.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_sign.cc" />
+    <ClCompile Include="src\float\sfloat\misc\cl_SF_signum.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_atanhx.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_atanx.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst_def.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_catalanconst_var.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_cos.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_cosh.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_coshsinh.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_cossin.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst_def.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_eulerconst_var.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_exp.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_exp1.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_exp1_def.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_exp1_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_exp1_var.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_expx.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln10.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln10_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln10_var.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln2.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln2_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_ln2_var.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_lnx.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_pi.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_pi_def.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_pi_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_pi_var.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_roundpi.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_roundpi2.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_sin.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_sinh.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_sinhx.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_sinx.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_tan.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_tanh.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_zeta_int.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_zeta_int_def.cc" />
+    <ClCompile Include="src\float\transcendental\cl_F_zeta_int_f.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_atanh_recip.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_atan_recip.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_catalanconst.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_coshsinh.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_coshsinh_aux.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_cossin.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_cossin_aux.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_eulerconst.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_exp1.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_exp_aux.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ln10.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ln2.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_pi.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_a.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_ab.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_b.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_p.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pa.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pab.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pb.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pq.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pqa.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pqab.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_pqb.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_q.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_qa.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_qab.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratseries_qb.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqcd.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqcd_aux.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqd.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_ratsumseries_pqd_aux.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_zeta3.cc" />
+    <ClCompile Include="src\float\transcendental\cl_LF_zeta_int.cc" />
+    <ClCompile Include="src\integer\2adic\cl_I_2adic_div.cc" />
+    <ClCompile Include="src\integer\2adic\cl_I_2adic_recip.cc" />
+    <ClCompile Include="src\integer\algebraic\cl_I_rootp.cc" />
+    <ClCompile Include="src\integer\algebraic\cl_I_rootp_aux.cc" />
+    <ClCompile Include="src\integer\algebraic\cl_I_rootp_I.cc" />
+    <ClCompile Include="src\integer\algebraic\cl_I_sqrt.cc" />
+    <ClCompile Include="src\integer\algebraic\cl_I_sqrtp.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ash.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ash_exception.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ash_I.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_boole.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_dpb.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_dpf.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_fullbyte.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ilength.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ldb.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ldbtest.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ldbx.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_ldbxtest.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logand.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logandc2.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logbitp.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logbitp_I.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logcount.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logeqv.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logior.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_lognand.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_lognor.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_lognot.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logorc2.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logtest.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_logxor.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_log_aux.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_mkf.cc" />
+    <ClCompile Include="src\integer\bitwise\cl_I_mkfx.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_cached_power.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_digits_need.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_digits.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_DS.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_L.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_L2.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_NDS.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_NUDS.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_Q.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_Q2.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_UDS.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_UL.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_UL2.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_from_UQ.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_mul10plus.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_to_digits.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_to_L.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_to_Q.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_to_UL.cc" />
+    <ClCompile Include="src\integer\conv\cl_I_to_UQ.cc" />
+    <ClCompile Include="src\integer\division\cl_I_ceil1.cc" />
+    <ClCompile Include="src\integer\division\cl_I_ceil2.cc" />
+    <ClCompile Include="src\integer\division\cl_I_exquo.cc" />
+    <ClCompile Include="src\integer\division\cl_I_exquopos.cc" />
+    <ClCompile Include="src\integer\division\cl_I_exquo_exception.cc" />
+    <ClCompile Include="src\integer\division\cl_I_floor1.cc" />
+    <ClCompile Include="src\integer\division\cl_I_floor2.cc" />
+    <ClCompile Include="src\integer\division\cl_I_mod.cc" />
+    <ClCompile Include="src\integer\division\cl_I_rem.cc" />
+    <ClCompile Include="src\integer\division\cl_I_round1.cc" />
+    <ClCompile Include="src\integer\division\cl_I_round2.cc" />
+    <ClCompile Include="src\integer\division\cl_I_trunc1.cc" />
+    <ClCompile Include="src\integer\division\cl_I_trunc2.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_compare.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_div.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_equal.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_minus.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_minus1.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_minusp.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_mul.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_plus.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_plus1.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_plusp.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_square.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_uminus.cc" />
+    <ClCompile Include="src\integer\elem\cl_I_zerop.cc" />
+    <ClCompile Include="src\integer\gcd\cl_I_gcd.cc" />
+    <ClCompile Include="src\integer\gcd\cl_I_gcd_aux.cc" />
+    <ClCompile Include="src\integer\gcd\cl_I_gcd_aux2.cc" />
+    <ClCompile Include="src\integer\gcd\cl_I_lcm.cc" />
+    <ClCompile Include="src\integer\gcd\cl_I_xgcd.cc" />
+    <ClCompile Include="src\integer\gcd\cl_low_gcd.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hashcode.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hashweak_rcpointer.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hash_gcobject.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hash_gcpointer.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hash_pointer.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hash_rcobject.cc" />
+    <ClCompile Include="src\integer\hash\cl_I_hash_rcpointer.cc" />
+    <ClCompile Include="src\integer\input\cl_I_from_string.cc" />
+    <ClCompile Include="src\integer\input\cl_I_read.cc" />
+    <ClCompile Include="src\integer\input\cl_I_readparsed.cc" />
+    <ClCompile Include="src\integer\input\cl_I_read_stream.cc" />
+    <ClCompile Include="src\integer\misc\cl_BN_class.cc" />
+    <ClCompile Include="src\integer\misc\cl_FN_class.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_abs.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_as.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_debug.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_eqhashcode.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_exptpos.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_exptpos_I.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_max.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_min.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_oddp.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_ord2.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_power2p.cc" />
+    <ClCompile Include="src\integer\misc\cl_I_signum.cc" />
+    <ClCompile Include="src\integer\misc\combin\cl_I_binomial.cc" />
+    <ClCompile Include="src\integer\misc\combin\cl_I_doublefactorial.cc" />
+    <ClCompile Include="src\integer\misc\combin\cl_I_factorial.cc" />
+    <ClCompile Include="src\integer\misc\combin\cl_I_factorial_aux.cc" />
+    <ClCompile Include="src\integer\output\cl_I_aprint.cc" />
+    <ClCompile Include="src\integer\output\cl_I_bprint.cc" />
+    <ClCompile Include="src\integer\output\cl_I_cprint.cc" />
+    <ClCompile Include="src\integer\output\cl_I_decstring.cc" />
+    <ClCompile Include="src\integer\output\cl_I_dprint.cc" />
+    <ClCompile Include="src\integer\output\cl_I_print.cc" />
+    <ClCompile Include="src\integer\output\cl_I_print_string.cc" />
+    <ClCompile Include="src\integer\random\cl_I_random.cc" />
+    <ClCompile Include="src\integer\random\cl_I_trandom.cc" />
+    <ClCompile Include="src\integer\ring\cl_0_ring.cc" />
+    <ClCompile Include="src\integer\ring\cl_I_ring.cc" />
+    <ClCompile Include="src\modinteger\cl_MI.cc" />
+    <ClCompile Include="src\modinteger\cl_MI_cond_composite.cc" />
+    <ClCompile Include="src\modinteger\cl_MI_debug.cc" />
+    <ClCompile Include="src\modinteger\cl_MI_err_comp.cc" />
+    <ClCompile Include="src\modinteger\cl_MI_lshift.cc" />
+    <ClCompile Include="src\modinteger\cl_MI_rshift.cc" />
+    <ClCompile Include="src\numtheory\cl_IF_millerrabin.cc" />
+    <ClCompile Include="src\numtheory\cl_IF_smallprimes.cc" />
+    <ClCompile Include="src\numtheory\cl_IF_trialdiv.cc" />
+    <ClCompile Include="src\numtheory\cl_IF_trialdiv1.cc" />
+    <ClCompile Include="src\numtheory\cl_IF_trialdiv2.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_cornacchia1.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_cornacchia4.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_isprobprime.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_jacobi.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_jacobi_low.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_nextprobprime.cc" />
+    <ClCompile Include="src\numtheory\cl_nt_sqrtmodp.cc" />
+    <ClCompile Include="src\polynomial\elem\cl_asm_GF2.cc" />
+    <ClCompile Include="src\polynomial\elem\cl_asm_sparc_GF2.cc" />
+    <ClCompile Include="src\polynomial\elem\cl_UP.cc" />
+    <ClCompile Include="src\polynomial\elem\cl_UP_named.cc" />
+    <ClCompile Include="src\polynomial\elem\cl_UP_no_ring.cc" />
+    <ClCompile Include="src\polynomial\elem\cl_UP_unnamed.cc" />
+    <ClCompile Include="src\polynomial\misc\cl_UP_debug.cc" />
+    <ClCompile Include="src\polynomial\misc\cl_UP_deriv.cc" />
+    <ClCompile Include="src\polynomial\misc\cl_UP_I_hermite.cc" />
+    <ClCompile Include="src\polynomial\misc\cl_UP_I_laguerre.cc" />
+    <ClCompile Include="src\polynomial\misc\cl_UP_I_tchebychev.cc" />
+    <ClCompile Include="src\polynomial\misc\cl_UP_RA_legendre.cc" />
+    <ClCompile Include="src\rational\algebraic\cl_RA_rootp.cc" />
+    <ClCompile Include="src\rational\algebraic\cl_RA_rootp_I.cc" />
+    <ClCompile Include="src\rational\algebraic\cl_RA_sqrtp.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_ceil1.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_ceil12.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_ceil2.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_ceil22.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_floor1.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_floor12.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_floor2.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_floor22.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_round1.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_round12.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_round2.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_round22.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_trunc1.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_trunc12.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_trunc2.cc" />
+    <ClCompile Include="src\rational\division\cl_RA_trunc22.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_compare.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_denominator.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_div.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_equal.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_I_div.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_posI.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_posI1.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_from_I_posI_div.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_minus.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_minus1.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_minusp.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_mul.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_numerator.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_plus.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_plus1.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_plusp.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_recip.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_square.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_uminus.cc" />
+    <ClCompile Include="src\rational\elem\cl_RA_zerop.cc" />
+    <ClCompile Include="src\rational\input\cl_RA_from_string.cc" />
+    <ClCompile Include="src\rational\input\cl_RA_read.cc" />
+    <ClCompile Include="src\rational\input\cl_RA_readparsed.cc" />
+    <ClCompile Include="src\rational\input\cl_RA_read_stream.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_abs.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_as.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_class.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_debug.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_eqhashcode.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_expt.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_exptpos.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_exptpos_I.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_expt_I.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_max.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_min.cc" />
+    <ClCompile Include="src\rational\misc\cl_RA_signum.cc" />
+    <ClCompile Include="src\rational\output\cl_RA_aprint.cc" />
+    <ClCompile Include="src\rational\output\cl_RA_bprint.cc" />
+    <ClCompile Include="src\rational\output\cl_RA_cprint.cc" />
+    <ClCompile Include="src\rational\output\cl_RA_dprint.cc" />
+    <ClCompile Include="src\rational\output\cl_RA_print.cc" />
+    <ClCompile Include="src\rational\ring\cl_RA_ring.cc" />
+    <ClCompile Include="src\rational\transcendental\cl_I_logp.cc" />
+    <ClCompile Include="src\rational\transcendental\cl_RA_logp.cc" />
+    <ClCompile Include="src\real\algebraic\cl_RA_sqrt.cc" />
+    <ClCompile Include="src\real\algebraic\cl_R_sqrt.cc" />
+    <ClCompile Include="src\real\conv\cl_F_from_R.cc" />
+    <ClCompile Include="src\real\conv\cl_F_from_R_def.cc" />
+    <ClCompile Include="src\real\conv\cl_F_from_R_f.cc" />
+    <ClCompile Include="src\real\conv\cl_R_to_DF.cc" />
+    <ClCompile Include="src\real\conv\cl_R_to_double.cc" />
+    <ClCompile Include="src\real\conv\cl_R_to_FF.cc" />
+    <ClCompile Include="src\real\conv\cl_R_to_float.cc" />
+    <ClCompile Include="src\real\conv\cl_R_to_LF.cc" />
+    <ClCompile Include="src\real\conv\cl_R_to_SF.cc" />
+    <ClCompile Include="src\real\division\cl_R_ceil1.cc" />
+    <ClCompile Include="src\real\division\cl_R_ceil12.cc" />
+    <ClCompile Include="src\real\division\cl_R_ceil2.cc" />
+    <ClCompile Include="src\real\division\cl_R_ceil22.cc" />
+    <ClCompile Include="src\real\division\cl_R_fceil1.cc" />
+    <ClCompile Include="src\real\division\cl_R_fceil12.cc" />
+    <ClCompile Include="src\real\division\cl_R_fceil2.cc" />
+    <ClCompile Include="src\real\division\cl_R_fceil22.cc" />
+    <ClCompile Include="src\real\division\cl_R_ffloor1.cc" />
+    <ClCompile Include="src\real\division\cl_R_ffloor12.cc" />
+    <ClCompile Include="src\real\division\cl_R_ffloor2.cc" />
+    <ClCompile Include="src\real\division\cl_R_ffloor22.cc" />
+    <ClCompile Include="src\real\division\cl_R_floor1.cc" />
+    <ClCompile Include="src\real\division\cl_R_floor12.cc" />
+    <ClCompile Include="src\real\division\cl_R_floor2.cc" />
+    <ClCompile Include="src\real\division\cl_R_floor22.cc" />
+    <ClCompile Include="src\real\division\cl_R_fround1.cc" />
+    <ClCompile Include="src\real\division\cl_R_fround12.cc" />
+    <ClCompile Include="src\real\division\cl_R_fround2.cc" />
+    <ClCompile Include="src\real\division\cl_R_fround22.cc" />
+    <ClCompile Include="src\real\division\cl_R_ftrunc1.cc" />
+    <ClCompile Include="src\real\division\cl_R_ftrunc12.cc" />
+    <ClCompile Include="src\real\division\cl_R_ftrunc2.cc" />
+    <ClCompile Include="src\real\division\cl_R_ftrunc22.cc" />
+    <ClCompile Include="src\real\division\cl_R_mod.cc" />
+    <ClCompile Include="src\real\division\cl_R_rem.cc" />
+    <ClCompile Include="src\real\division\cl_R_round1.cc" />
+    <ClCompile Include="src\real\division\cl_R_round12.cc" />
+    <ClCompile Include="src\real\division\cl_R_round2.cc" />
+    <ClCompile Include="src\real\division\cl_R_round22.cc" />
+    <ClCompile Include="src\real\division\cl_R_trunc1.cc" />
+    <ClCompile Include="src\real\division\cl_R_trunc12.cc" />
+    <ClCompile Include="src\real\division\cl_R_trunc2.cc" />
+    <ClCompile Include="src\real\division\cl_R_trunc22.cc" />
+    <ClCompile Include="src\real\elem\cl_R_compare.cc" />
+    <ClCompile Include="src\real\elem\cl_R_div.cc" />
+    <ClCompile Include="src\real\elem\cl_R_equal.cc" />
+    <ClCompile Include="src\real\elem\cl_R_minus.cc" />
+    <ClCompile Include="src\real\elem\cl_R_minus1.cc" />
+    <ClCompile Include="src\real\elem\cl_R_minusp.cc" />
+    <ClCompile Include="src\real\elem\cl_R_mul.cc" />
+    <ClCompile Include="src\real\elem\cl_R_plus.cc" />
+    <ClCompile Include="src\real\elem\cl_R_plus1.cc" />
+    <ClCompile Include="src\real\elem\cl_R_plusp.cc" />
+    <ClCompile Include="src\real\elem\cl_R_recip.cc" />
+    <ClCompile Include="src\real\elem\cl_R_square.cc" />
+    <ClCompile Include="src\real\elem\cl_R_uminus.cc" />
+    <ClCompile Include="src\real\elem\cl_R_zerop.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_cardinal.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_floatstring.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_integer.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_newroman.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_oldroman.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_ordinal.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_paddedstring.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_scaleexp.cc" />
+    <ClCompile Include="src\real\format-output\cl_fmt_tens.cc" />
+    <ClCompile Include="src\real\input\cl_R_from_string.cc" />
+    <ClCompile Include="src\real\input\cl_R_read.cc" />
+    <ClCompile Include="src\real\input\cl_R_read_stream.cc" />
+    <ClCompile Include="src\real\misc\cl_R_abs.cc" />
+    <ClCompile Include="src\real\misc\cl_R_as.cc" />
+    <ClCompile Include="src\real\misc\cl_R_contagion.cc" />
+    <ClCompile Include="src\real\misc\cl_R_debug.cc" />
+    <ClCompile Include="src\real\misc\cl_R_eqhashcode.cc" />
+    <ClCompile Include="src\real\misc\cl_R_expt.cc" />
+    <ClCompile Include="src\real\misc\cl_R_expt_I.cc" />
+    <ClCompile Include="src\real\misc\cl_R_max.cc" />
+    <ClCompile Include="src\real\misc\cl_R_min.cc" />
+    <ClCompile Include="src\real\misc\cl_R_rational.cc" />
+    <ClCompile Include="src\real\misc\cl_R_rationalize.cc" />
+    <ClCompile Include="src\real\misc\cl_R_signum.cc" />
+    <ClCompile Include="src\real\output\cl_R_aprint.cc" />
+    <ClCompile Include="src\real\output\cl_R_bprint.cc" />
+    <ClCompile Include="src\real\output\cl_R_cprint.cc" />
+    <ClCompile Include="src\real\random\cl_R_random.cc" />
+    <ClCompile Include="src\real\ring\cl_R_ring.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_atan.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_atan2.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_cos.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_cosh.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_coshsinh.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_cossin.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_exp.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_ln.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_log.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_sin.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_sinh.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_tan.cc" />
+    <ClCompile Include="src\real\transcendental\cl_R_tanh.cc" />
+    <ClCompile Include="src\timing\cl_t_c1.cc" />
+    <ClCompile Include="src\timing\cl_t_c2.cc" />
+    <ClCompile Include="src\timing\cl_t_current.cc" />
+    <ClCompile Include="src\timing\cl_t_current2.cc" />
+    <ClCompile Include="src\timing\cl_t_d.cc" />
+    <ClCompile Include="src\timing\cl_t_dec.cc" />
+    <ClCompile Include="src\timing\cl_t_inc.cc" />
+    <ClCompile Include="src\timing\cl_t_minus.cc" />
+    <ClCompile Include="src\timing\cl_t_report.cc" />
+    <ClCompile Include="src\timing\cl_t_td_minus.cc" />
+    <ClCompile Include="src\timing\cl_t_td_plus.cc" />
+    <ClCompile Include="src\vector\cl_GV_I.cc" />
+    <ClCompile Include="src\vector\cl_GV_I_copy.cc" />
+    <ClCompile Include="src\vector\cl_GV_I_debug.cc" />
+    <ClCompile Include="src\vector\cl_GV_number.cc" />
+    <ClCompile Include="src\vector\cl_GV_number_copy.cc" />
+    <ClCompile Include="src\vector\cl_GV_number_debug.cc" />
+    <ClCompile Include="src\vector\cl_SV_copy.cc" />
+    <ClCompile Include="src\vector\cl_SV_number.cc" />
+    <ClCompile Include="src\vector\cl_SV_number_debug.cc" />
+    <ClCompile Include="src\vector\cl_SV_ringelt.cc" />
+    <ClCompile Include="src\vector\cl_SV_ringelt_debug.cc" />
+    <ClCompile Include="src\vector\output\cl_GV_number_aprint.cc" />
+    <ClCompile Include="src\vector\output\cl_SV_aprint.cc" />
+    <ClCompile Include="src\vector\output\cl_SV_number_aprint.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
