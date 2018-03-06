@@ -80,7 +80,7 @@ GINAC_BIND_UNARCHIVER(nielsen_polylog);
   {
     if ( _print_format & print_format::no_nielsen_polylog ) return multiple_polylog::print(c,level);
 
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // empty sum equals 1
     if (depth == 0) 
@@ -108,7 +108,7 @@ GINAC_BIND_UNARCHIVER(nielsen_polylog);
 	return;
       }
 
-    int i;
+    //int i;
     ex temp_depth = depth;
 
     if (is_a<print_latex>(c))

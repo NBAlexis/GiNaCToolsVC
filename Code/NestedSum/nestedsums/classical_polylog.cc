@@ -79,7 +79,7 @@ GINAC_BIND_UNARCHIVER(classical_polylog);
   {
     if ( _print_format & print_format::no_classical_polylog ) return multiple_polylog::print(c,level);
 
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // empty sum equals 1
     if (depth == 0) 
@@ -107,7 +107,7 @@ GINAC_BIND_UNARCHIVER(classical_polylog);
 	return;
       }
 
-    int i;
+    //int i;
 
     if (is_a<print_latex>(c)) 
       {

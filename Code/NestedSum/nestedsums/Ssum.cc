@@ -85,6 +85,10 @@ GINAC_BIND_UNARCHIVER(Ssum);
   unsigned Ssum::calchash(void) const
     {
       unsigned v = make_hash_seed(typeid(*this));
+      //const void* mangled_name_ptr = (const void*)typeid(*this).name();
+      //p_int pin1 = (p_int)mangled_name_ptr;
+      //p_int pin2 = reinterpret_cast<p_int>(mangled_name_ptr);
+      //std::cout << "in ssum calchash, typeid=" << typeid(*this).name() << "pin1=" << pin1 << "pin2=" << pin2 << std::endl;
 
       v = rotate_left_31(v);
       v ^= n.gethash();
@@ -107,7 +111,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
 
   void Ssum::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
 
@@ -176,7 +180,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
     if ( n.is_equal(Infinity) ) return create_Ssum_to_Infinity(letter_list);
 
     // check if Ssum simplifies to harmonic sum
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( depth==0 ) return create_harmonic_sum(n,letter_list);
     int i=0;
@@ -484,7 +488,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::remove_first_letter(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth==0)
       throw(std::logic_error("empty sum"));
@@ -508,7 +512,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::remove_first_letter(const ex & nc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth==0)
       throw(std::logic_error("empty sum"));
@@ -531,7 +535,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */ 
   ex Ssum::prepend_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (!is_a<letter>(lc))
       throw(std::invalid_argument("argument must be a letter"));
@@ -556,7 +560,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */ 
   ex Ssum::prepend_letter(const ex & nc, const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (!is_a<letter>(lc))
       throw(std::invalid_argument("argument must be a letter"));
@@ -580,7 +584,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */ 
   ex Ssum::append_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (!is_a<letter>(lc))
       throw(std::invalid_argument("argument must be a letter"));
@@ -604,7 +608,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */ 
   ex Ssum::append_letter_list(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();
@@ -783,7 +787,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::get_head(int k) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( k > depth )
       throw(std::invalid_argument("argument cannot be larger then the depth"));
@@ -807,7 +811,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::get_tail(int k) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( k > depth )
       throw(std::invalid_argument("argument cannot be larger then the depth"));
@@ -833,7 +837,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::multiply_letter_with_last_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth == 0) return ex_to<letter>(lc).set_index(n) * (*this);
 
@@ -860,7 +864,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::multiply_letter_with_first_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth == 0) return ex_to<letter>(lc).set_index(n) * (*this);
 
@@ -902,7 +906,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   int Ssum::flag_remove_negative_degrees(void) const
   {
-    unsigned depth = get_depth();
+      unsigned depth = static_cast<unsigned>(get_depth());
 
     int flag = 0;
 
@@ -946,7 +950,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::remove_negative_degrees(void) const
   {
-    unsigned depth = get_depth();
+      unsigned depth = static_cast<int>(get_depth());
 
     int i;
     for (i=depth-1;i>=0;i--)
@@ -1074,7 +1078,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
 
   ex Ssum::expand_members(int level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();
@@ -1094,9 +1098,9 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::eval_explicit() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
-    int i,flag;
+    int i; // , flag;
 
     // n <= 0 : return 0
     if ( n.info(info_flags::negint) || n.is_zero() ) return 0;
@@ -1129,7 +1133,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
    */
   ex Ssum::get_weight(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     ex res = 0;
     for (int k=0;k<depth;k++)
@@ -1249,7 +1253,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1285,7 +1289,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1321,7 +1325,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1369,7 +1373,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1405,7 +1409,7 @@ GINAC_BIND_UNARCHIVER(Ssum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 

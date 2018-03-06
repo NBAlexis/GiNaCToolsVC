@@ -1,3 +1,4 @@
+#pragma warning (disable : 4101)
 /** @file parser_bugs.cpp
  *
  *  Check for some silly bugs in the parser. */

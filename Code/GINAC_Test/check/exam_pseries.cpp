@@ -1,3 +1,6 @@
+#pragma warning (disable : 4267)
+#pragma warning (disable : 4244)
+#pragma warning (disable : 4101)
 /** @File exam_pseries.cpp
  *
  *  Series expansion test (Laurent and Taylor series). */

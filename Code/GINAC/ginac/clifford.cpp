@@ -1167,6 +1167,7 @@ ex remove_dirac_ONE(const ex & e, unsigned char rl, unsigned options)
 			try {
 				return e1.map(fcn);
 			} catch (std::exception &p) {
+                (void)p;
 				need_reevaluation = true;
 			}
 	} else if (is_a<power>(e1)) {
@@ -1176,6 +1177,7 @@ ex remove_dirac_ONE(const ex & e, unsigned char rl, unsigned options)
 			try {
 				return pow(remove_dirac_ONE(e1.op(0), rl, options | 1), e1.op(1));
 			} catch (std::exception &p) {
+                (void)p;
 				need_reevaluation = true;
 			}
 	} 
@@ -1356,6 +1358,7 @@ lst clifford_to_lst(const ex & e, const ex & c, bool algebraic)
 			for (unsigned int i = 0; i < D; i++)
 				V.append(get_clifford_comp(e1, c.subs(c.op(1) == i, subs_options::no_pattern)));
 		} catch  (std::exception &p) {
+            (void)p;
 			/* Try to expand dummy summations to simplify the expression*/
 			e1 = canonicalize_clifford(expand_dummy_sum(e, true));
 			V.remove_all();

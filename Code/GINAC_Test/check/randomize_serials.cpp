@@ -1,3 +1,6 @@
+#pragma warning (disable : 4267)
+#pragma warning (disable : 4244)
+#pragma warning (disable : 4101)
 /** @file randomize_serials.cpp
  *
  *  Utility function used by the benchmarks.

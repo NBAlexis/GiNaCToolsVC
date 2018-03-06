@@ -18,104 +18,10 @@
 
 #define NESTEDSUMS_API __declspec(dllexport)
 
+//We need dll export serial
+//We also need to use the macros
 #undef GINAC_API
 #define GINAC_API NESTEDSUMS_API
-
-#undef GINAC_DECLARE_REGISTERED_CLASS
-#define GINAC_DECLARE_REGISTERED_CLASS(classname, supername) \
-	GINAC_DECLARE_REGISTERED_CLASS_COMMON(classname) \
-	template<class B, typename... Args> friend B & dynallocate(Args &&... args); \
-	typedef supername inherited; \
-	classname(); \
-	GiNaC::basic * duplicate() const override { \
-		classname * bp = new classname(*this); \
-		bp->setflag(GiNaC::status_flags::dynallocated);	\
-		return bp; \
-	} \
-	\
-	void accept(GiNaC::visitor & v) const override \
-	{ \
-		if (visitor *p = dynamic_cast<visitor *>(&v)) \
-			p->visit(*this); \
-		else \
-			inherited::accept(v); \
-	} \
-	const GiNaC::registered_class_info &get_class_info() const override { return classname::get_class_info_static(); } \
-	GiNaC::registered_class_info &get_class_info() override { return classname::get_class_info_static(); } \
-	const char *class_name() const override { return classname::get_class_info_static().options.get_name(); } \
-protected: \
-	int compare_same_type(const GiNaC::basic & other) const override; \
-private:
-
-
-//#undef GINAC_DECLARE_UNARCHIVER
-//#undef DECLARE_FUNCTION_2P
-//#undef DECLARE_FUNCTION_3P
-//#undef GINAC_DECLARE_REGISTERED_CLASS
-//#undef GINAC_DECLARE_REGISTERED_CLASS_COMMON
-//
-//#define GINAC_DECLARE_UNARCHIVER(classname)			\
-//class NESTEDSUMS_API classname ## _unarchiver					\
-//{								\
-//	static int usecount;					\
-//public:								\
-//	static GiNaC::basic* create();				\
-//	classname ## _unarchiver();				\
-//	~ classname ## _unarchiver();				\
-//};								\
-//static classname ## _unarchiver classname ## _unarchiver_instance
-//
-//#define DECLARE_FUNCTION_2P(NAME) \
-//class NESTEDSUMS_API NAME##_SERIAL { public: static unsigned serial; }; \
-//const unsigned NAME##_NPARAMS = 2; \
-//template< typename T1, typename T2 > const GiNaC::function NAME( const T1 & p1, const T2 & p2 ) { \
-//	return GiNaC::function(NAME##_SERIAL::serial, GiNaC::ex(p1), GiNaC::ex(p2) ); \
-//}
-//
-//#define DECLARE_FUNCTION_3P(NAME) \
-//class NESTEDSUMS_API NAME##_SERIAL { public: static unsigned serial; }; \
-//const unsigned NAME##_NPARAMS = 3; \
-//template< typename T1, typename T2, typename T3 > const GiNaC::function NAME( const T1 & p1, const T2 & p2, const T3 & p3 ) { \
-//	return GiNaC::function(NAME##_SERIAL::serial, GiNaC::ex(p1), GiNaC::ex(p2), GiNaC::ex(p3) ); \
-//}
-//
-//#define GINAC_DECLARE_REGISTERED_CLASS_COMMON(classname)	\
-//private: \
-//	static GiNaC::registered_class_info reg_info; \
-//public: \
-//	static GiNaC::registered_class_info &get_class_info_static() { return reg_info; } \
-//	class NESTEDSUMS_API visitor { \
-//	public: \
-//		virtual void visit(const classname &) = 0; \
-//		virtual ~visitor() {}; \
-//	};
-//
-////Must have classnamereturn!!!
-//
-//#define GINAC_DECLARE_REGISTERED_CLASS(classname, supername) \
-//	GINAC_DECLARE_REGISTERED_CLASS_COMMON(classname) \
-//	template<class B, typename... Args> friend B & dynallocate(Args &&... args); \
-//	typedef supername inherited; \
-//	classname(); \
-//	GiNaC::basic * duplicate() const override { \
-//		classname * bp = new classname(*this); \
-//		bp->setflag(GiNaC::status_flags::dynallocated);	\
-//		return bp; \
-//	} \
-//	\
-//	void accept(GiNaC::visitor & v) const override \
-//	{ \
-//		if (visitor *p = dynamic_cast<visitor *>(&v)) \
-//			p->visit(*this); \
-//		else \
-//			inherited::accept(v); \
-//	} \
-//	const GiNaC::registered_class_info &get_class_info() const override { return classname::get_class_info_static(); } \
-//	GiNaC::registered_class_info &get_class_info() override { return classname::get_class_info_static(); } \
-//	const char *class_name() const override { return classname::get_class_info_static().options.get_name(); } \
-//protected: \
-//	int compare_same_type(const GiNaC::basic & other) const override; \
-//private:
 
 
 #include "config.h"

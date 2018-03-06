@@ -177,7 +177,7 @@ inline GiNaC::ex create_basic_letter(const GiNaC::ex & l, const GiNaC::ex & d, c
     return (new basic_letter(l,d,o,i))->setflag(GiNaC::status_flags::dynallocated);
   }
 
- GiNaC::ex concat(const basic_letter & l1, const basic_letter & l2);
+NESTEDSUMS_API GiNaC::ex concat(const basic_letter & l1, const basic_letter & l2);
 
 } // namespace nestedsums
 

@@ -92,7 +92,7 @@ namespace nestedsums {
     public :
       GiNaC::ex get_index(void) const;
       GiNaC::ex get_letter_list(void) const;
-      unsigned get_depth(void) const;
+      size_t get_depth(void) const;
 
     protected:
 
@@ -137,7 +137,7 @@ inline GiNaC::ex Bsum::get_letter_list(void) const
    * Returns the depth.
    *
    */
-inline unsigned Bsum::get_depth(void) const
+inline size_t Bsum::get_depth(void) const
   {
     return letter_list.nops();
   }

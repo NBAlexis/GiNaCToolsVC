@@ -279,9 +279,8 @@ public:
 			compare_statistics.gethash_cached++;
 #endif
 			return hashvalue;
-		} else {
-			return calchash();
-		}
+		} 
+        return calchash();
 	}
 
 	/** Set some status_flags. */

@@ -128,7 +128,7 @@ namespace nestedsums {
     public :
       GiNaC::ex get_index(void) const;
       GiNaC::ex get_letter_list(void) const;
-      unsigned get_depth(void) const;
+      size_t get_depth(void) const;
 
       // friends :
       NESTEDSUMS_API friend GiNaC::ex convert_Csum_to_Ssum(const GiNaC::ex & C);
@@ -171,7 +171,7 @@ inline GiNaC::ex Csum::get_letter_list(void) const
    * Returns the depth.
    *
    */
-inline unsigned Csum::get_depth(void) const
+inline size_t Csum::get_depth(void) const
   {
     return letter_list.nops();
   }

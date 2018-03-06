@@ -1,3 +1,6 @@
+#pragma warning (disable : 4267)
+#pragma warning (disable : 4244)
+#pragma warning (disable : 4101)
 /** @file exam_paranoia.cpp
  *
  *  This set of tests checks for some of GiNaC's oopses which showed up during

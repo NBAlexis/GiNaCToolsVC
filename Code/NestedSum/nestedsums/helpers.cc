@@ -47,7 +47,7 @@ using namespace GiNaC;
     // addition
     if ( is_a<add>(expr))
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -60,7 +60,7 @@ using namespace GiNaC;
     // multiplication
     if ( is_a<mul>(expr))
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -74,7 +74,7 @@ using namespace GiNaC;
     // ncmultiplication
     if ( is_a<ncmul>(expr))
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -122,7 +122,7 @@ using namespace GiNaC;
     // addition
     if ( is_a<add>(expr))
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -136,7 +136,7 @@ using namespace GiNaC;
     if ( is_a<mul>(expr) || is_a<ncmul>(expr))
       {
 	exvector factors;
-	int up_limit = expr.nops();
+    int up_limit = static_cast<int>(expr.nops());
 	factors.reserve(up_limit);
 	int flag = 0;
 
@@ -157,7 +157,7 @@ using namespace GiNaC;
 		ex pre = (new ncmul(factors))->setflag(status_flags::dynallocated);
 		ex post = (new ncmul(postfactor))->setflag(status_flags::dynallocated);
 
-		int up_limit_pos = expr.op(pos).nops();
+		int up_limit_pos = static_cast<int>(expr.op(pos).nops());
 		exvector res_exvector;
 		res_exvector.reserve(up_limit_pos);
 
@@ -518,12 +518,13 @@ using namespace GiNaC;
       }
 
     // list with unequal number of entries
-    l_max = l1.nops();
+    l_max = static_cast<int>(l1.nops());
 
     if ( l1.nops() < l2.nops() )
       {
-	l_max = l2.nops();
-	for ( i=l1.nops();i<l2.nops();i++)
+	int l1_max = static_cast<int>(l1.nops());
+    l_max = static_cast<int>(l2.nops());
+	for ( i= l1_max;i<l_max;i++)
 	  {
 	    l_a1.append(1);
 	    l_b1.append(0);
@@ -532,7 +533,10 @@ using namespace GiNaC;
 
     if ( l2.nops() < l1.nops() )
       {
-	for ( i=l2.nops();i<l1.nops();i++)
+        
+        int l1_max = static_cast<int>(l1.nops());
+        int l2_max = static_cast<int>(l2.nops());
+	for ( i= l2_max;i<l1_max;i++)
 	  {
 	    l_a2.append(1);
 	    l_b2.append(0);
@@ -627,7 +631,7 @@ using namespace GiNaC;
 
       lst ll = ex_to<lst>(l);
 
-      int up_limit = ll.nops();
+      int up_limit = static_cast<int>(ll.nops());
 
       exvector res;
       res.reserve(up_limit);
@@ -659,7 +663,7 @@ using namespace GiNaC;
 
       lst ll = ex_to<lst>(l);
 
-      int up_limit = ll.nops();
+      int up_limit = static_cast<int>(ll.nops());
 
       exvector res;
       res.reserve(up_limit);
@@ -687,7 +691,7 @@ using namespace GiNaC;
       lst ll = ex_to<lst>(l);
 
       int j;
-      int up_limit = ll.nops();
+      int up_limit = static_cast<int>(ll.nops());
 
       exvector res;
       res.reserve(up_limit+v.size());
@@ -1020,7 +1024,7 @@ using namespace GiNaC;
     // addition
     if ( is_a<add>(expr))
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1181,7 +1185,7 @@ using namespace GiNaC;
 
 	    if ( is_a<mul>(term) || is_a<ncmul>(term) )
 	      {
-		int up_limit = term.nops();
+		int up_limit = static_cast<int>(term.nops());
 
 		exvector pre_exvector;
 		pre_exvector.reserve(up_limit);

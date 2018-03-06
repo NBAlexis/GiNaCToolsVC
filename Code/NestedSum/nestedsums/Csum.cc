@@ -104,7 +104,7 @@ GINAC_BIND_UNARCHIVER(Csum);
 
   void Csum::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
 
@@ -269,7 +269,7 @@ GINAC_BIND_UNARCHIVER(Csum);
    */
   ex Csum::convert_to_Ssum_exvector(const exvector & Z1) const
   {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 #ifdef _DEBUG
     if ( _debug_level & 16 ) 
       {
@@ -412,7 +412,7 @@ GINAC_BIND_UNARCHIVER(Csum);
    */
   ex Csum::decrease_letter_degree(int m) const
     {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 
       if (depth==0)
 	throw(std::logic_error("empty sum"));
@@ -449,7 +449,7 @@ GINAC_BIND_UNARCHIVER(Csum);
    */
   ex Csum::move_x0_into_x1(void) const
     {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 
       if (depth<2)
 	throw(std::logic_error("sum must have at least depth two"));
@@ -486,7 +486,7 @@ GINAC_BIND_UNARCHIVER(Csum);
    */
   ex Csum::move_x1_into_x2(void) const
     {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 
       if (depth<3)
 	throw(std::logic_error("sum must have at least depth three"));
@@ -516,7 +516,7 @@ GINAC_BIND_UNARCHIVER(Csum);
    */
   ex Csum::remove_x0(void) const
     {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 
       if (depth==0)
 	throw(std::logic_error("empty sum"));
@@ -540,7 +540,7 @@ GINAC_BIND_UNARCHIVER(Csum);
    */
   ex Csum::remove_x0_and_x1(void) const
     {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 
       if (depth<2)
 	throw(std::logic_error("empty sum or sum of depth one"));
@@ -570,7 +570,7 @@ GINAC_BIND_UNARCHIVER(Csum);
 
   ex Csum::expand_members(int level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();

@@ -103,7 +103,7 @@ GINAC_BIND_UNARCHIVER(Bsum);
 
   void Bsum::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
 
@@ -224,7 +224,7 @@ GINAC_BIND_UNARCHIVER(Bsum);
    */
   ex Bsum::convert_to_Ssum_exvector(const exvector & Z1) const
   {
-      unsigned depth = get_depth();
+      size_t depth = get_depth();
 #ifdef _DEBUG
     if ( _debug_level & 32 ) 
       {
@@ -279,7 +279,7 @@ GINAC_BIND_UNARCHIVER(Bsum);
 
   ex Bsum::expand_members(int level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();

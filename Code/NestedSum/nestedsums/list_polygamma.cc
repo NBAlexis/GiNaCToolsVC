@@ -158,7 +158,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
 
   void list_of_tgamma::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth == 0) 
       {
@@ -326,7 +326,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::eval_explicit() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( index.info(info_flags::integer) )
       {
@@ -412,7 +412,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
     // but : set_expansion should be only called when a1 is non-negative, therefore no poles
     //       and also multiply_via_triangle can be used without modifications
 
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
     ex res = 1;
@@ -475,7 +475,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::set_index(const ex & new_index) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
     lst *newlist = new lst();
@@ -495,7 +495,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::set_expansion_parameter(const ex & new_eps) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
     lst *newlist = new lst();
@@ -515,7 +515,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::set_order(int new_order) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
     lst *newlist = new lst();
@@ -542,7 +542,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::shift_plus_one(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
     lst *newlist = new lst();
@@ -569,7 +569,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::shift_minus_one(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
     lst *newlist = new lst();
@@ -609,7 +609,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::shift_index(const ex & new_index) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     ex offset = index - new_index;
 
@@ -631,7 +631,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   ex list_of_tgamma::concat(const ex & l) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();
@@ -660,7 +660,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   int list_of_tgamma::pole_alert(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
 
@@ -681,7 +681,7 @@ GINAC_BIND_UNARCHIVER(list_of_tgamma);
    */
   int list_of_tgamma::expansion_alert(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int j;
 

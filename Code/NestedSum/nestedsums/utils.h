@@ -93,8 +93,12 @@ static inline unsigned make_hash_seed(const std::type_info& tinfo)
 {
 	// this pointer is the same for all objects of the same type.
 	// Hence we can use that pointer 
-	const void* mangled_name_ptr = (const void*)tinfo.name();
-	unsigned v = golden_ratio_hash((p_int)mangled_name_ptr);
+
+    //FOR VC, mangled_name_ptr is different even when tinfo.name() is same!!!!
+    unsigned v = cln::hashcode(tinfo.name());
+	//const void* mangled_name_ptr = (const void*)tinfo.name();
+	//unsigned v = golden_ratio_hash(static_cast<unsigned>((p_int)mangled_name_ptr));
+
 	return v;
 }
 

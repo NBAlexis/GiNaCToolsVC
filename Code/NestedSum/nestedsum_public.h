@@ -32,35 +32,6 @@
 #	error "We shall in WIN"
 #endif
 
-//#include "config.h"
-#undef GINAC_DECLARE_REGISTERED_CLASS
-#define GINAC_DECLARE_REGISTERED_CLASS(classname, supername) \
-	GINAC_DECLARE_REGISTERED_CLASS_COMMON(classname) \
-	template<class B, typename... Args> friend B & dynallocate(Args &&... args); \
-	typedef supername inherited; \
-	classname(); \
-	GiNaC::basic * duplicate() const override { \
-		classname * bp = new classname(*this); \
-		bp->setflag(GiNaC::status_flags::dynallocated);	\
-		return bp; \
-	} \
-	\
-	void accept(GiNaC::visitor & v) const override \
-	{ \
-		if (visitor *p = dynamic_cast<visitor *>(&v)) \
-			p->visit(*this); \
-		else \
-			inherited::accept(v); \
-	} \
-	const GiNaC::registered_class_info &get_class_info() const override { return classname::get_class_info_static(); } \
-	GiNaC::registered_class_info &get_class_info() override { return classname::get_class_info_static(); } \
-	const char *class_name() const override { return classname::get_class_info_static().options.get_name(); } \
-protected: \
-	int compare_same_type(const GiNaC::basic & other) const override; \
-private:
-
-
-
 #include "nestedsums/version.h"
 #include "nestedsums/flags.h"
 #include "nestedsums/symbol_factory.h"

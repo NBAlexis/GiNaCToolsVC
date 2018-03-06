@@ -79,7 +79,7 @@ sr_gcd_priv(T& g, T a, T b,
 		}
 		a = b;
 
-		ring_t ri_psi_delta = delta > 0 ?  ri*expt_pos(psi, delta) : ri;
+		ring_t ri_psi_delta = static_cast<ring_t>( delta > 0 ?  ri*expt_pos(psi, delta) : ri );
 
 		bool divisible_p = divide(b, r, ri_psi_delta);
 		bug_on(!divisible_p, "division failed: r = " << r <<
@@ -101,8 +101,8 @@ sr_gcd_priv(T& g, T a, T b,
 		if (delta == 1)
 			psi = ri;
 		else if (delta) {
-			const ring_t ri_delta = expt_pos(ri, delta);
-			const ring_t psi_delta_1 = expt_pos(psi, delta - 1);
+			const ring_t ri_delta = static_cast<ring_t>(expt_pos(ri, delta));
+			const ring_t psi_delta_1 = static_cast<ring_t>(expt_pos(psi, delta - 1));
 			bool sanity_check = div(psi, ri_delta, psi_delta_1);
 			bug_on(!sanity_check, "division failed: ri = " << ri
 				<< ", psi = " << psi << ", delta = " << delta);

@@ -110,7 +110,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
 
   void Zsum::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
 
@@ -179,7 +179,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
     if ( n.is_equal(Infinity) ) return create_multiple_polylog(letter_list);
 
     // check if Zsum simplifies to Euler-Zagier sum
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( depth==0 ) return create_Euler_Zagier_sum(n,letter_list);
     int i=0;
@@ -414,7 +414,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::remove_first_letter(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth==0)
       throw(std::logic_error("empty sum"));
@@ -438,7 +438,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::remove_first_letter(const ex & nc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth==0)
       throw(std::logic_error("empty sum"));
@@ -461,7 +461,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */ 
   ex Zsum::prepend_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (!is_a<letter>(lc))
       throw(std::invalid_argument("argument must be a letter"));
@@ -486,7 +486,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */ 
   ex Zsum::prepend_letter(const ex & nc, const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (!is_a<letter>(lc))
       throw(std::invalid_argument("argument must be a letter"));
@@ -510,7 +510,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */ 
   ex Zsum::append_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (!is_a<letter>(lc))
       throw(std::invalid_argument("argument must be a letter"));
@@ -534,7 +534,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */ 
   ex Zsum::append_letter_list(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();
@@ -723,7 +723,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::get_head(int k) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( k > depth )
       throw(std::invalid_argument("argument cannot be larger then the depth"));
@@ -747,7 +747,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::get_tail(int k) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( k > depth )
       throw(std::invalid_argument("argument cannot be larger then the depth"));
@@ -772,7 +772,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::antipode(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( depth == 0 ) return *this;
 
@@ -796,7 +796,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::multiply_letter_with_last_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth == 0) return ex_to<letter>(lc).set_index(n) * (*this);
 
@@ -823,7 +823,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::multiply_letter_with_first_letter(const ex & lc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth == 0) return ex_to<letter>(lc).set_index(n) * (*this);
 
@@ -858,7 +858,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
 
   ex Zsum::expand_members(int level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
     lst* l_new = new lst();
@@ -878,7 +878,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::eval_explicit() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     int i;
 
@@ -913,7 +913,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
    */
   ex Zsum::get_weight(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     ex res = 0;
     for (int k=0;k<depth;k++)
@@ -1031,7 +1031,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1067,7 +1067,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1105,7 +1105,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 
@@ -1153,7 +1153,7 @@ GINAC_BIND_UNARCHIVER(Zsum);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+        int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 

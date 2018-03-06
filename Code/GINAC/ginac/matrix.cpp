@@ -162,8 +162,8 @@ GINAC_BIND_UNARCHIVER(matrix);
 void matrix::archive(archive_node &n) const
 {
 	inherited::archive(n);
-	n.add_unsigned("row", row);
-	n.add_unsigned("col", col);
+	n.add_unsigned("row", static_cast<unsigned>(row));
+	n.add_unsigned("col", static_cast<unsigned>(col));
 	for (auto & i : m) {
 		n.add_ex("m", i);
 	}
@@ -1114,7 +1114,7 @@ unsigned matrix::rank() const
     size_t r = row*col;  // index of last non-zero element
 	while (r--) {
 		if (!to_eliminate.m[r].is_zero())
-			return 1+r/col;
+			return static_cast<unsigned>(1+r/col);
 	}
 	return 0;
 }

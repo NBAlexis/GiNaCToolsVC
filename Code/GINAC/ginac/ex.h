@@ -962,6 +962,7 @@ template <class T>
 inline const T &ex_to(const ex &e)
 {
 	GINAC_ASSERT(is_a<T>(e));
+    //Should NOT DYNAMIC_CAST here!! Or typeid will not work!
 	return static_cast<const T &>(*e.bp);
 }
 

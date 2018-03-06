@@ -260,7 +260,7 @@ ex idx::map(map_function & f) const
 	if (are_ex_trivially_equal(value, mapped_value))
 		return *this;
 	else {
-		idx *copy = duplicate();
+		idx *copy = dynamic_cast<idx *>(duplicate());
 		copy->clearflag(status_flags::hash_calculated);
 		copy->value = mapped_value;
 		return *copy;
@@ -382,7 +382,7 @@ ex idx::subs(const exmap & m, unsigned options) const
 			return it->second;
 
 		// Otherwise substitute value
-		idx *i_copy = duplicate();
+		idx *i_copy = dynamic_cast<idx *>(duplicate());
 		i_copy->value = it->second;
 		i_copy->clearflag(status_flags::hash_calculated);
 		return *i_copy;
@@ -393,7 +393,7 @@ ex idx::subs(const exmap & m, unsigned options) const
 	if (are_ex_trivially_equal(value, subsed_value))
 		return *this;
 
-	idx *i_copy = duplicate();
+	idx *i_copy = dynamic_cast<idx *>(duplicate());
 	i_copy->value = subsed_value;
 	i_copy->clearflag(status_flags::hash_calculated);
 	return *i_copy;
@@ -460,7 +460,7 @@ bool spinidx::is_dummy_pair_same_type(const basic & other) const
 
 ex idx::replace_dim(const ex & new_dim) const
 {
-	idx *i_copy = duplicate();
+	idx *i_copy = dynamic_cast<idx *>(duplicate());
 	i_copy->dim = new_dim;
 	i_copy->clearflag(status_flags::hash_calculated);
 	return *i_copy;
@@ -473,7 +473,7 @@ ex idx::minimal_dim(const idx & other) const
 
 ex varidx::toggle_variance() const
 {
-	varidx *i_copy = duplicate();
+	varidx *i_copy = dynamic_cast<varidx *>(duplicate());
 	i_copy->covariant = !i_copy->covariant;
 	i_copy->clearflag(status_flags::hash_calculated);
 	return *i_copy;
@@ -481,7 +481,7 @@ ex varidx::toggle_variance() const
 
 ex spinidx::toggle_dot() const
 {
-	spinidx *i_copy = duplicate();
+	spinidx *i_copy = dynamic_cast<spinidx *>(duplicate());
 	i_copy->dotted = !i_copy->dotted;
 	i_copy->clearflag(status_flags::hash_calculated);
 	return *i_copy;
@@ -489,7 +489,7 @@ ex spinidx::toggle_dot() const
 
 ex spinidx::toggle_variance_dot() const
 {
-	spinidx *i_copy = duplicate();
+	spinidx *i_copy = dynamic_cast<spinidx *>(duplicate());
 	i_copy->covariant = !i_copy->covariant;
 	i_copy->dotted = !i_copy->dotted;
 	i_copy->clearflag(status_flags::hash_calculated);

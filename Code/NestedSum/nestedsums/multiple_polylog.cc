@@ -75,7 +75,7 @@ GINAC_BIND_UNARCHIVER(multiple_polylog);
   // functions overriding virtual functions from bases classes
   void multiple_polylog::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // empty sum equals 1
     if (depth == 0) 
@@ -210,7 +210,7 @@ GINAC_BIND_UNARCHIVER(multiple_polylog);
    */
   ex multiple_polylog::eval() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // check if multiple polylog simplifies to multiple zeta value
     if ( depth==0 ) return create_multiple_zeta_value(letter_list);
@@ -251,7 +251,7 @@ GINAC_BIND_UNARCHIVER(multiple_polylog);
    */
   ex multiple_polylog::eval_approx() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if ( depth==0 ) return 1;
 
@@ -375,7 +375,7 @@ GINAC_BIND_UNARCHIVER(multiple_polylog);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 

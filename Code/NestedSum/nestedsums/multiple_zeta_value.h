@@ -1,4 +1,4 @@
-
+#pragma warning (disable : 4250)
 /** @file multiple_zeta_value.h
  *
  * Interface to multiple zeta values
@@ -68,7 +68,6 @@ namespace nestedsums {
 
       void print(const GiNaC::print_context & c, unsigned level = 0) const override;
       GiNaC::ex eval() const override;
-
     };
 
 GINAC_DECLARE_UNARCHIVER(multiple_zeta_value);

@@ -83,7 +83,7 @@ GINAC_BIND_UNARCHIVER(Euler_Zagier_sum);
 
   void Euler_Zagier_sum::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // empty sum equals 1
     if (depth == 0) 
@@ -392,7 +392,7 @@ GINAC_BIND_UNARCHIVER(Euler_Zagier_sum);
    */
   ex Euler_Zagier_sum::remove_first_letter(void) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth==0)
       throw(std::logic_error("empty sum"));
@@ -416,7 +416,7 @@ GINAC_BIND_UNARCHIVER(Euler_Zagier_sum);
    */
   ex Euler_Zagier_sum::remove_first_letter(const ex & nc) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     if (depth==0)
       throw(std::logic_error("empty sum"));

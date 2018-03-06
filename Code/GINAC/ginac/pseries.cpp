@@ -365,7 +365,7 @@ ex pseries::coeff(const ex &s, int n) const
 		
 		// Binary search in sequence for given power
 		numeric looking_for = numeric(n);
-		int lo = 0, hi = seq.size() - 1;
+		int lo = 0, hi = static_cast<int>(seq.size()) - 1; //if seq.empty, already return, so size() > 1, No warry about the sign here
 		while (lo <= hi) {
 			int mid = (lo + hi) / 2;
 			GINAC_ASSERT(is_exactly_a<numeric>(seq[mid].coeff));

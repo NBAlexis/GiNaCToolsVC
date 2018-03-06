@@ -80,7 +80,7 @@ GINAC_BIND_UNARCHIVER(multiple_zeta_value);
 
   void multiple_zeta_value::print(const print_context & c, unsigned level) const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // empty sum equals 1
     if (depth == 0) 

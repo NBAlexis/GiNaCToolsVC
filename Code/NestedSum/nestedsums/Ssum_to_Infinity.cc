@@ -83,7 +83,7 @@ GINAC_BIND_UNARCHIVER(Ssum_to_Infinity);
    */
   ex Ssum_to_Infinity::eval() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // check if simplifies to harmonic sum to Infinity
     if ( depth==0 ) return create_harmonic_sum_to_Infinity(letter_list);

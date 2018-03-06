@@ -330,7 +330,7 @@ GINAC_BIND_UNARCHIVER(ratio_of_tgamma);
 		// need at least order=1 for a non-zero result
 		if ( order < 1 ) return 0;
 
-		int i,j;
+		int j;
 		// j=0 term separate to avoid problems with 0^0
 		// have to create a unit in the algebra
 		ex numerator = create_Euler_Zagier_sum(index-1,_empty_list);
@@ -807,7 +807,7 @@ GINAC_BIND_UNARCHIVER(ratio_of_tgamma);
     // addition, multiplication or ncmul
     if ( is_a<add>(expr) || is_a<mul>(expr) || is_a<ncmul>(expr) )
       {
-	int up_limit = expr.nops();
+	int up_limit = static_cast<int>(expr.nops());
 	exvector res_exvector;
 	res_exvector.reserve(up_limit);
 

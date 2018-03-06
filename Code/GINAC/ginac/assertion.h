@@ -23,6 +23,9 @@
 #ifndef GINAC_ASSERTION_H
 #define GINAC_ASSERTION_H
 
+#ifdef DEBUG
+#define DO_GINAC_ASSERT 1
+#endif
 #if !defined(GINAC_ASSERT)
 #if defined(DO_GINAC_ASSERT)
 #include <cassert>

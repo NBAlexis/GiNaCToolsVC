@@ -133,7 +133,7 @@ private: \
 	static GiNaC::registered_class_info reg_info; \
 public: \
 	static GiNaC::registered_class_info &get_class_info_static() { return reg_info; } \
-	class GINAC_API visitor { \
+	class visitor { \
 	public: \
 		virtual void visit(const classname &) = 0; \
 		virtual ~visitor() {}; \
@@ -157,7 +157,7 @@ private:
 	template<class B, typename... Args> friend B & dynallocate(Args &&... args); \
 	typedef supername inherited; \
 	classname(); \
-	classname * duplicate() const override { \
+	GiNaC::basic * duplicate() const override { \
 		classname * bp = new classname(*this); \
 		bp->setflag(GiNaC::status_flags::dynallocated);	\
 		return bp; \

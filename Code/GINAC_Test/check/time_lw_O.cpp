@@ -1,3 +1,5 @@
+#pragma warning (disable : 4267)
+#pragma warning (disable : 4244)
 /** @file time_lw_O.cpp
  *
  *  Test O1 from the paper "Comparison of Polynomial-Oriented CAS" by Robert H.

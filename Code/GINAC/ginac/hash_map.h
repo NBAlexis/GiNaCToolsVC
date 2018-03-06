@@ -497,7 +497,7 @@ template <typename T, template <class> class A>
 void exhashmap<T, A>::grow()
 {
 	// Allocate new empty hash table
-	size_type new_num_buckets = internal::next_prime(num_buckets + 1);
+	size_type new_num_buckets = internal::next_prime(static_cast<unsigned long>(num_buckets + 1));
 	Table new_hashtab;
 	new_hashtab.resize(new_num_buckets);
 	for (table_iterator it = new_hashtab.begin(); it != new_hashtab.end(); ++it)

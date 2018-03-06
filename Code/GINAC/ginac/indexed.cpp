@@ -552,7 +552,7 @@ template<class T> static ex rename_dummy_indices(const ex & e, exvector & global
 		// More local indices than we encountered before, add the new ones
 		// to the global set
 		size_t old_global_size = global_size;
-		int remaining = local_size - global_size;
+		int remaining = static_cast<int>(local_size - global_size); //global_size < local_size
 		auto it = local_dummy_indices.begin(), itend = local_dummy_indices.end();
 		while (it != itend && remaining > 0) {
 			if (is_exactly_a<T>(*it) &&
@@ -644,12 +644,12 @@ bool reposition_dummy_indices(ex & e, exvector & variant_dummy_indices, exvector
 	// we try all possibilities of raising/lowering and keep the least one in
 	// the sense of ex_is_less.
 	ex optimal_e = e;
-	size_t numpossibs = 1 << local_var_dummies.size();
+	size_t numpossibs = 1ULL << local_var_dummies.size();
 	for (size_t i=0; i<numpossibs; ++i) {
 		ex try_e = e;
 		for (size_t j=0; j<local_var_dummies.size(); ++j) {
 			exmap m;
-			if (1<<j & i) {
+			if (1ULL<<j & i) {
 				ex curr_idx = local_var_dummies[j];
 				ex curr_toggle = ex_to<varidx>(curr_idx).toggle_variance();
 				m[curr_idx] = curr_toggle;

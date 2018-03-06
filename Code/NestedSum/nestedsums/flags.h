@@ -88,6 +88,52 @@ namespace nestedsums {
 
 } // namespace nestedsums
 
+//////////////////////////////////////////////////////////////////////////
+//For warning C4250
+
+//#define NestedSum_DeclareOverrideExplicitly_P0(funcname) \
+//   GiNaC::ex funcname(void) const override { return inherited::funcname(); }
+//
+//#define NestedSum_DeclareOverrideExplicitly_P1(funcname, param1, param1type) \
+//   GiNaC::ex funcname(const param1type & param1) const override { return inherited::funcname(param1); }
+//
+//#define NestedSum_DeclareOverrideExplicitly_P1V(funcname, param1, param1type) \
+//   GiNaC::ex funcname(param1type param1) const override { return inherited::funcname(param1); }
+//
+//#define NestedSum_DeclareOverrideExplicitly_P1VD(funcname, param1, param1type, param1default) \
+//   GiNaC::ex funcname(param1type param1 = param1default) const override { return inherited::funcname(param1); }
+//
+//#define NestedSum_DeclareOverrideExplicitly_P2(funcname, param1, param1type, param2, param2type) \
+//   GiNaC::ex funcname(const param1type & param1, const param2type & param2) const override { return inherited::funcname(param1, param2); }
+//
+//#define NestedSum_DeclareOverrideExplicitly_P3(funcname, param1, param1type, param2, param2type, param3, param3type) \
+//   GiNaC::ex funcname(const param1type & param1, const param2type & param2, const param3type & param3) const override { return inherited::funcname(param1, param2, param3); }
+//
+//#define NestedSum_DeclareOverrideExplicitly_Zsum() \
+//    NestedSum_DeclareOverrideExplicitly_P2(convert_to_Ssum_exvector, Z0, GiNaC::exvector, Z1, GiNaC::exvector) \
+//    NestedSum_DeclareOverrideExplicitly_P3(shuffle_exvector, Z0, GiNaC::exvector, Z1, GiNaC::exvector, Z2, GiNaC::exvector) \
+//    NestedSum_DeclareOverrideExplicitly_P1(set_index, i, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P0(shift_plus_one) \
+//    NestedSum_DeclareOverrideExplicitly_P0(shift_minus_one) \
+//    NestedSum_DeclareOverrideExplicitly_P1(adjust_upper_limit_downwards, i, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P1(adjust_upper_limit_upwards, i, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P0(adjust_upper_limit_plus_one) \
+//    NestedSum_DeclareOverrideExplicitly_P0(index_eq_one) \
+//    NestedSum_DeclareOverrideExplicitly_P1V(get_head, k, int) \
+//    NestedSum_DeclareOverrideExplicitly_P1V(get_tail, k, int) \
+//    NestedSum_DeclareOverrideExplicitly_P0(antipode) \
+//    NestedSum_DeclareOverrideExplicitly_P1VD(expand_members, level, int, 0) \
+//    NestedSum_DeclareOverrideExplicitly_P0(eval_explicit) \
+//    NestedSum_DeclareOverrideExplicitly_P0(get_first_letter) \
+//    NestedSum_DeclareOverrideExplicitly_P0(remove_first_letter) \
+//    NestedSum_DeclareOverrideExplicitly_P1(remove_first_letter, nc, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P1(prepend_letter, lc, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P2(prepend_letter, nc, GiNaC::ex, lc, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P1(append_letter, lc, GiNaC::ex) \
+//    NestedSum_DeclareOverrideExplicitly_P1(append_letter_list, lc, GiNaC::ex) 
+
+    
+
 #endif // ndef __NESTEDSUMS_FLAGS_H__
 
 

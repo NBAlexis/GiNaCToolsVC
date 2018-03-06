@@ -1,3 +1,5 @@
+#pragma warning (disable : 4101)
+
 #include "ginac_private.h"
 /** @file inifcns_nstdsums.cpp
  *

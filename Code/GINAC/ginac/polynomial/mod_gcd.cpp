@@ -125,8 +125,8 @@ void mod_gcd(upoly& result, upoly A, upoly B)
 	// compute the coefficient bound for GCD(a, b)
 	ring_t g = gcd(lcoeff(A), lcoeff(B));
 	std::size_t max_gcd_degree = std::min(degree(A), degree(B));
-	ring_t limit = (ring_t(1) << max_gcd_degree)*g*
-		       std::min(max_coeff(A), max_coeff(B));
+	ring_t limit = static_cast<ring_t>( (ring_t(1) << max_gcd_degree)*g*
+		       std::min(max_coeff(A), max_coeff(B)) );
 	ring_t q(0);
 	upoly H;
 

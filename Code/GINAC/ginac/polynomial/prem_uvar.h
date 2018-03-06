@@ -54,7 +54,7 @@ template<typename T> bool pseudoremainder(T& r, const T& a, const T& b)
 	const ring_t one = get_ring_elt(b[0], 1);
 	const std::size_t l = degree(a) - degree(b) + 1;
 	const ring_t blcoeff = lcoeff(b);
-	const ring_t b_lth = expt_pos(blcoeff, l);
+	const ring_t b_lth = static_cast<ring_t>(expt_pos(blcoeff, l));
 	if (b_lth == one)
 		return remainder_in_ring(r, a, b);
 

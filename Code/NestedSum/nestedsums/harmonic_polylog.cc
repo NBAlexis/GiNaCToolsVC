@@ -84,7 +84,7 @@ GINAC_BIND_UNARCHIVER(harmonic_polylog);
   {
     if ( _print_format & print_format::no_harmonic_polylog ) return multiple_polylog::print(c,level);
 
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // empty sum equals 1
     if (depth == 0) 
@@ -157,7 +157,7 @@ GINAC_BIND_UNARCHIVER(harmonic_polylog);
    */
   ex harmonic_polylog::eval() const
   {
-    unsigned depth = get_depth();
+    size_t depth = get_depth();
 
     // check if harmonic polylog simplifies to a Nielsen polylog
     if ( depth > 0 )

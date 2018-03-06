@@ -85,7 +85,7 @@ struct map_remove_Zsums : public map_function
 			return e.map(*this);
 		}
 		else if (is_a<classical_polylog>(e)) {
-			int depth = ex_to<classical_polylog>(e).get_depth();
+			int depth = static_cast<int>(ex_to<classical_polylog>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<classical_polylog>(e).get_letter_list();
@@ -96,14 +96,14 @@ struct map_remove_Zsums : public map_function
 				return Li(degree, ex_to<letter>(letterlist.op(0)).get_scale());
 		}
 		else if (is_a<nielsen_polylog>(e)) {
-			int depth = ex_to<nielsen_polylog>(e).get_depth();
+			int depth = static_cast<int>(ex_to<nielsen_polylog>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<nielsen_polylog>(e).get_letter_list();
 			return S(ex_to<letter>(letterlist.op(0)).get_degree()-1, depth, ex_to<letter>(letterlist.op(0)).get_scale());
 		}
 		else if (is_a<harmonic_polylog>(e)) {
-			int depth = ex_to<harmonic_polylog>(e).get_depth();
+			int depth = static_cast<int>(ex_to<harmonic_polylog>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<harmonic_polylog>(e).get_letter_list();
@@ -113,7 +113,7 @@ struct map_remove_Zsums : public map_function
 			return H(degrees, ex_to<letter>(letterlist.op(0)).get_scale());
 		}
 		else if (is_a<multiple_zeta_value>(e)) {
-			int depth = ex_to<multiple_zeta_value>(e).get_depth();
+			int depth = static_cast<int>(ex_to<multiple_zeta_value>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<multiple_zeta_value>(e).get_letter_list();
@@ -123,7 +123,7 @@ struct map_remove_Zsums : public map_function
 			return zeta(degrees);
 		}
 		else if (is_a<multiple_polylog>(e)) {
-			int depth = ex_to<multiple_polylog>(e).get_depth();
+			int depth = static_cast<int>(ex_to<multiple_polylog>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<multiple_polylog>(e).get_letter_list();
@@ -136,7 +136,7 @@ struct map_remove_Zsums : public map_function
 			return Li(degrees, scales);
 		}
 		else if (is_a<Euler_Zagier_sum>(e)) {
-			int depth = ex_to<Euler_Zagier_sum>(e).get_depth();
+			int depth = static_cast<int>(ex_to<Euler_Zagier_sum>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<Euler_Zagier_sum>(e).get_letter_list();
@@ -146,7 +146,7 @@ struct map_remove_Zsums : public map_function
 			return EulerZagier_sum(degrees, ex_to<Euler_Zagier_sum>(e).get_index());
 		}
 		else if (is_a<harmonic_sum>(e)) {
-			int depth = ex_to<harmonic_sum>(e).get_depth();
+			int depth = static_cast<int>(ex_to<harmonic_sum>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<harmonic_sum>(e).get_letter_list();
@@ -156,7 +156,7 @@ struct map_remove_Zsums : public map_function
 			return Harmonic_sum(degrees, ex_to<harmonic_sum>(e).get_index());
 		}
 		else if (is_a<Ssum_to_Infinity>(e)) {
-			int depth = ex_to<Ssum_to_Infinity>(e).get_depth();
+			int depth = static_cast<int>(ex_to<Ssum_to_Infinity>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<Ssum_to_Infinity>(e).get_letter_list();
@@ -169,7 +169,7 @@ struct map_remove_Zsums : public map_function
 			return S_sum_infinity(degrees, scales);
 		}
 		else if (is_a<Ssum>(e)) {
-			int depth = ex_to<Ssum>(e).get_depth();
+			int depth = static_cast<int>(ex_to<Ssum>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<Ssum>(e).get_letter_list();
@@ -182,7 +182,7 @@ struct map_remove_Zsums : public map_function
 			return S_sum(ex_to<Ssum>(e).get_index(), degrees, scales);
 		}
 		else if (is_a<Zsum>(e)) {
-			int depth = ex_to<Zsum>(e).get_depth();
+			int depth = static_cast<int>(ex_to<Zsum>(e).get_depth());
 			if (!depth)
 				return 1;
 			ex letterlist = ex_to<Zsum>(e).get_letter_list();
@@ -247,7 +247,8 @@ struct map_insert_Zsums : public map_function
 			}
 			else if (name == "mZeta") {
 				lst letterlist;
-				for (int i=e.op(0).nops()-1; i>=0; i--) {
+                int imax = static_cast<int>(e.op(0).nops());
+				for (int i= imax -1; i>=0; i--) {
 					letterlist.append(unit_letter(e.op(0).op(i)));
 				}
 				return multiple_zeta_value(letterlist);

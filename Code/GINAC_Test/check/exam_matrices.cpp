@@ -1,4 +1,6 @@
-
+#pragma warning (disable : 4267)
+#pragma warning (disable : 4244)
+#pragma warning (disable : 4101)
 /** @file exam_matrices.cpp
  *
  *  Here we examine manipulations on GiNaC's symbolic matrices. */

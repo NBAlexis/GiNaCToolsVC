@@ -1,4 +1,4 @@
-
+#pragma warning (disable : 4250)
 /** @file harmonic_sum_to_Infinity.h
  *
  * Interface to harmonic sums to Infinity

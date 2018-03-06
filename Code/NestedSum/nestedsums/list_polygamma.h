@@ -92,7 +92,7 @@ namespace nestedsums {
       GiNaC::ex set_order(int new_order) const;
 
       GiNaC::ex get_index(void) const;
-      unsigned get_depth(void) const;
+      size_t get_depth(void) const;
 
       GiNaC::ex shift_plus_one(void) const;
       GiNaC::ex shift_minus_one(void) const;
@@ -148,7 +148,7 @@ inline GiNaC::ex list_of_tgamma::get_index(void) const
    * Returns the depth.
    *
    */
-inline unsigned list_of_tgamma::get_depth(void) const
+inline size_t list_of_tgamma::get_depth(void) const
   {
     return gamma_sequence.nops();
   }

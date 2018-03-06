@@ -1430,7 +1430,7 @@ GINAC_BIND_UNARCHIVER(transcendental_sum_type_D);
     if ( is_a<mul>(subsum) || is_a<ncmul>(subsum) )
       {
 	int j;
-	int up_limit = subsum.nops();
+	int up_limit = static_cast<int>(subsum.nops());
 	exvector prefactor;
 	exvector hard_core;
 	prefactor.reserve(up_limit);
@@ -1649,7 +1649,7 @@ GINAC_BIND_UNARCHIVER(transcendental_sum_type_D);
     if ( is_a<mul>(subsum_rev) || is_a<ncmul>(subsum_rev) )
       {
 	int j;
-	int up_limit = subsum_rev.nops();
+	int up_limit = static_cast<int>(subsum_rev.nops());
 	exvector prefactor;
 	exvector hard_core;
 	prefactor.reserve(up_limit);
@@ -1851,7 +1851,7 @@ GINAC_BIND_UNARCHIVER(transcendental_sum_type_D);
     if ( is_a<mul>(letter) || is_a<ncmul>(letter) )
       {
 	int j;
-	int up_limit = letter.nops();
+	int up_limit = static_cast<int>(letter.nops());
 	exvector prefactor;
 	exvector hard_core;
 	prefactor.reserve(up_limit);
@@ -1912,7 +1912,7 @@ GINAC_BIND_UNARCHIVER(transcendental_sum_type_D);
     if ( is_a<mul>(letter_rev) || is_a<ncmul>(letter_rev) )
       {
 	int j;
-	int up_limit = letter_rev.nops();
+	int up_limit = static_cast<int>(letter_rev.nops());
 	exvector prefactor;
 	exvector hard_core;
 	prefactor.reserve(up_limit);
