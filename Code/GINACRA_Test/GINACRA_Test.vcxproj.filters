@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{39e8ee2d-972d-48a8-b0e8-b242cc68c876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{dccfb089-45ef-4ed5-aec6-98965a05b10d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\CAD_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Constraint_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Groebner_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\MultivariateMonomialMR_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\MultivariatePolynomialMR_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\MultivariateTermMR_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\OpenInterval_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\RationalUnivariatePolynomial_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\RealAlgebraicNumber_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\RealAlgebraicNumberFactory_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\RealAlgebraicNumberIR_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\SpecialQuotientRingMultiplicationTable_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\UnivariatePolynomial_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\UnivariatePolynomialSet_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\utilities_unittest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test\CAD_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Constraint_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Groebner_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\MultivariateMonomialMR_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\MultivariatePolynomialMR_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\MultivariateTermMR_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\OpenInterval_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\RationalUnivariatePolynomial_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\RealAlgebraicNumber_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\RealAlgebraicNumberFactory_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\RealAlgebraicNumberIR_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\UnivariatePolynomial_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\UnivariatePolynomialSet_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\utilities_unittest.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\benchmark_CAD_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\benchmark_Groebner_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_AlgoSyn-presentation-2012-07.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_2.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_3.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_4.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_5.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_6.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_7.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_8.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_9.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_A.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_B.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CAD_C.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CADincremental_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CADincremental_2.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_CADincremental_3.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_IR_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_IR_2.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_IR_3.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_IR_4.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_NFM2011-presentation.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_RAN_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_RAN_2.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_RAN_3.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example_SGB_1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example1.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example2.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example3.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\example4.h">
+      <Filter>examples</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

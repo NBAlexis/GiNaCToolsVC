@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{20813aae-11e2-4191-9dfc-335ce4decdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\Inc">
+      <UniqueIdentifier>{93af222a-1778-4ae5-b660-e5aa25836a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\Src">
+      <UniqueIdentifier>{b33f3e26-66c4-4333-8e37-ab4b00860895}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\CAD.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\constants.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\Constraint.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\Groebner.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\MultivariateCoefficientMR.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\MultivariateMonomialMR.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\MultivariatePolynomialMR.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\MultivariateTermMR.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\OpenInterval.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\operators.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\Polynomial.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\RationalUnivariatePolynomial.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\RealAlgebraicNumber.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\RealAlgebraicNumberFactory.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\RealAlgebraicNumberIR.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\RealAlgebraicNumberNR.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\RealAlgebraicPoint.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\settings.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\SymbolDB.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\tree.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\UnivariatePolynomial.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\UnivariatePolynomialSet.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\UnivariateRepresentation.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\utilities.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\VariableListPool.h">
+      <Filter>lib\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="ginacra_private.h" />
+    <ClInclude Include="ginacra_public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lib\VariableListPool.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\utilities.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\UnivariateRepresentation.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\UnivariatePolynomialSet.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\UnivariatePolynomial.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\SymbolDB.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\settings.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\RealAlgebraicPoint.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\RealAlgebraicNumberNR.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\RealAlgebraicNumberIR.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\RealAlgebraicNumberFactory.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\RealAlgebraicNumber.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\RationalUnivariatePolynomial.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\Polynomial.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\operators.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\OpenInterval.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\MultivariateTermMR.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\MultivariatePolynomialMR.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\MultivariateMonomialMR.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\MultivariateCoefficientMR.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\Groebner.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\Constraint.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\CAD.cpp">
+      <Filter>lib\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ginacra_private.cpp" />
+  </ItemGroup>
+</Project>

@@ -22,12 +22,71 @@ namespace CodeHelper
             //ChangeAllNum3();
             //ChangeMainFunction();
             //AddDllExportForNestedSums();
+            //AddPrivateHeaderForGINACRA();
+            //AddDllExportForGINACRA();
+            //AddIncludeBackForGINACRA();
 
             //pasue
             Console.WriteLine("work done, press enter to exit...");
             string byebye = Console.ReadLine();
         }
 
+        #region GINACRA
+
+        static void AddIncludeBackForGINACRA()
+        {
+            Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
+            DirectoryInfo dirinfo = new DirectoryInfo("..\\..\\..\\Code\\GINACRA\\src\\lib");
+            FileInfo[] files = dirinfo.GetFiles("*.*", SearchOption.AllDirectories).Where(s => s.FullName.EndsWith(".cpp") || s.FullName.EndsWith(".h")).ToArray();
+
+            foreach (FileInfo f in files)
+            {
+                Console.WriteLine(f.FullName);
+
+                string textf = File.ReadAllText(f.FullName);
+                textf = Regex.Replace(textf, @"//(#include\s+<[^>]+>)", @"$1");
+                textf = Regex.Replace(textf, @"(#include\s+<ginac/ginac.h>)", @"//$1");
+                textf = Regex.Replace(textf, @"(#include\s+<cln/cln.h>)", @"//$1");
+                //Console.Write(textf);
+                File.WriteAllText(f.FullName, textf);
+            }
+        }
+
+        static void AddPrivateHeaderForGINACRA()
+        {
+            Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
+            DirectoryInfo dirinfo = new DirectoryInfo("..\\..\\..\\Code\\GINACRA\\src\\lib");
+            FileInfo[] files = dirinfo.GetFiles("*.cpp", SearchOption.AllDirectories);
+            foreach (FileInfo f in files)
+            {
+                Console.WriteLine(f.FullName);
+
+                string textf = File.ReadAllText(f.FullName);
+                textf = "#include \"..\\ginacra_private.h\"\n" + textf;
+                File.WriteAllText(f.FullName, textf);
+            }
+        }
+
+        static void AddDllExportForGINACRA()
+        {
+            Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
+            DirectoryInfo dirinfo = new DirectoryInfo("..\\..\\..\\Code\\GINACRA\\src\\lib");
+            FileInfo[] files = dirinfo.GetFiles("*.h", SearchOption.AllDirectories);
+
+            foreach (FileInfo f in files)
+            {
+                string fileContent = File.ReadAllText(f.FullName);
+                fileContent = Regex.Replace(fileContent,
+                    @"class(\s+[\d\w_]+\s*[:\{;])",
+                    @"class GINACRA_API$1");
+                //Console.Write(fileContent);
+                File.WriteAllText(f.FullName, fileContent);
+            }
+        }
+
+        #endregion
+
+        #region Nested Sum
         static void AddDllExportForNestedSums()
         {
             Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
@@ -44,6 +103,7 @@ namespace CodeHelper
                 File.WriteAllText(f.FullName, fileContent);
             }
         }
+        #endregion
 
         #region GINAC_CHECK
 
