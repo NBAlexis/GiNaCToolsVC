@@ -1,3 +1,7 @@
+#include "ginacra_test.h"
+#if 0
+
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -32,7 +36,7 @@
  * Notation is following http://www.possibility.com/Cpp/CppCodingStandard.html.
  */
 
-#include "SpecialQuotientRingMultiplicationTable_unittest.h"
+//#include "SpecialQuotientRingMultiplicationTable_unittest.h"
 
 // test suite
 CPPUNIT_TEST_SUITE_REGISTRATION( SpecialQuotientRingMultiplicationTableTest );
@@ -116,3 +120,4 @@ void SpecialQuotientRingMultiplicationTableTest::testTrace()
     //  cout << "Trace: " << T1.trace(p3) << endl;
     //  cout << "Trace: " << T1.trace(p4) << endl;
 }
+#endif

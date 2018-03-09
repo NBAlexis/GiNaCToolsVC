@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -31,9 +33,9 @@
  * @version 2012-03-20
  */
 
-#include <cppunit/extensions/HelperMacros.h>
+////#include <cppunit/extensions/HelperMacros.h>
 
-#include "utilities.h"
+////#include "utilities.h"
 
 using namespace GiNaC;
 

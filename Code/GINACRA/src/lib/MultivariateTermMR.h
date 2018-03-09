@@ -103,10 +103,10 @@ namespace GiNaCRA
                 mCoeff( 1 )
             {}
 
-            friend bool operator ==( const MultivariateTermMR& t1, const MultivariateTermMR& t2 );
-            friend const MultivariateTermMR operator *( const MultivariateTermMR& t1, const MultivariateTermMR& t2 );
-            friend const MultivariateTermMR operator *( const MultivariateTermMR& t1, const MultivariateMonomialMR& m1 );
-            friend const MultivariateTermMR operator *( const MultivariateMonomialMR& m1, const MultivariateTermMR& t1 );
+            GINACRA_API friend bool operator ==( const MultivariateTermMR& t1, const MultivariateTermMR& t2 );
+            GINACRA_API friend const MultivariateTermMR operator *( const MultivariateTermMR& t1, const MultivariateTermMR& t2 );
+            GINACRA_API friend const MultivariateTermMR operator *( const MultivariateTermMR& t1, const MultivariateMonomialMR& m1 );
+            GINACRA_API friend const MultivariateTermMR operator *( const MultivariateMonomialMR& m1, const MultivariateTermMR& t1 );
 
             /**
              * Compares the monomials
@@ -192,7 +192,7 @@ namespace GiNaCRA
              * @param rhs
              * @return
              */
-            friend std::ostream& operator <<( std::ostream& os, const MultivariateTermMR& rhs );
+            GINACRA_API friend std::ostream& operator <<( std::ostream& os, const MultivariateTermMR& rhs );
 
         protected:
             MultivariateCoefficientMR mCoeff;

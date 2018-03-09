@@ -535,7 +535,7 @@ namespace GiNaCRA
             return cadSettings;
         }
 
-        friend std::ostream& operator <<( std::ostream& os, const CADSettings& settings )
+        GINACRA_API friend std::ostream& operator <<( std::ostream& os, const CADSettings& settings )
         {
             list<string> settingStrs = list<string>();
             if( settings.mSimplifyByGroebner )

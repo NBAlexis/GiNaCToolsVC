@@ -1,3 +1,4 @@
+#if 0
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -28,6 +29,7 @@ using namespace std;
 #include "ginacra_test.h"
 
 using namespace GiNaC;
+using namespace GiNaCRA;
 
 /**
  * Application testing real root isolation of a multivariate triangular system.
@@ -49,7 +51,7 @@ int example_NFM2011presentationmain()
     list<pair<RealAlgebraicNumberIR, RealAlgebraicNumberIR> > commonRoots = list<pair<RealAlgebraicNumberIR, RealAlgebraicNumberIR> >();
 
     // compute real roots of p1 directly
-    list<RealAlgebraicNumberIR> roots1 = RealAlgebraicNumberIRFactory::realRoots( RationalUnivariatePolynomial( p1 ));
+    list<RealAlgebraicNumberIR> roots1 = RealAlgebraicNumberFactory::realRoots( RationalUnivariatePolynomial( p1 ));
     cout << p1 << " has " << roots1.size() << " real roots:" << endl;
     for( list<RealAlgebraicNumberIR>::const_iterator i = roots1.begin(); i != roots1.end(); ++i )
         cout << *i << endl;
@@ -77,7 +79,7 @@ int example_NFM2011presentationmain()
                 break;
         }
         cout << "==> Separable part: " << sepapart << endl;
-        list<RealAlgebraicNumberIR> roots2 = RealAlgebraicNumberIRFactory::realRoots( sepapart );
+        list<RealAlgebraicNumberIR> roots2 = RealAlgebraicNumberFactory::realRoots( sepapart );
         cout << "==> Found " << roots2.size() << " new common real root(s) " << endl;
         for( list<RealAlgebraicNumberIR>::const_iterator j = roots2.begin(); j != roots2.end(); ++j )
         {
@@ -95,3 +97,5 @@ int example_NFM2011presentationmain()
     cout << endl;
     return 0;
 }
+
+#endif

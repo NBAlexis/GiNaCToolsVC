@@ -51,8 +51,8 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-const string VERSION = "2012-02-01";
-const string SUPPORT = "Ulrich Loup <loup@cs.rwth-aachen.de>";
+//const string VERSION = "2012-02-01";
+//const string SUPPORT = "Ulrich Loup <loup@cs.rwth-aachen.de>";
 /// monomial ordering function pointer for ginacra
 const MonomOrderingFc monomialOrderingGinacra = &MultivariateMonomialMR::GrLexCompare;    // &MultivariateMonomialMR::GrRevLexCompare;
 /// monomial ordering string for Singular
@@ -70,7 +70,7 @@ const int    TIMEOUT_INT = 10;
 // tools
 
 /// compilation of tools to test
-void testTools();
+void testToolsgrob1();
 /// run current benchmark with ginacra
 void testGinacra();
 /// run current benchmark with singular
@@ -159,7 +159,7 @@ int benchmark_Groebner_1main()
     {
         cout << "Switching to example set " << benchmarkCount << "." << endl;
         (*f)();
-        testTools();
+        testToolsgrob1();
         ++benchmarkCount;
     }
     cout << "---------------------------------------------------------- We're done. ----------------------------------------------------------"
@@ -182,7 +182,7 @@ int benchmark_Groebner_1main()
 // Tools //
 ///////////
 
-void testTools()
+void testToolsgrob1()
 {
     ostringstream intStream;
     intStream << variables.size();

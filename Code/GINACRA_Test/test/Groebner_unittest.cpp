@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -20,9 +22,9 @@
  */
 
 
-#include "Groebner_unittest.h"
-#include "VariableListPool.h"
-#include "MultivariateMonomialMR_unittest.h"
+//#include "Groebner_unittest.h"
+//#include "VariableListPool.h"
+//#include "MultivariateMonomialMR_unittest.h"
 
 CPPUNIT_TEST_SUITE_REGISTRATION( Groebner_unittest );
 

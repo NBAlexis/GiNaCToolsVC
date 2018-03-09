@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -32,7 +34,7 @@
  * Notation is following http://www.possibility.com/Cpp/CppCodingStandard.html.
  */
 
-#include "MultivariateMonomialMR_unittest.h"
+//#include "MultivariateMonomialMR_unittest.h"
 
 // test suite
 CPPUNIT_TEST_SUITE_REGISTRATION( MultivariateMonomialMRTest );

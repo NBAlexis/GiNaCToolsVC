@@ -90,7 +90,7 @@ namespace GiNaCRA
              * @param rhs
              * @return
              */
-            friend std::ostream& operator <<( std::ostream& os, const Groebner& rhs )
+            GINACRA_API friend std::ostream& operator <<( std::ostream& os, const Groebner& rhs )
             {
                 os << "{";
                 for( lpol_cIt i = rhs.mGB.begin(); i != rhs.mGB.end(); ++i )

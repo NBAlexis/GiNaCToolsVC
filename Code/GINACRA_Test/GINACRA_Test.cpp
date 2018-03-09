@@ -10,6 +10,8 @@
 
 using namespace std;
 
+CTestFactory GFac;
+
 int WINAPI WinMain(HINSTANCE hInstance,
     HINSTANCE hPrevInstance,
     LPSTR lpCmdLine,
@@ -24,10 +26,14 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
     int error = 0;
 
-    error += testmain();
+    MultivariatePolynomialSettings::InitializeGiNaCRAMultivariateMR();
 
-    cout << "error = " << error << endl;
-    error += benchmark_CAD_1main();
+    error += testmain();
+    error += CppUnit::iErrors;
+
+#if 0
+    //cout << "error = " << error << endl;
+    //error += benchmark_CAD_1main(); this CANNOT run because it contains a "UnivariatePolynomial( *i, )", what's this??
     cout << "error = " << error << endl;
     error += benchmark_Groebner_1main();
     cout << "error = " << error << endl;
@@ -78,16 +84,17 @@ int WINAPI WinMain(HINSTANCE hInstance,
     error += example_IR_3main();
     cout << "error = " << error << endl;
     error += example_IR_4main();
-    cout << "error = " << error << endl;
-    error += example_NFM2011presentationmain();
-    cout << "error = " << error << endl;
-    error += example_RAN_1main();
+    //cout << "error = " << error << endl;
+    //error += example_NFM2011presentationmain();
+    //cout << "error = " << error << endl;
+    //error += example_RAN_1main();
     cout << "error = " << error << endl;
     error += example_RAN_2main();
     cout << "error = " << error << endl;
     error += example_RAN_3main();
-    cout << "error = " << error << endl;
-    error += example_SGB_1main();
+    //cout << "error = " << error << endl;
+    //error += example_SGB_1main();
+#endif
 
 //ADDTESTFUNCTIONS
 

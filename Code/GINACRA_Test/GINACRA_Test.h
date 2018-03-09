@@ -97,6 +97,102 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
+namespace CppUnit
+{
+
+    template< class T > class TSimpleDoubleLinkedList : public T
+    {
+    public:
+        TSimpleDoubleLinkedList* m_pNext;
+        TSimpleDoubleLinkedList** m_ppPrevLink;
+        void Unlink()
+        {
+            if (m_pNext)
+                m_pNext->m_ppPrevLink = m_ppPrevLink;
+            if (m_ppPrevLink)
+                *m_ppPrevLink = m_pNext;
+        }
+        void Link(TSimpleDoubleLinkedList*& Before)
+        {
+            if (Before)
+                Before->m_ppPrevLink = &m_pNext;
+            m_pNext = Before;
+            m_ppPrevLink = &Before;
+            Before = this;
+        }
+    };
+
+    class TestFixture
+    {
+    public:
+        virtual void setUp() {}
+        virtual void tearDown() {}
+    };
+
+    class thetestsuit
+    {
+    public:
+        virtual const char* GetName() { return "No Name"; }
+        virtual void DoTest() {}
+    };
+
+    //typedef void(*testfunc)(void);
+
+    typedef TSimpleDoubleLinkedList<thetestsuit> testUnits;
+    //typedef TSimpleDoubleLinkedList<testfunc> testFunctions;
+
+    //static testUnits* sAllTests;
+    static int iErrors = 0;
+}
+
+#define CPPUNIT_TEST_SUITE(classname) \
+public: \
+class classname##thetestsuit : public CppUnit::testUnits { \
+     public: \
+     classname##thetestsuit() { GFac.AddClass(this); }\
+     virtual const char * GetName() { return #classname; } \
+     virtual void DoTest() { \
+     classname impl; \
+     impl.setUp(); 
+
+
+#define CPPUNIT_TEST(functionname) impl.functionname();
+
+#define CPPUNIT_TEST_SUITE_END() }};
+
+
+#define CPPUNIT_TEST_SUITE_REGISTRATION(classname) \
+static classname::classname##thetestsuit classname##staticimp;
+
+
+#define CPPUNIT_NS CppUnit
+
+#define CPPUNIT_ASSERT(a) if (!(a)) { ++CppUnit::iErrors; }
+
+#define CPPUNIT_ASSERT_EQUAL(a, b) if ((a) != (b)) { ++CppUnit::iErrors; }
+
+#define CPPUNIT_ASSERT_EQUAL4(a, b, c, d) if ((a) != (b) || (a) != (c) || (a) != (d)) { ++CppUnit::iErrors; }
+
+#define CPPUNIT_ASSERT_THROW(a, b) try { a; } catch(...) { cout << "should throw" << #b << endl; }
+
+
+class CTestFactory 
+{
+public:
+    CppUnit::testUnits* sAllTests;
+    CTestFactory() 
+    {
+
+    }
+
+    void AddClass(CppUnit::testUnits * otherc)
+    {
+        otherc->Link(sAllTests);
+    }
+};
+
+extern CTestFactory GFac;
+
 #include "test/CAD_unittest.h"
 #include "test/Constraint_unittest.h"
 #include "test/Groebner_unittest.h"
@@ -112,8 +208,16 @@ using namespace GiNaCRA;
 #include "test/UnivariatePolynomialSet_unittest.h"
 #include "test/UnivariatePolynomial_unittest.h"
 #include "test/utilities_unittest.h"
-#include "examples/benchmark_CAD_1.h"
+
+const string   VERSION        = "2010-12-25";
+const string   SUPPORT        = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
+const unsigned TESTCOUNT      = 100;    // number of repetitions
+const unsigned TERMCOUNT      = 62;    // number of terms in the polynomial except for the constant part
+const unsigned MAXDEGREE      = 80;    // maximum degree (+1) of polynomials
+const unsigned MAXCOEFFICIENT = 1001;    // maximum coefficient (+1) of polynomials
+
 #include "examples/benchmark_Groebner_1.h"
+#include "examples/benchmark_CAD_1.h"
 #include "examples/example1.h"
 #include "examples/example2.h"
 #include "examples/example3.h"
@@ -145,6 +249,22 @@ using namespace GiNaCRA;
 #include "examples/example_SGB_1.h"
 
 //AddOtherIncludeHere
+
+//class classnameAAthetestsuit : public CppUnit::testUnits {
+//public:
+//    classnameAAthetestsuit() 
+//    { 
+//        Link(CppUnit::sAllTests); 
+//    }
+//    virtual const char * GetName() { return "BB"; }
+//    virtual void DoTest()
+//    {
+//        Groebner_unittest abc;
+//        abc.setUp();
+//    }
+//};
+//
+//classnameAAthetestsuit * classnameAAthetestsuit::mmmm = new classnameAAthetestsuit();
 
 inline float gettime()
 {
@@ -200,64 +320,6 @@ inline void RedirectIOToConsole() {
 }
 
 
-namespace CppUnit 
-{
 
-    template< class T > class TSimpleDoubleLinkedList : public T
-    {
-    public:
-        TSimpleDoubleLinkedList* m_pNext;
-        TSimpleDoubleLinkedList** m_ppPrevLink;
-        void Unlink()
-        {
-            if (m_pNext)
-                m_pNext->m_ppPrevLink = m_ppPrevLink;
-            if (m_ppPrevLink)
-                *m_ppPrevLink = m_pNext;
-        }
-        void Link(TSimpleDoubleLinkedList*& Before)
-        {
-            if (Before)
-                Before->m_ppPrevLink = &m_pNext;
-            m_pNext = Before;
-            m_ppPrevLink = &Before;
-            Before = this;
-        }
-    };
-
-    class TestFixture
-    {
-    public:
-        virtual void setUp() {}
-        virtual void tearDown() {}
-    };
-
-    typedef void(*testfunc)(void);
-
-    typedef TSimpleDoubleLinkedList<class thetestsuit*> testUnits;
-    typedef TSimpleDoubleLinkedList<testfunc> testFunctions;
-
-    class thetestsuit
-    {
-    public:
-        testFunctions myfuncs;
-    };
-
-    static testUnits sAllTests;
-}
-
-#define CPPUNIT_TEST_SUITE(classname) \
-class classname##thetestsuit : thetestsuit { \
-     classname##thetestsuit() { \
-
-
-#define CPPUNIT_TEST(functionname) myfuncs = new TSimpleSingleList<testfunc>(functionname);
-
-#define CPPUNIT_TEST_SUITE_END() }};
-
-
-#define CPPUNIT_TEST_SUITE_REGISTRATION(classname) \
-classname::classname##thetestsuit classname##thetestsuitImp();\
-CppUnit::sAllTests.Link(&classname##thetestsuitImp);
 
 #endif //_GINACRA_TEST_H_

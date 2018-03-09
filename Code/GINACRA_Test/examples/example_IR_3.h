@@ -40,8 +40,8 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-const string VERSION = "2011-10-17";
-const string SUPPORT = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
+//const string VERSION = "2011-10-17";
+//const string SUPPORT = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
 
 //////////////////
 // Main program //

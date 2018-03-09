@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -33,10 +35,10 @@
  * Notation is following http://www.possibility.com/Cpp/CppCodingStandard.html.
  */
 
-#include <cppunit/extensions/HelperMacros.h>
+////#include <cppunit/extensions/HelperMacros.h>
 
-#include "UnivariatePolynomialSet.h"
-#include "settings.h"
+//#include "UnivariatePolynomialSet.h"
+//#include "settings.h"
 
 using namespace GiNaC;
 
@@ -44,7 +46,7 @@ class UnivariatePolynomialSetTest:
     public CppUnit:: TestFixture
 {
     // declare test suite
-    CPPUNIT_TEST_SUITE( UnivariatePolynomialSetTest, TESTSUITE_UNIVARIATE );
+    CPPUNIT_TEST_SUITE( UnivariatePolynomialSetTest );
     // declare each test case
     CPPUNIT_TEST( testInsert );
     CPPUNIT_TEST( testRemoveConstants );

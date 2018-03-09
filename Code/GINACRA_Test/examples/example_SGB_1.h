@@ -1,3 +1,4 @@
+#if 0
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -38,8 +39,8 @@ using namespace std;
 
 using namespace GiNaC;
 
-const string VERSION = "2010-05-05";
-const string SUPPORT = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
+//const string VERSION = "2010-05-05";
+//const string SUPPORT = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
 
 //////////////////
 // Main program //
@@ -75,3 +76,4 @@ int example_SGB_1main()
     cout << "Example finished." << endl << endl;
     return 0;
 }
+#endif

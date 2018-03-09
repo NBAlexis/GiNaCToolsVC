@@ -99,12 +99,12 @@ namespace GiNaCRA
              */
             GiNaC::ex toEx() const;
 
-            friend const MultivariateMonomialMR operator *( const MultivariateMonomialMR& m1, const MultivariateMonomialMR& m2 );
-            friend const MultivariateMonomialMR operator /( const MultivariateMonomialMR& nom, const MultivariateMonomialMR& denom );
+            GINACRA_API friend const MultivariateMonomialMR operator *( const MultivariateMonomialMR& m1, const MultivariateMonomialMR& m2 );
+            GINACRA_API friend const MultivariateMonomialMR operator /( const MultivariateMonomialMR& nom, const MultivariateMonomialMR& denom );
 
-            friend bool operator !=( const MultivariateMonomialMR& lhs, const MultivariateMonomialMR& rhs );
-            friend bool operator ==( const MultivariateMonomialMR& lhs, const MultivariateMonomialMR& rhs );
-            friend std::ostream& operator <<( std::ostream& os, const MultivariateMonomialMR& rhs );
+            GINACRA_API friend bool operator !=( const MultivariateMonomialMR& lhs, const MultivariateMonomialMR& rhs );
+            GINACRA_API friend bool operator ==( const MultivariateMonomialMR& lhs, const MultivariateMonomialMR& rhs );
+            GINACRA_API friend std::ostream& operator <<( std::ostream& os, const MultivariateMonomialMR& rhs );
 
             //static bool varsMatch(const MultivariateMonomialMR& lhs, const MultivariateMonomialMR& rhs);
 

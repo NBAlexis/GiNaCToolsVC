@@ -39,21 +39,21 @@ using namespace std;
 using namespace GiNaCRA;
 using namespace GiNaC;
 
-void runTest( CADSettings settings );
+void runTestec4( CADSettings settings );
 
 int example_CAD_4main()
 {
     CADSettings setting = CADSettings::getSettings();
 
     setting.setPreferNonrootSamples( false );
-    runTest( setting );
+    runTestec4( setting );
 
     setting.setPreferNonrootSamples( true );
-    runTest( setting );
+    runTestec4( setting );
     return 0;
 }
 
-void runTest( CADSettings settings )
+void runTestec4( CADSettings settings )
 {
     symbol x( "x" ), y( "y" );
     vector<symbol> v = vector<symbol>();

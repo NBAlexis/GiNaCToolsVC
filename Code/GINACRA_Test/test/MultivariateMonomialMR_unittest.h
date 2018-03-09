@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -33,10 +35,10 @@
  * Notation is following http://www.possibility.com/Cpp/CppCodingStandard.html.
  */
 
-#include <cppunit/extensions/HelperMacros.h>
+////#include <cppunit/extensions/HelperMacros.h>
 
-#include "MultivariateMonomialMR.h"
-#include "operators.h" // need operators on top because of correct operator<< for tests.
+//#include "MultivariateMonomialMR.h"
+//#include "operators.h" // need operators on top because of correct operator<< for tests.
 
 using namespace GiNaCRA;
 

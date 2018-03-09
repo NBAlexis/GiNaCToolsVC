@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -32,8 +34,8 @@
  * @version 2012-05-07
  */
 
-#include "RealAlgebraicNumberIR_unittest.h"
-#include "operators.h"
+//#include "RealAlgebraicNumberIR_unittest.h"
+//#include "operators.h"
 
 using std::cout;
 using std::endl;
@@ -279,8 +281,8 @@ void RealAlgebraicNumberIRTest::testMemory()
 void RealAlgebraicNumberIRTest::testEvalf()
 {
     // the numbers might differ in some cases, but the message is clear: numeric evaluation of expressions works with RealAlgebraicNumberIRs
-    CPPUNIT_ASSERT_EQUAL( ex( numeric( -17, 16 )), ex( a3 ).evalf( 2 ));
-    CPPUNIT_ASSERT_EQUAL( ex( numeric( 17, 16 )), ex( a4 ).evalf( 2 ));
+    CPPUNIT_ASSERT_EQUAL( ex( numeric( -17, 16 )), ex( a3 ).evalf());
+    CPPUNIT_ASSERT_EQUAL( ex( numeric( 17, 16 )), ex( a4 ).evalf());
 }
 
 void RealAlgebraicNumberIRTest::testSgn()

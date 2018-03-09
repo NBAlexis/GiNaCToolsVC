@@ -40,13 +40,13 @@ namespace GiNaCRA
         public:
             MultivariateCoefficientMR();
             MultivariateCoefficientMR( const GiNaC::ex& );
-            friend bool operator ==( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
-            friend const MultivariateCoefficientMR operator *( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
-            friend const MultivariateCoefficientMR operator +( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
-            friend const MultivariateCoefficientMR operator -( const MultivariateCoefficientMR& m1 );
-            friend const MultivariateCoefficientMR operator -( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
-            friend const MultivariateCoefficientMR operator /( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
-            friend std::ostream& operator <<( std::ostream& os, const MultivariateCoefficientMR& m1 );
+            GINACRA_API friend bool operator ==( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
+            GINACRA_API friend const MultivariateCoefficientMR operator *( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
+            GINACRA_API friend const MultivariateCoefficientMR operator +( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
+            GINACRA_API friend const MultivariateCoefficientMR operator -( const MultivariateCoefficientMR& m1 );
+            GINACRA_API friend const MultivariateCoefficientMR operator -( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
+            GINACRA_API friend const MultivariateCoefficientMR operator /( const MultivariateCoefficientMR& m1, const MultivariateCoefficientMR& m2 );
+            GINACRA_API friend std::ostream& operator <<( std::ostream& os, const MultivariateCoefficientMR& m1 );
 
             inline GiNaC::ex getExpression() const
             {

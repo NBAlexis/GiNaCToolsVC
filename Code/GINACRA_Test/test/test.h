@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -27,12 +29,12 @@
  * @version 2011-07-15
  */
 
-#include <iostream>
-#include <cppunit/CompilerOutputter.h>
-#include <cppunit/extensions/TestFactoryRegistry.h>
-#include <cppunit/ui/text/TestRunner.h>
+////#include <iostream>
+////#include <cppunit/CompilerOutputter.h>
+////#include <cppunit/extensions/TestFactoryRegistry.h>
+////#include <cppunit/ui/text/TestRunner.h>
 
-#include "ginacra.h"
+//#include "ginacra.h"
 
 using namespace GiNaCRA;
 using namespace std;
@@ -41,22 +43,51 @@ using namespace std;
 // Test program //
 //////////////////
 
-int testmain( int argc, char** argv )
+//class classnameAAthetestsuit3 : public CppUnit::testUnits {
+//public:
+//    classnameAAthetestsuit3()
+//    {
+//        Link(CppUnit::sAllTests);
+//    }
+//    virtual const char * GetName() { return "BB"; }
+//    virtual void DoTest()
+//    {
+//
+//    }
+//};
+
+int testmain()
 {
-    GiNaCRA::MultivariatePolynomialSettings::InitializeGiNaCRAMultivariateMR();
-    // Get the top level suite from the registry
-    CppUnit::Test*              suite_all        = CppUnit::TestFactoryRegistry::getRegistry().makeTest();
-    CppUnit::Test*              suite_univariate = CppUnit::TestFactoryRegistry::getRegistry( CPPUNITSettings::TESTSUITE_UNIVARIATE ).makeTest();
-    CppUnit::TextUi::TestRunner runner;
-    runner.addTest( suite_all );
-    runner.addTest( suite_univariate );
+    //GiNaCRA::MultivariatePolynomialSettings::InitializeGiNaCRAMultivariateMR();
+    //// Get the top level suite from the registry
+    //CppUnit::Test*              suite_all        = CppUnit::TestFactoryRegistry::getRegistry().makeTest();
+    //CppUnit::Test*              suite_univariate = CppUnit::TestFactoryRegistry::getRegistry( CPPUNITSettings::TESTSUITE_UNIVARIATE ).makeTest();
+    //CppUnit::TextUi::TestRunner runner;
+    //runner.addTest( suite_all );
+    //runner.addTest( suite_univariate );
 
-    // Change the default outputter to a compiler error format outputter
-    runner.setOutputter( new CppUnit::CompilerOutputter( &runner.result(), std::cerr ));
+    //// Change the default outputter to a compiler error format outputter
+    //runner.setOutputter( new CppUnit::CompilerOutputter( &runner.result(), std::cerr ));
 
-    // Run the tests.
-    bool wasSucessful = runner.run();
+    //// Run the tests.
+    //bool wasSucessful = runner.run();
 
-    // Return error code 1 if the one of test failed.
-    return !wasSucessful;
+    //// Return error code 1 if the one of test failed.
+    //return !wasSucessful;
+
+    for (CppUnit::testUnits* start = GFac.sAllTests; nullptr != start; start = start->m_pNext)
+    {
+        cout << "testing:" << start->GetName() << "..." << endl;
+        start->DoTest();
+    }
+
+    //cout << CppUnit::sAllTests << endl;
+
+    //CAD_unittest::CAD_unittestthetestsuit sth;
+
+    //cout << CppUnit::sAllTests << endl;
+
+    //classnameAAthetestsuit3 sth2;
+
+    return 0;
 }

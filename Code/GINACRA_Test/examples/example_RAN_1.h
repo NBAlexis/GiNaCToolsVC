@@ -1,3 +1,4 @@
+#if 0
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -108,3 +109,4 @@ int example_RAN_1main()
     //    for(const_iterator i = p2SubstitutedR1.begin(); i != p2SubstitutedR1.end(); ++i )
     //        cout << "  " << *i << ": " << endl;
 }
+#endif

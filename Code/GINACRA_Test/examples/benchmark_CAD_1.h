@@ -1,3 +1,4 @@
+#if 0
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -49,22 +50,22 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-const string VERSION = "2012-04-11";
-const string SUPPORT = "Ulrich Loup <loup@cs.rwth-aachen.de>";
+//const string VERSION = "2012-04-11";
+//const string SUPPORT = "Ulrich Loup <loup@cs.rwth-aachen.de>";
 /// command for Singular
 const string cmdQepcad = "qepcad";
 /// command for Reduce
-const string cmdReduce = "redcsl";
+//const string cmdReduce = "redcsl";
 /// timeout for all competitors
-const string TIMEOUT     = "10";
-const int    TIMEOUT_INT = 10;
+//const string TIMEOUT     = "10";
+//const int    TIMEOUT_INT = 10;
 
 // tools
 
 /// compilation of tools to test
-void testTools();
+void testTools2();
 /// run current benchmark with ginacra
-void testGinacra();
+void testGinacra2();
 /// run current benchmark with qepcad
 void testQepcad();
 /// run current benchmark with reduce
@@ -101,15 +102,15 @@ void printTestFooter( const string& name, double t );
 // global variables
 
 /// the list of variables for the current benchmark
-list<symbol> variables;
+//list<symbol> variables;
 /// the list of polynomials for the current benchmark
-lst polynomials;
+//lst polynomials;
 /// latex table of results to be filled during the benchmarks. For each benchmark we have a row using the columns "benchmark name" | "number of vars" | "number of polys" | max degree" | "ginacra time" | "singular time" | "reduce time"
-string latexTable[8][7];
+//string latexTable[8][7];
 /// global benchmark count
-unsigned benchmarkCount = 0;
+//unsigned benchmarkCount = 0;
 /// global index of current tool, ranging from 0 to the overall number of tools to be tested
-unsigned toolIndex = 0;
+//unsigned toolIndex = 0;
 
 /**
  * Main program.
@@ -145,7 +146,7 @@ int benchmark_CAD_1main()
     {
         cout << "Switching to example set " << benchmarkCount << "." << endl;
         (*f)();
-        testTools();
+        testTools2();
         ++benchmarkCount;
     }
     cout << "---------------------------------------------------------- We're done. ----------------------------------------------------------"
@@ -168,7 +169,7 @@ int benchmark_CAD_1main()
 // Tools //
 ///////////
 
-void testTools()
+void testTools2()
 {
     ostringstream intStream;
     intStream << variables.size();
@@ -177,20 +178,20 @@ void testTools()
     intStream << polynomials.nops();
     latexTable[benchmarkCount][2] = intStream.str();    // sets benchmark number of vars
     toolIndex                     = 0;
-    testGinacra();
+    testGinacra2();
     ++toolIndex;
     testQepcad();
     ++toolIndex;
     testReduce();
 }
 
-void testGinacra()
+void testGinacra2()
 {
     printTestHeader( "GiNaCRA" );
     // prepare input
     UnivariatePolynomialSet input = UnivariatePolynomialSet();
     for( lst::const_iterator i = polynomials.begin(); i != polynomials.end(); ++i )
-        input.insert( UnivariatePolynomial( *i, ));
+        input.insert( UnivariatePolynomial( *i, ));//?????????
     // solve & output
     time_t t = clock();
     //        int             pid;
@@ -542,7 +543,7 @@ void benchmarkKatsuraLS5()
 
 
 
-
+#endif
 
 
 

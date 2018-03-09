@@ -82,11 +82,11 @@ public:
     /// Value of the data stored at a node.
     typedef T value_type;
 
-    class GINACRA_API iterator_base;
-    class GINACRA_API pre_order_iterator;
-    class GINACRA_API post_order_iterator;
-    class GINACRA_API sibling_iterator;
-    class GINACRA_API leaf_iterator;
+    class iterator_base;
+    class pre_order_iterator;
+    class post_order_iterator;
+    class sibling_iterator;
+    class leaf_iterator;
 
     tree( );
     tree( const T& );
@@ -98,11 +98,11 @@ public:
     /// Base class for iterators, only pointers stored, no traversal logic.
 #ifdef __SGI_STL_PORT
 
-    class GINACRA_API iterator_base : public stlport::bidirectional_iterator<T, ptrdiff_t>
+    class iterator_base : public stlport::bidirectional_iterator<T, ptrdiff_t>
     {
 #else
 
-    class GINACRA_API iterator_base
+    class iterator_base
     {
 #endif
     public:
@@ -135,7 +135,7 @@ public:
 
     /// Depth-first iterator, first accessing the node, then its children.
 
-    class GINACRA_API pre_order_iterator : public iterator_base
+    class pre_order_iterator : public iterator_base
     {
     public:
         pre_order_iterator( );
@@ -155,7 +155,7 @@ public:
 
     /// Depth-first iterator, first accessing the children, then the node itself.
 
-    class GINACRA_API post_order_iterator : public iterator_base
+    class post_order_iterator : public iterator_base
     {
     public:
         post_order_iterator( );
@@ -178,7 +178,7 @@ public:
 
     /// Breadth-first iterator, using a queue
 
-    class GINACRA_API breadth_first_queued_iterator : public iterator_base
+    class breadth_first_queued_iterator : public iterator_base
     {
     public:
         breadth_first_queued_iterator( );
@@ -201,7 +201,7 @@ public:
 
     /// Iterator which traverses only the nodes at a given depth from the root.
 
-    class GINACRA_API fixed_depth_iterator : public iterator_base
+    class fixed_depth_iterator : public iterator_base
     {
     public:
         fixed_depth_iterator( );
@@ -224,7 +224,7 @@ public:
 
     /// Iterator which traverses only the nodes which are siblings of each other.
 
-    class GINACRA_API sibling_iterator : public iterator_base
+    class sibling_iterator : public iterator_base
     {
     public:
         sibling_iterator( );
@@ -250,7 +250,7 @@ public:
 
     /// Iterator which traverses only the leaves.
 
-    class GINACRA_API leaf_iterator : public iterator_base
+    class leaf_iterator : public iterator_base
     {
     public:
         leaf_iterator( );

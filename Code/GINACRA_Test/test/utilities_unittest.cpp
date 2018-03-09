@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -30,9 +32,9 @@
  * @version 2012-03-20
  */
 
-#include <cln/cln.h>
+////#include <cln/cln.h>
 
-#include "utilities_unittest.h"
+//#include "utilities_unittest.h"
 
 // test suite
 CPPUNIT_TEST_SUITE_REGISTRATION( utilitiesTest );

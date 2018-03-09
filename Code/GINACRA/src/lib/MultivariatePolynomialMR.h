@@ -89,7 +89,7 @@ namespace GiNaCRA
                 return mOrderFunc( m1, m2 );
             }
 
-            friend bool operator !=( const MonomMRCompare& m1, const MonomMRCompare& m2 );
+            GINACRA_API friend bool operator !=( const MonomMRCompare& m1, const MonomMRCompare& m2 );
 
         private:
             MonomOrderingFc mOrderFunc;
@@ -237,23 +237,23 @@ namespace GiNaCRA
              */
             GiNaC::ex toEx() const;
 
-            friend bool operator ==( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
-            friend bool operator !=( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
+            GINACRA_API friend bool operator ==( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
+            GINACRA_API friend bool operator !=( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
 
-            friend const MultivariatePolynomialMR operator +( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
-            friend const MultivariatePolynomialMR operator +( const MultivariatePolynomialMR& p1, const MultivariateTermMR& t1 );
-            friend const MultivariatePolynomialMR operator +( const MultivariateTermMR& t1, MultivariatePolynomialMR& p1 );
-            friend const MultivariatePolynomialMR operator +( const MultivariatePolynomialMR& p1, const MultivariateMonomialMR& m1 );
-            friend const MultivariatePolynomialMR operator +( const MultivariateMonomialMR& m1, const MultivariatePolynomialMR& p1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator +( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
+            GINACRA_API friend const MultivariatePolynomialMR operator +( const MultivariatePolynomialMR& p1, const MultivariateTermMR& t1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator +( const MultivariateTermMR& t1, MultivariatePolynomialMR& p1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator +( const MultivariatePolynomialMR& p1, const MultivariateMonomialMR& m1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator +( const MultivariateMonomialMR& m1, const MultivariatePolynomialMR& p1 );
 
-            friend const MultivariatePolynomialMR operator -( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
-            friend const MultivariatePolynomialMR operator -( const MultivariatePolynomialMR& p1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator -( const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2 );
+            GINACRA_API friend const MultivariatePolynomialMR operator -( const MultivariatePolynomialMR& p1 );
 
-            //friend const MultivariatePolynomialMR operator*(const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2);
-            friend const MultivariatePolynomialMR operator *( const MultivariatePolynomialMR& p1, const MultivariateTermMR& t1 );
-            friend const MultivariatePolynomialMR operator *( const MultivariateTermMR& t1, MultivariatePolynomialMR& p1 );
-            friend const MultivariatePolynomialMR operator *( const MultivariatePolynomialMR& p1, const MultivariateMonomialMR& m1 );
-            friend const MultivariatePolynomialMR operator *( const MultivariateMonomialMR& m1, const MultivariatePolynomialMR& p1 );
+            //GINACRA_API friend const MultivariatePolynomialMR operator*(const MultivariatePolynomialMR& p1, const MultivariatePolynomialMR& p2);
+            GINACRA_API friend const MultivariatePolynomialMR operator *( const MultivariatePolynomialMR& p1, const MultivariateTermMR& t1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator *( const MultivariateTermMR& t1, MultivariatePolynomialMR& p1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator *( const MultivariatePolynomialMR& p1, const MultivariateMonomialMR& m1 );
+            GINACRA_API friend const MultivariatePolynomialMR operator *( const MultivariateMonomialMR& m1, const MultivariatePolynomialMR& p1 );
 
             /**
              *
@@ -261,7 +261,7 @@ namespace GiNaCRA
              * @param rhs
              * @return
              */
-            friend std::ostream& operator <<( std::ostream& os, const MultivariatePolynomialMR& rhs );
+            GINACRA_API friend std::ostream& operator <<( std::ostream& os, const MultivariatePolynomialMR& rhs );
 
             /**
              * Calculates the S-polynomial of p1 and p2

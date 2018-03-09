@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -23,9 +25,9 @@
 #ifndef GINACRA_OPENINTERVAL_TEST_H
 #define GINACRA_OPENINTERVAL_TEST_H
 
-#include <cppunit/extensions/HelperMacros.h>
+////#include <cppunit/extensions/HelperMacros.h>
 
-#include "OpenInterval.h"
+//#include "OpenInterval.h"
 
 using GiNaCRA::OpenInterval;
 

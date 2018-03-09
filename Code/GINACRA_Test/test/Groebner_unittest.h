@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -23,8 +25,8 @@
 #ifndef GROEBNER_UNITTEST_H
 #define GROEBNER_UNITTEST_H
 
-#include <cppunit/extensions/HelperMacros.h>
-#include "Groebner.h"
+////#include <cppunit/extensions/HelperMacros.h>
+//#include "Groebner.h"
 
 using namespace GiNaCRA;
 

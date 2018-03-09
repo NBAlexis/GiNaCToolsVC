@@ -40,12 +40,12 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-const string   VERSION        = "2010-12-25";
-const string   SUPPORT        = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
-const unsigned TESTCOUNT      = 100;    // number of repetitions
-const unsigned TERMCOUNT      = 62;    // number of terms in the polynomial except for the constant part
-const unsigned MAXDEGREE      = 24;    // maximum degree (+1) of polynomials
-const unsigned MAXCOEFFICIENT = 1001;    // maximum coefficient (+1) of polynomials
+//const string   VERSION        = "2010-12-25";
+//const string   SUPPORT        = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
+//const unsigned TESTCOUNT      = 100;    // number of repetitions
+//const unsigned TERMCOUNT      = 62;    // number of terms in the polynomial except for the constant part
+//const unsigned MAXDEGREE      = 24;    // maximum degree (+1) of polynomials
+//const unsigned MAXCOEFFICIENT = 1001;    // maximum coefficient (+1) of polynomials
 
 //////////////////
 // Main program //

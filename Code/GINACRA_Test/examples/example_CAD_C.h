@@ -40,18 +40,18 @@ using namespace std;
 using namespace GiNaCRA;
 using namespace GiNaC;
 
-void runTest( CADSettings settings );
+void runTestec( CADSettings settings );
 
 int example_CAD_Cmain()
 {
     CADSettings s1 = CADSettings::getSettings();
     //    s1.setPreferNonrootSamples( false );
 
-    runTest( s1 );
+    runTestec( s1 );
     return 0;
 }
 
-void runTest( CADSettings settings )
+void runTestec( CADSettings settings )
 {
     symbol a( "p_2" ), b( "p_3" ), c( "p_4" ), d( "p_0" ), x( "height_0" ), y( "delta_0" ), z( "bounce_1" ), w( "bounce_5" );
 

@@ -40,7 +40,7 @@ using namespace std;
 using namespace GiNaCRA;
 using namespace GiNaC;
 
-void runTest( vector<GiNaC::sign> signs, CADSettings settings );
+void runTestecb( vector<GiNaC::sign> signs, CADSettings settings );
 
 int example_CAD_Bmain()
 {
@@ -48,11 +48,11 @@ int example_CAD_Bmain()
     //    s1.setPreferNonrootSamples( false );
 
     vector<GiNaC::sign> zero_signs = vector<GiNaC::sign>( 3, GiNaC::ZERO_SIGN );
-    runTest( zero_signs, s1 );
+    runTestecb( zero_signs, s1 );
     return 0;
 }
 
-void runTest( vector<GiNaC::sign> signs, CADSettings settings )
+void runTestecb( vector<GiNaC::sign> signs, CADSettings settings )
 {
     symbol a( "a" ), b( "b" ), c( "c" );
     symbol x( "x" ), y( "y" ), z( "z" );

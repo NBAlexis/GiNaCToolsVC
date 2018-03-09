@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -29,8 +31,8 @@
  * @author: Ulrich Loup
  */
 
-#include "RealAlgebraicNumberFactory_unittest.h"
-#include "operators.h"
+//#include "RealAlgebraicNumberFactory_unittest.h"
+//#include "operators.h"
 
 using GiNaCRA::OpenInterval;
 using GiNaCRA::RealAlgebraicNumberPtr;

@@ -26,6 +26,7 @@ namespace CodeHelper
             //AddDllExportForGINACRA();
             //AddIncludeBackForGINACRA();
             //Fix1ForGINACRAtest();
+            //Fix1ForGINACRAtest2();
 
             //pasue
             Console.WriteLine("work done, press enter to exit...");
@@ -33,6 +34,26 @@ namespace CodeHelper
         }
 
         #region GINACRATEST
+
+        static void Fix1ForGINACRAtest2()
+        {
+            Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
+
+            DirectoryInfo dirinfo = new DirectoryInfo("..\\..\\..\\Code\\GINACRA_Test\\test");
+
+            FileInfo[] files = dirinfo.GetFiles("*.*", SearchOption.AllDirectories).Where(s => s.FullName.EndsWith(".cpp") || s.FullName.EndsWith(".h")).ToArray();
+            foreach (FileInfo f in files)
+            {
+                //Console.WriteLine(f.Name);
+                string textf = File.ReadAllText(f.FullName);
+
+                textf = removeAllinc(textf);
+                textf = "#include \"ginacra_test.h\"\n" + textf;
+
+                //Console.Write(textf);
+                File.WriteAllText(f.FullName, textf);
+            }
+        }
 
         static void Fix1ForGINACRAtest()
         {
@@ -96,7 +117,7 @@ namespace CodeHelper
         static public string removeAllinc(string sIn)
         {
             sIn = Regex.Replace(sIn, @"(#include\s+<[^>]+>)", @"//$1");
-            return Regex.Replace(sIn, "(#include\\s+\\\"[^\\\"]+>)", @"//$1");
+            return Regex.Replace(sIn, "(#include\\s+\\\"[^\\\"]+\\\")", @"//$1");
         }
 
         static public string RenameMainFunctions(ref string sIn, string sFileName)

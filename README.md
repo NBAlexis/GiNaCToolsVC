@@ -31,7 +31,11 @@ http://wwwthep.physik.uni-mainz.de/~stefanw/nestedsums/
 Reduz: v2.2
 https://reduze.hepforge.org/
 
-GiNacRA(May need this to calculate sums): 
+GiNaCRA: v0.6.4
+NOTICE!: 
+GiNaCRA seems not complete yet, I should NOT waste my time on this.
+Code added, some test runs while others not.
+And I will not work on this any longer.
 http://ginacra.sourceforge.net/
 
 ###Build GMP, CLN, GiNaC in MinGW64###

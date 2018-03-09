@@ -1,3 +1,5 @@
+#include "ginacra_test.h"
+//#include "ginacra_test.h"
 /*
  * GiNaCRA - GiNaC Real Algebra package
  * Copyright (C) 2010-2012  Ulrich Loup, Joachim Redies, Sebastian Junges
@@ -32,9 +34,9 @@
 #ifndef GINACRA_INTERVALREPRESENTATIONFACTORY_UNITTEST_H
 #define GINACRA_INTERVALREPRESENTATIONFACTORY_UNITTEST_H
 
-#include <cppunit/extensions/HelperMacros.h>
+////#include <cppunit/extensions/HelperMacros.h>
 
-#include "RealAlgebraicNumberFactory.h"
+//#include "RealAlgebraicNumberFactory.h"
 
 class RealAlgebraicNumberFactoryTest:
     public CppUnit:: TestFixture
