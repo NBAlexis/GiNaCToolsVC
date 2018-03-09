@@ -37,10 +37,10 @@
  * @version 2012-04-11
  */
 
-#include <ctime>
-#include <iostream>
-#include <pthread.h>
-#include <signal.h>
+//#include <ctime>
+//#include <iostream>
+//#include <pthread.h>
+//#include <signal.h>
 
 using namespace std;
 
@@ -114,7 +114,7 @@ unsigned toolIndex = 0;
 /**
  * Main program.
  */
-int main( int argc, char** argv )
+int benchmark_CAD_1main()
 {
     MultivariatePolynomialSettings::InitializeGiNaCRAMultivariateMR();
     //    VariableListPool::ensureNrVariables( 19 );

@@ -31,7 +31,7 @@
  * @version 2010-12-26
  */
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -39,7 +39,7 @@ using namespace std;
 
 using namespace GiNaCRA;
 
-int main( int argc, char** argv )
+int example3main()
 {
     symbol x( "x" );
     RationalUnivariatePolynomial p1( pow( x, 2 ) - 2, x );

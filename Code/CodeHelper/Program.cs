@@ -25,11 +25,87 @@ namespace CodeHelper
             //AddPrivateHeaderForGINACRA();
             //AddDllExportForGINACRA();
             //AddIncludeBackForGINACRA();
+            //Fix1ForGINACRAtest();
 
             //pasue
             Console.WriteLine("work done, press enter to exit...");
             string byebye = Console.ReadLine();
         }
+
+        #region GINACRATEST
+
+        static void Fix1ForGINACRAtest()
+        {
+            Console.Write(System.AppDomain.CurrentDomain.BaseDirectory);
+
+            DirectoryInfo dirinfo = new DirectoryInfo("..\\..\\..\\Code\\GINACRA_Test\\test");
+
+            FileInfo[] files = dirinfo.GetFiles("*.*", SearchOption.AllDirectories).Where(s => s.FullName.EndsWith(".cpp") || s.FullName.EndsWith(".h")).ToArray();
+            string sNewHeadFiles = "";
+            string sMainFunctions = "";
+            foreach (FileInfo f in files)
+            {
+                //Console.WriteLine(f.Name);
+                string textf = File.ReadAllText(f.FullName);
+
+                textf = removeAllinc(textf);
+                textf = "#include \"ginacra_test.h\"\n";
+
+                if (f.FullName.EndsWith(".h"))
+                {
+                    sNewHeadFiles = sNewHeadFiles + "#include \"test/" + f.Name + "\"\n";
+                }
+                
+                 //Console.Write(textf);
+                 File.WriteAllText(f.FullName, textf);
+            }
+
+            dirinfo = new DirectoryInfo("..\\..\\..\\Code\\GINACRA_Test\\examples");
+            files = dirinfo.GetFiles("*.h", SearchOption.AllDirectories);
+            foreach (FileInfo f in files)
+            {
+                //Console.WriteLine(f.Name);
+                string textf = File.ReadAllText(f.FullName);
+                textf = removeAllinc(textf);
+                //textf = "#include \"ginacra_test.h\"\n";
+
+                string sMainFunction = RenameMainFunctions(ref textf, f.Name.Substring(0, f.Name.Length - 2));
+
+                sNewHeadFiles = sNewHeadFiles + "#include \"example/" + f.Name + "\"\n";
+                sMainFunctions = sMainFunctions + "    cout << \"error = \" << error << endl;\n    " + sMainFunction + "\n";
+
+                File.WriteAllText(f.FullName, textf);
+            }
+
+            //Add Head Files
+            FileInfo headerfile = new FileInfo("..\\..\\..\\Code\\GINACRA_Test\\ginacra_test.h");
+            string headContent = File.ReadAllText(headerfile.FullName);
+            headContent = headContent.Replace("//AddOtherIncludeHere", sNewHeadFiles + "\n//AddOtherIncludeHere");
+
+            FileInfo cppfile = new FileInfo("..\\..\\..\\Code\\GINACRA_Test\\ginacra_test.cpp");
+            string cppContent = File.ReadAllText(cppfile.FullName);
+            cppContent = cppContent.Replace("//ADDTESTFUNCTIONS", sMainFunctions + "\n//ADDTESTFUNCTIONS");
+
+            Console.Write(headContent);
+            Console.Write(cppContent);
+
+            File.WriteAllText(headerfile.FullName, headContent);
+            File.WriteAllText(cppfile.FullName, cppContent);
+        }
+
+        static public string removeAllinc(string sIn)
+        {
+            sIn = Regex.Replace(sIn, @"(#include\s+<[^>]+>)", @"//$1");
+            return Regex.Replace(sIn, "(#include\\s+\\\"[^\\\"]+>)", @"//$1");
+        }
+
+        static public string RenameMainFunctions(ref string sIn, string sFileName)
+        {
+            sIn = Regex.Replace(sIn, @"(int\s+)main\s*\([^\)]*\)", "$1" + sFileName + "main()");
+            return "error += " + sFileName + "main();";
+        }
+
+        #endregion
 
         #region GINACRA
 

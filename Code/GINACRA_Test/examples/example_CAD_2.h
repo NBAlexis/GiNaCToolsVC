@@ -28,9 +28,9 @@
  * @version 2012-04-27
  */
 
-#include <string>
-#include <ctime>
-#include <iostream>
+//#include <string>
+//#include <ctime>
+//#include <iostream>
 
 using namespace std;
 
@@ -41,7 +41,7 @@ using namespace GiNaC;
 
 void runTest( CADSettings settings );
 
-int main( int argc, char** argv )
+int example_CAD_2main()
 {
     CADSettings setting = CADSettings::getSettings();
 

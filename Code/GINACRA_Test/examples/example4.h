@@ -30,7 +30,7 @@
  * @version 2011-11-26
  */
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -38,7 +38,7 @@ using namespace std;
 
 using namespace GiNaCRA;
 
-int main( int argc, char** argv )
+int example4main()
 {
     symbol x( "x" ), y( "y" );
     OpenInterval i1( -1, 1 );

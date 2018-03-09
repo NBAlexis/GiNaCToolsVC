@@ -137,14 +137,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir)check\;$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(SolutionDir)GINACRA\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir);$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(SolutionDir)GINACRA\;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)..\Bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\Temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir)check\;$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(SolutionDir)GINACRA\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\Dependency;$(ProjectDir);$(SolutionDir)GINAC\ginac\;$(SolutionDir)CLN\include\;$(SolutionDir)GINACRA\;$(IncludePath)</IncludePath>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

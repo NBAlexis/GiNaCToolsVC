@@ -30,10 +30,10 @@
  * @version 2012-01-05
  */
 
-#include <string>
-#include <ctime>
-#include <iostream>
-#include <typeinfo>
+//#include <string>
+//#include <ctime>
+//#include <iostream>
+//#include <typeinfo>
 
 using namespace std;
 
@@ -42,7 +42,7 @@ using namespace std;
 using namespace GiNaCRA;
 using namespace GiNaC;
 
-int main( int argc, char** argv )
+int example_RAN_1main()
 {
     symbol x( "x" ), y( "y" );
     vector<symbol> v = vector<symbol>();

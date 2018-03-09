@@ -28,9 +28,9 @@
  * @version 2012-04-19
  */
 
-#include <string>
-#include <ctime>
-#include <iostream>
+//#include <string>
+//#include <ctime>
+//#include <iostream>
 
 using namespace std;
 
@@ -39,7 +39,7 @@ using namespace std;
 using namespace GiNaCRA;
 using namespace GiNaC;
 
-int main( int argc, char** argv )
+int example_CADincremental_2main()
 {
     symbol x( "x" ), y( "y" ), r1( "r1" ), r2( "r2" );
     vector<symbol> v = vector<symbol>();

@@ -1,5 +1,5 @@
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -8,7 +8,7 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-int main( int argc, char** argv )
+int example_AlgoSynmain()
 {
     symbol x( "x" );
 

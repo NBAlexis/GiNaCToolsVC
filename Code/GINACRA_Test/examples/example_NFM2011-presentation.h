@@ -20,8 +20,8 @@
  */
 
 
-#include <iostream>
-#include <assert.h>
+//#include <iostream>
+//#include <assert.h>
 
 using namespace std;
 
@@ -38,7 +38,7 @@ using namespace GiNaC;
  *
  * Notation is following http://www.possibility.com/Cpp/CppCodingStandard.html.
  */
-int main( int argc, char** argv )
+int example_NFM2011presentationmain()
 {
     symbol x( "x" ), y( "y" );
     // (x-1) * (pow(x, 2)-2) * (x-3) * (pow(x,2)+1) * (x+1)

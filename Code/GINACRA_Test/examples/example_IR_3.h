@@ -30,8 +30,8 @@
  * @version 2011-10-17
  */
 
-#include <ctime>
-#include <iostream>
+//#include <ctime>
+//#include <iostream>
 
 using namespace std;
 
@@ -47,7 +47,7 @@ const string SUPPORT = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
 // Main program //
 //////////////////
 
-int main( int argc, char** argv )
+int example_IR_3main()
 {
     cout << endl;
     cout << " GiNaCRA Example on RealAlgebraicNumberPtr from [Davenport et al. 1987] Version " << VERSION << endl << "";

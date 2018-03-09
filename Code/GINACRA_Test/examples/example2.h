@@ -31,7 +31,7 @@
  * @version 2010-12-26
  */
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -39,7 +39,7 @@ using namespace std;
 
 using namespace GiNaCRA;
 
-int main( int argc, char** argv )
+int example2main()
 {
     symbol x( "x" );
     ex e1( -15015 + 12673 * x - 3954 * pow( x, 2 ) + 574 * pow( x, 3 ) - 39 * pow( x, 4 ) + pow( x, 5 ));

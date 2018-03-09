@@ -54,6 +54,7 @@
     <ClCompile Include="test\utilities_unittest.cpp">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="GINACRA_Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test\CAD_unittest.h">
@@ -194,5 +195,6 @@
     <ClInclude Include="examples\example4.h">
       <Filter>examples</Filter>
     </ClInclude>
+    <ClInclude Include="GINACRA_Test.h" />
   </ItemGroup>
 </Project>

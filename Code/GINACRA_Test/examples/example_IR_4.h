@@ -31,7 +31,7 @@
  * @version 2010-12-22
  */
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -40,7 +40,7 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-int main( int argc, char** argv )
+int example_IR_4main()
 {
     symbol x( "x" );    // main variable of the GiNaCRA polynomial
     RationalUnivariatePolynomial p( -15015 + 12673 * x - 3954 * pow( x, 2 ) + 574 * pow( x, 3 ) - 39 * pow( x, 4 ) + pow( x, 5 ), x );

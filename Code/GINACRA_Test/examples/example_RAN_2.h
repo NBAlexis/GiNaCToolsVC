@@ -30,7 +30,7 @@
  * @version 2010-05-09
  */
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -39,10 +39,10 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-#include <string>
-#include <ctime>
+//#include <string>
+//#include <ctime>
 
-int main( int argc, char** argv )
+int example_RAN_2main()
 {
     symbol x( "x" );
     string s = "x";

@@ -29,9 +29,9 @@
  * @see smtlib 2 benchmarks
  */
 
-#include <string>
-#include <ctime>
-#include <iostream>
+//#include <string>
+//#include <ctime>
+//#include <iostream>
 
 using namespace std;
 
@@ -42,7 +42,7 @@ using namespace GiNaC;
 
 void runTest( CADSettings settings );
 
-int main( int argc, char** argv )
+int example_CAD_Cmain()
 {
     CADSettings s1 = CADSettings::getSettings();
     //    s1.setPreferNonrootSamples( false );

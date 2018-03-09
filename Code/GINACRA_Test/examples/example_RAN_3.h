@@ -28,8 +28,8 @@
  * @version 2012-03-13
  */
 
-#include <iostream>
-#include <ctime>
+//#include <iostream>
+//#include <ctime>
 
 using namespace std;
 
@@ -38,7 +38,7 @@ using namespace std;
 using namespace GiNaC;
 using namespace GiNaCRA;
 
-int main( int argc, char** argv )
+int example_RAN_3main()
 {
     cout << "Comparing times of gcd computations (relevant for RealAlgebraicNumberIR::refine())..." << endl;
     srand( time( NULL ));

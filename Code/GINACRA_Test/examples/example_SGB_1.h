@@ -30,7 +30,7 @@
  * @version 2010-05-05
  */
 
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -45,7 +45,7 @@ const string SUPPORT = "Ulrich Loup <loup* @cs.rwth-aachen.de>";
 // Main program //
 //////////////////
 
-int main( int argc, char** argv )
+int example_SGB_1main()
 {
     cout << endl;
     cout << " GiNaCRA Example on MultivariatePolynomial computations with special Groebner basis, version " << VERSION << endl << "";

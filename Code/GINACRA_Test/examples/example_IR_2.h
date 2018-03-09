@@ -30,8 +30,8 @@
  * @version 2010-12-25
  */
 
-#include <ctime>
-#include <iostream>
+//#include <ctime>
+//#include <iostream>
 
 using namespace std;
 
@@ -51,7 +51,7 @@ const unsigned MAXCOEFFICIENT = 1001;    // maximum coefficient (+1) of polynomi
 // Main program //
 //////////////////
 
-int main( int argc, char** argv )
+int example_IR_2main()
 {
     cout << endl;
     cout << " GiNaCRA Example on RealAlgebraicNumberIR Version " << VERSION << endl << "";
